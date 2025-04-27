@@ -302,3 +302,71 @@ header {
     flex-direction: column;
   }
 }
+/*HEADER CHANGE*/
+/* Slim Header Styles */
+header {
+  padding: 0.5rem 0;
+  background: var(--header-background, #fff);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-height: 80px;
+  overflow: hidden;
+}
+
+/* Container inside Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Name Title */
+#name {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+/* Tagline */
+#tagline {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+/* Controls (Language Switcher + Theme Toggle) */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#lang-switcher,
+#theme-toggle {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+/* Navbar */
+.nav-bar {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: var(--text-color, #333);
+  font-size: 0.9rem;
+}
