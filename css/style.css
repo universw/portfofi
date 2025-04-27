@@ -303,14 +303,14 @@ header {
   }
 }
 /*HEADER CHANGE*/
-/* Slim Header Styles */
-/* Slim but Visible Header */
+/* Real Balanced Header */
 header {
-  padding: 1rem 0;
-  background: var(--header-background, #fff);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-height: 120px;
-  overflow: hidden;
+  background-color: var(--header-background, #ffffff);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 /* Header Container */
@@ -320,67 +320,94 @@ header {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 20px;
 }
 
 /* Profile Picture */
 .profile-pic {
-  width: 65px;
-  height: 65px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-/* Name Title */
+/* Name and Tagline */
 #name {
-  font-size: 1.5rem;
-  margin: 0 1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-left: 15px;
 }
 
-/* Tagline */
 #tagline {
   font-size: 1rem;
-  margin: 0;
+  margin-left: 15px;
+  color: #666;
 }
 
-/* Controls (Language Switcher + Theme Toggle) */
+/* Controls (Language and Theme Switcher) */
 .controls {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.8rem;
 }
 
 #lang-switcher,
 #theme-toggle {
-  padding: 0.4rem 0.7rem;
-  font-size: 0.9rem;
-  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 0.95rem;
   border: 1px solid #ccc;
-  background: #f9f9f9;
+  border-radius: 5px;
+  background-color: #f5f5f5;
   cursor: pointer;
 }
 
-/* Navbar */
+/* Navigation Bar */
 .nav-bar {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
+  margin-left: 30px;
 }
 
 .nav-bar a {
   text-decoration: none;
-  color: var(--text-color, #333);
   font-size: 1rem;
-  padding: 0.4rem 0.6rem;
-  transition: color 0.3s;
+  color: var(--text-color, #333);
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
 }
 
 .nav-bar a:hover {
-  color: var(--accent-color, #007bff);
+  background-color: var(--accent-color, #007bff);
+  color: white;
 }
 
-/* Optional: Responsiveness */
+/* Responsive for Mobile */
 @media (max-width: 768px) {
   .nav-bar {
     display: none;
   }
+  .controls {
+    gap: 0.5rem;
+  }
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.name-tagline {
+  display: flex;
+  flex-direction: column;
+}
+
+#name {
+  margin: 0;
+}
+
+#tagline {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #777;
 }

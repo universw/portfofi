@@ -8,23 +8,41 @@
 </head>
 
 <body>
-  <header>
-    <div class="header-content container">
-      <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic">
-      <div class="header-text">
-        <h1>Henry HoangQuan Nguyen</h1>
-        <p data-i18n="tagline">Multilingual Developer | IT Enthusiast | Book & Travel Lover</p>
-        <div class="controls">
-          <select id="lang-switcher">
-            <option value="en">EN</option>
-            <option value="ja">日本語</option>
-            <option value="vi">Tiếng Việt</option>
-            <option value="zh">中文</option>
-          </select>
-          <button id="theme-toggle" class="btn">Light/Dark</button>
+  <<header>
+    <div class="container header-container">
+      <!-- Left part: Profile pic + Name + Tagline -->
+      <div class="header-left">
+        <img src="assets/images/profile.jpg" alt="Profile" class="profile-pic" />
+        <div class="name-tagline">
+          <h1 id="name">Henry HoangQuan Nguyen</h1>
+          <p id="tagline" data-i18n="tagline">
+            Multilingual Developer | IT Enthusiast | Book & Travel Lover
+          </p>
         </div>
       </div>
+  
+      <!-- Middle part: Navigation links -->
+      <nav class="nav-bar">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#resume" data-i18n="nav_resume">Resume</a>
+        <a href="#activities" data-i18n="nav_activities">Activities</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+  
+      <!-- Right part: Controls (Language and Theme) -->
+      <div class="controls">
+        <select id="lang-switcher">
+          <option value="en">EN</option>
+          <option value="ja">日本語</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="zh">中文</option>
+        </select>
+        <button id="theme-toggle" class="btn">Light/Dark</button>
+      </div>
     </div>
+  </div>
 
     <nav class="nav-bar container">
       <a href="#about" data-i18n="nav_about">About</a>
