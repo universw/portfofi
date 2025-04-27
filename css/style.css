@@ -1,19 +1,32 @@
-/* Reset & Base */
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
+/* Fonts and Body */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
   line-height: 1.6;
-  transition: all 0.3s ease;
 }
 
+/* Theme Variables */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #007bff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+}
+
+/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -21,193 +34,157 @@ body {
   padding: 2rem 0;
 }
 
-.section {
-  margin-bottom: 3rem;
-}
-
-/* Variables for Light & Dark Theme */
-:root {
-  --bg-color: #ffffff;
-  --text-color: #333333;
-  --accent-color: #4CAF50;
-  --secondary-color: #eeeeee;
-}
-
-body.dark-mode {
-  --bg-color: #121212;
-  --text-color: #f5f5f5;
-  --accent-color: #90CAF9;
-  --secondary-color: #333333;
-}
-
 /* Header */
 header {
-  background-color: var(--accent-color);
+  background-color: var(--primary-color);
   color: white;
   padding: 1rem 0;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 }
 
 .header-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .profile-pic {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  border: 3px solid white;
-  margin-bottom: 0.5rem;
-  transition: transform 0.3s;
+  object-fit: cover;
+  border: 2px solid white;
 }
 
-.profile-pic:hover {
-  transform: scale(1.1);
+.header-text {
+  flex: 1;
+  margin-left: 1rem;
 }
 
 .header-text h1 {
-  font-size: 1.8rem;
-}
-
-.header-text p {
-  font-size: 1rem;
-  margin: 0.5rem 0;
+  font-size: 1.5rem;
 }
 
 .controls {
   margin-top: 0.5rem;
 }
 
-#lang-switcher, #theme-toggle {
-  margin: 0 0.3rem;
-  padding: 0.4rem 0.8rem;
+#lang-switcher,
+#theme-toggle {
+  margin: 0.3rem;
+  padding: 0.4rem 0.6rem;
   border: none;
-  background-color: white;
-  color: var(--accent-color);
-  font-weight: bold;
-  cursor: pointer;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  background: white;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: bold;
 }
 
-#lang-switcher:hover, #theme-toggle:hover {
-  background-color: var(--secondary-color);
+#theme-toggle {
+  background: var(--primary-color);
+  color: white;
 }
 
-/* Navigation */
+/* Navbar */
 .nav-bar {
-  margin-top: 0.8rem;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
 }
 
 .nav-bar a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   font-weight: bold;
-  font-size: 0.95rem;
-  padding: 0.4rem 0.8rem;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  padding: 0.5rem;
 }
 
 .nav-bar a:hover {
-  background-color: #388E3C;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
 }
 
 /* Sections */
-.section h2 {
-  text-align: center;
-  margin-bottom: 1.2rem;
-  font-size: 1.8rem;
-  color: var(--accent-color);
+.section {
+  padding: 3rem 0;
 }
 
-.section p, .section ul, .section li {
-  font-size: 1rem;
-  margin: 0.5rem 0;
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.section p, .section ul {
+  margin: 1rem 0;
+  text-align: center;
 }
 
 /* Buttons */
 .btn {
   display: inline-block;
-  background-color: var(--accent-color);
+  background: var(--primary-color);
   color: white;
   padding: 0.6rem 1.2rem;
-  margin: 0.8rem 0.5rem 0 0;
   border: none;
   border-radius: 5px;
-  text-decoration: none;
+  margin-top: 1rem;
+  cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
 }
 
 .btn:hover {
-  background-color: #388E3C;
-  transform: translateY(-2px);
+  background: #0056b3;
 }
 
-/* Gallery Grid */
+/* Gallery */
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .gallery-item {
+  width: 250px;
   text-align: center;
 }
 
 .gallery-item img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
   border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.gallery-item img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-/* Projects Grid */
+/* Projects */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .project-item {
-  background-color: var(--secondary-color);
-  padding: 1rem;
+  width: 300px;
+  background: var(--bg-color);
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
   text-align: center;
-  transition: background-color 0.3s, transform 0.3s;
 }
 
 .project-item img {
   width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
-.project-item:hover {
-  transform: translateY(-5px);
-  background-color: #e0f2f1;
-}
-
-/* Snake Game */
+/* Snake iframe */
 .snake-container {
   margin-top: 2rem;
   text-align: center;
@@ -215,110 +192,113 @@ header {
 
 .snake-iframe {
   width: 100%;
-  height: 450px;
-  border: 2px solid var(--accent-color);
+  max-width: 500px;
+  height: 500px;
+  border: 2px solid var(--primary-color);
   border-radius: 10px;
 }
 
-/* Skills */
+/* Skills List */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   justify-content: center;
   list-style: none;
-  gap: 0.8rem;
-  margin-top: 2rem;
+  padding: 0;
 }
 
 .skills-list li {
-  background-color: var(--secondary-color);
-  padding: 0.6rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
   border-radius: 20px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.skills-list li:hover {
-  background-color: #d1c4e9;
 }
 
 /* Contact */
 .social-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
-  text-align: center;
 }
 
-.social-buttons .btn {
-  margin: 0.4rem;
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #contact-form input,
 #contact-form textarea {
   width: 100%;
+  max-width: 500px;
   padding: 0.7rem;
-  margin-bottom: 1rem;
-  border: 1px solid var(--accent-color);
   border-radius: 5px;
-}
-
-#contact-form button {
-  width: 100%;
+  border: 1px solid #ccc;
 }
 
 /* Chatbox */
 #chatbox {
-  background-color: var(--secondary-color);
-  padding: 1rem;
+  background: var(--bg-color);
   border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 #chat-messages {
-  height: 200px;
+  max-height: 300px;
   overflow-y: auto;
   margin-bottom: 1rem;
-  background: white;
-  padding: 1rem;
+  padding: 0.5rem;
+  background: #f5f5f5;
   border-radius: 5px;
 }
 
 #chat-form {
   display: flex;
+  gap: 0.5rem;
 }
 
 #chat-input {
   flex: 1;
-  padding: 0.7rem;
-  margin-right: 0.5rem;
-  border: 1px solid var(--accent-color);
+  padding: 0.5rem;
   border-radius: 5px;
-}
-
-#chat-form button {
-  padding: 0.7rem 1.2rem;
+  border: 1px solid #ccc;
 }
 
 /* Footer */
 .footer {
   text-align: center;
-  padding: 1.5rem 0;
-  background-color: var(--accent-color);
-  color: white;
-  font-size: 0.85rem;
-  margin-top: 3rem;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
 }
 
-/* Responsive Tweaks */
+/* Responsive */
 @media (max-width: 768px) {
-  .header-text h1 {
-    font-size: 1.5rem;
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .nav-bar a {
-    font-size: 0.9rem;
-    padding: 0.3rem 0.6rem;
+  .header-text {
+    margin-left: 0;
+    margin-top: 1rem;
   }
 
-  .snake-iframe {
-    height: 350px;
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .projects-grid,
+  .gallery-grid,
+  .skills-list,
+  .social-buttons {
+    flex-direction: column;
   }
 }
