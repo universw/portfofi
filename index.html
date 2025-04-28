@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Henry HoangQuan Nguyen's multilingual IT portfolio, projects, and resume.">
   <meta name="keywords" content="Portfolio, Web Developer, Multilingual, IT, Japan, Henry, HoangQuan, Nguyen">
   <meta name="author" content="Henry HoangQuan Nguyen">
-  <title>Henry HoangQuan Nguyen | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title data-i18n="site_title">Henry HoangQuan Nguyen | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -15,21 +15,21 @@
   <header>
     <div class="container header-container">
       <div class="header-left">
-        <img src="assets/images/profile.jpg" alt="Profile" class="profile-pic">
+        <img src="assets/images/profile.jpg" alt="Profile" class="profile-pic" />
         <div class="name-tagline">
-          <h1>Henry HoangQuan Nguyen</h1>
-          <p>Multilingual Developer | IT Enthusiast | Avid Reader and Traveler</p>
+          <h1 id="name">Henry HoangQuan Nguyen</h1>
+          <p id="tagline" data-i18n="tagline"></p>
         </div>
       </div>
 
       <nav class="nav-bar">
-        <a href="#about">About Me</a>
-        <a href="#resume">Resume</a>
-        <a href="#activities">Activities</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <a href="#chatbox">Chat</a>
+        <a href="#about" data-i18n="nav_about"></a>
+        <a href="#resume" data-i18n="nav_resume"></a>
+        <a href="#activities" data-i18n="nav_activities"></a>
+        <a href="#projects" data-i18n="nav_projects"></a>
+        <a href="#skills" data-i18n="nav_skills"></a>
+        <a href="#contact" data-i18n="nav_contact"></a>
+        <a href="#chatbox" data-i18n="nav_chatbox"></a>
       </nav>
 
       <div class="controls">
@@ -49,84 +49,84 @@
 
     <!-- About Section -->
     <section id="about" class="container section">
-      <h2>About Me</h2>
-      <p>Hello! I'm Henry, a multilingual developer currently living in Japan. I speak English, Japanese, Vietnamese, and basic Chinese. I am passionate about technology, self-growth, and exploring different cultures.</p>
+      <h2 data-i18n="about_title"></h2>
+      <p data-i18n="about_description"></p>
     </section>
 
     <!-- Resume Section -->
     <section id="resume" class="container section">
-      <h2>Resume</h2>
+      <h2 data-i18n="resume_title"></h2>
 
-      <h3>Education</h3>
+      <h3 data-i18n="education"></h3>
       <ul>
-        <li>Akamonkai Japanese Language School (2018–2020)</li>
-        <li>Chiba Mode Business College - International Business IT Course (2023–2025)</li>
+        <li data-i18n="edu_akamonkai"></li>
+        <li data-i18n="edu_chibamode"></li>
       </ul>
 
-      <h3>Work Experience</h3>
+      <h3 data-i18n="work_experience"></h3>
       <ul>
-        <li>Yamato Transport - Part-time</li>
-        <li>Sukiya - Part-time</li>
+        <li data-i18n="work_yamato"></li>
+        <li data-i18n="work_sukiya"></li>
       </ul>
 
-      <h3>Certifications</h3>
+      <h3 data-i18n="certifications"></h3>
       <ul>
-        <li>JLPT N2 (Completed N1 Preparation Program)</li>
-        <li>TOEIC 590</li>
-        <li>MOS Certification</li>
+        <li data-i18n="cert_jlpt"></li>
+        <li data-i18n="cert_toeic"></li>
+        <li data-i18n="cert_mos"></li>
       </ul>
 
-      <a href="assets/resume/履歴書.pdf" class="btn" download>Download Resume (PDF)</a>
+      <a href="assets/resume/履歴書.pdf" class="btn" download data-i18n="download_resume"></a>
     </section>
 
     <!-- Motivation Section -->
     <section id="motivation" class="container section">
-      <h2>Motivation for Application</h2>
-      <p>After attending your company’s information session and factory tour, I was deeply impressed by your innovative use of cutting-edge technology. I am particularly drawn to your vision for addressing societal challenges such as the declining birthrate and aging population. I aspire to contribute with my development skills and grow together with your company.</p>
+      <h2 data-i18n="motivation_title"></h2>
+      <p data-i18n="motivation_text"></p>
     </section>
 
-    <!-- Self Appeal Section -->
+    <!-- Self-PR Section -->
     <section id="appeal" class="container section">
-      <h2>Self-PR</h2>
-      <p>I am proactive, possess strong communication skills, and have a strong sense of responsibility. I can act calmly and swiftly even in complex situations, and have built smooth relationships within diverse teams. My strong sense of responsibility is rooted in Japanese culture, and I believe these qualities will allow me to make meaningful contributions to your company.</p>
+      <h2 data-i18n="appeal_title"></h2>
+      <p data-i18n="appeal_text"></p>
     </section>
 
-    <!-- School Activities Section -->
+    <!-- Activities Section -->
     <section id="activities" class="container section">
-      <h2>School Activities</h2>
+      <h2 data-i18n="activities_title"></h2>
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="assets/images/graduation.jpg" alt="Graduation Ceremony">
-          <p>Graduation Ceremony</p>
+          <img src="assets/images/graduation.jpg" alt="Graduation" loading="lazy" />
+          <p data-i18n="gallery_graduation"></p>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/presentation.jpg" alt="Entrepreneurship Presentation">
-          <p>Entrepreneurship Presentation</p>
+          <img src="assets/images/entrepreneurship.jpg" alt="Entrepreneurship" loading="lazy" />
+          <p data-i18n="gallery_entrepreneurship"></p>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/festival.jpg" alt="School Festival Activities">
-          <p>School Festival Activities</p>
+          <img src="assets/images/school_event.jpg" alt="School Event" loading="lazy" />
+          <p data-i18n="gallery_school_event"></p>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="container section">
-      <h2>Projects</h2>
+      <h2 data-i18n="projects_title"></h2>
 
       <div class="projects-grid">
         <div class="project-item">
-          <img src="assets/images/snake.jpg" alt="Snake Game">
-          <h3>Snake Game</h3>
-          <p>Classic snake game made with pure HTML/CSS/JavaScript.</p>
-          <a href="#snake" class="btn">Play Now</a>
+          <img src="assets/images/snake-thumbnail.jpg" alt="Snake Game" loading="lazy" />
+          <h3 data-i18n="snake_game_title"></h3>
+          <p data-i18n="snake_game_desc"></p>
+          <a href="#snake" class="btn" data-i18n="play_button"></a>
         </div>
 
         <div class="project-item">
-          <img src="assets/images/resume-site.jpg" alt="Portfolio Website">
-          <h3>My Portfolio Website</h3>
-          <p>A multilingual personal site with embedded games and live chat.</p>
-          <a href="https://portfove.vercel.app" class="btn">View More</a>
+          <img src="assets/images/portfolio-project.jpg" alt="Portfolio Website" loading="lazy" />
+          <h3 data-i18n="portfolio_title"></h3>
+          <p data-i18n="portfolio_desc"></p>
+          <a href="#contact" class="btn" data-i18n="view_more"></a>
         </div>
       </div>
 
@@ -138,31 +138,31 @@
 
     <!-- Skills Section -->
     <section id="skills" class="container section">
-      <h2>Skills</h2>
+      <h2 data-i18n="skills_title"></h2>
       <ul class="skills-list">
-        <li>HTML, CSS, JavaScript</li>
-        <li>Java</li>
-        <li>IT Passport (currently studying for Fundamental Information Technology Engineer Exam)</li>
-        <li>Web Creator</li>
-        <li>Microsoft Excel, Word, PowerPoint, Access</li>
-        <li>English / Japanese / Vietnamese / Chinese (HSK1)</li>
+        <li data-i18n="skill_html"></li>
+        <li data-i18n="skill_java"></li>
+        <li data-i18n="skill_itpassport"></li>
+        <li data-i18n="skill_webcreator"></li>
+        <li data-i18n="skill_office"></li>
+        <li data-i18n="skill_languages"></li>
       </ul>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container section">
-      <h2>Contact</h2>
+      <h2 data-i18n="contact_title"></h2>
       <div class="social-buttons">
-        <a href="tel:08073578168" class="btn">Phone</a>
-        <a href="mailto:hennryhoangquanw@ymail.ne.jp" class="btn">Email</a>
-        <a href="https://www.linkedin.com/in/hoangquan-nguyen-henry-48075a361" target="_blank" class="btn">LinkedIn</a>
-        <a href="https://www.facebook.com/share/1Hc4c5eVrS/?mibextid=wwXIfr" target="_blank" class="btn">Facebook</a>
+        <a href="tel:08073578168" class="btn" data-i18n="phone"></a>
+        <a href="mailto:hennryhoangquanw@ymail.ne.jp" class="btn" data-i18n="email"></a>
+        <a href="https://www.linkedin.com/in/hoangquan-nguyen-henry-48075a361" target="_blank" class="btn" data-i18n="linkedin_link"></a>
+        <a href="https://www.facebook.com/share/1Hc4c5eVrS/?mibextid=wwXIfr" target="_blank" class="btn" data-i18n="facebook_link"></a>
         <a href="https://github.com/universw" target="_blank" class="btn">GitHub</a>
       </div>
 
       <form id="contact-form">
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
         <textarea placeholder="Message" required></textarea>
         <button type="submit" class="btn">Send</button>
       </form>
@@ -170,10 +170,10 @@
 
     <!-- Chatbox Section -->
     <section id="chatbox" class="container section">
-      <h2>Live Chat</h2>
+      <h2 data-i18n="chatbox_title"></h2>
       <div id="chat-messages"></div>
       <form id="chat-form">
-        <input type="text" id="chat-input" placeholder="Type your message..." required>
+        <input type="text" id="chat-input" placeholder="Type your message..." required />
         <button type="submit" class="btn">Send</button>
       </form>
     </section>
@@ -182,7 +182,7 @@
 
   <!-- Footer -->
   <footer class="container footer">
-    <p>© 2025 Henry HoangQuan Nguyen. All rights reserved.</p>
+    <p data-i18n="footer"></p>
   </footer>
 
   <!-- Scripts -->
@@ -190,6 +190,6 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
   <script src="js/chatbox.js"></script>
-
+  <script src="js/contact-form.js"></script>
 </body>
 </html>

@@ -1,24 +1,34 @@
-// Language Switcher
-document.getElementById("lang-switcher").addEventListener("change", function () {
+document.getElementById('lang-switcher').addEventListener('change', function () {
   const lang = this.value;
+  loadLanguage(lang);
+});
 
+function loadLanguage(lang) {
   fetch(`lang/${lang}.json`)
-    .then((res) => res.json())
-    .then((data) => {
-      // Replace all data-i18n text based on JSON keys
-      document.querySelectorAll("[data-i18n]").forEach((el) => {
-        const key = el.getAttribute("data-i18n");
-        if (data[key]) {
-          el.innerHTML = data[key];
-        }
-      });
-
-      // Update page <title> separately if needed
-      if (data["site_title"]) {
-        document.title = data["site_title"];
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Language file not found.');
       }
+      return response.json();
+    })
+    .then((translations) => {
+      applyTranslations(translations);
     })
     .catch((error) => {
-      console.error("Error loading language file:", error);
+      console.error('Error loading language:', error);
     });
-});
+}
+
+function applyTranslations(translations) {
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const key = element.getAttribute('data-i18n');
+    if (translations[key]) {
+      element.innerHTML = translations[key];
+    }
+  });
+
+  // Also update page <title> separately if needed
+  if (translations['site_title']) {
+    document.title = translations['site_title'];
+  }
+}

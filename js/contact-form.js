@@ -6,24 +6,29 @@ const contactForm = document.getElementById('contact-form');
 
 // Submit Contact Form
 contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    // Get input values
-    const name = contactForm.querySelector('input[type="text"]').value.trim();
-    const email = contactForm.querySelector('input[type="email"]').value.trim();
-    const message = contactForm.querySelector('textarea').value.trim();
+  const name = contactForm.querySelector('input[type="text"]').value.trim();
+  const email = contactForm.querySelector('input[type="email"]').value.trim();
+  const message = contactForm.querySelector('textarea').value.trim();
 
-    if (name && email && message) {
-        contactRef.push({
-            name: name,
-            email: email,
-            message: message,
-            timestamp: Date.now()
-        }).then(() => {
-            alert('Message Sent Successfully!');
-            contactForm.reset();
-        }).catch((error) => {
-            alert('Error: ' + error.message);
-        });
-    }
+  if (name && email && message) {
+    const newContact = {
+      name: name,
+      email: email,
+      message: message,
+      timestamp: Date.now()
+    };
+
+    contactRef.push(newContact)
+      .then(() => {
+        alert('Message sent successfully!');
+        contactForm.reset();
+      })
+      .catch((error) => {
+        alert('Error sending message: ' + error.message);
+      });
+  } else {
+    alert('Please fill out all fields.');
+  }
 });
