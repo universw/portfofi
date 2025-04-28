@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Henry HoangQuan Nguyen | Portfolio</title>
+  <meta name="description" content="Henry HoangQuan Nguyen's multilingual IT portfolio, projects, and resume.">
+  <meta name="keywords" content="Portfolio, Web Developer, Multilingual, IT, Japan, Henry, HoangQuan, Nguyen">
+  <meta name="author" content="Henry HoangQuan Nguyen">
+  <title data-i18n="site_title">Henry HoangQuan Nguyen | Portfolio</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+  <!-- Header -->
   <header>
     <div class="container header-container">
       <!-- Left part: Profile pic + Name + Tagline -->
@@ -15,24 +19,22 @@
         <img src="assets/images/profile.jpg" alt="Profile" class="profile-pic" />
         <div class="name-tagline">
           <h1 id="name">Henry HoangQuan Nguyen</h1>
-          <p id="tagline" data-i18n="tagline">
-            Multilingual Developer | IT Enthusiast | Book & Travel Lover
-          </p>
+          <p id="tagline" data-i18n="tagline"></p>
         </div>
       </div>
-  
-      <!-- Middle part: Navigation links -->
+
+      <!-- Center part: Navigation -->
       <nav class="nav-bar">
-        <a href="#about" data-i18n="nav_about">About</a>
-        <a href="#resume" data-i18n="nav_resume">Resume</a>
+        <a href="#about" data-i18n="nav_about"></a>
+        <a href="#resume" data-i18n="nav_resume"></a>
         <a href="#activities" data-i18n="nav_activities">Activities</a>
-        <a href="#projects" data-i18n="nav_projects">Projects</a>
-        <a href="#skills" data-i18n="nav_skills">Skills</a>
-        <a href="#contact" data-i18n="nav_contact">Contact</a>
+        <a href="#projects" data-i18n="nav_projects"></a>
+        <a href="#skills" data-i18n="nav_skills"></a>
+        <a href="#contact" data-i18n="nav_contact"></a>
         <a href="#chatbox" data-i18n="nav_chatbox">Chat</a>
       </nav>
-  
-      <!-- Right part: Controls (Language and Theme) -->
+
+      <!-- Right part: Controls -->
       <div class="controls">
         <select id="lang-switcher">
           <option value="en">EN</option>
@@ -45,125 +47,120 @@
     </div>
   </header>
 
+  <!-- Main Content -->
   <main>
 
-    <!-- About -->
+    <!-- About Section -->
     <section id="about" class="container section">
-      <h2 data-i18n="about_title">About Me</h2>
-      <p data-i18n="about_description">
-        Hello! I’m Henry, a passionate multilingual developer based in Japan, who loves building projects, learning new technologies, traveling, and exploring cultures.
-      </p>
+      <h2 data-i18n="about_title"></h2>
+      <p data-i18n="about_description"></p>
     </section>
 
-    <!-- Resume -->
+    <!-- Resume Section -->
     <section id="resume" class="container section">
-      <h2 data-i18n="resume_title">Resume</h2>
+      <h2 data-i18n="resume_title"></h2>
 
-      <h3 data-i18n="education">Education</h3>
+      <h3 data-i18n="education"></h3>
       <ul>
-        <li>Akamonkai Japanese Language School (2018–2020)</li>
-        <li>Chiba Mode Business College - International Business IT Course (2023–2025)</li>
+        <li data-i18n="edu_akamonkai"></li>
+        <li data-i18n="edu_chibamode"></li>
       </ul>
 
-      <h3 data-i18n="work_experience">Work Experience</h3>
+      <h3 data-i18n="work_experience"></h3>
       <ul>
-        <li>Yamato Transport - Part-time</li>
-        <li>Sukiya - Part-time</li>
+        <li data-i18n="work_yamato"></li>
+        <li data-i18n="work_sukiya"></li>
       </ul>
 
-      <h3 data-i18n="certifications">Certifications</h3>
+      <h3 data-i18n="certifications"></h3>
       <ul>
-        <li>JLPT N2 (Studying N1)</li>
-        <li>TOEIC 590</li>
-        <li>Japan Basic Interpreter</li>
-        <li>IT Passport (Studying)</li>
-        <li>Fundamental IT Engineer (Studying)</li>
-        <li>MOS (Studying)</li>
-        <li>Web Creator Exam (Studying)</li>
+        <li data-i18n="cert_jlpt"></li>
+        <li data-i18n="cert_toeic"></li>
+        <li data-i18n="cert_mos"></li>
       </ul>
 
-      <a href="assets/resume/履歷書.pdf" class="btn" download data-i18n="download_resume">Download Resume (PDF)</a>
+      <a href="assets/resume/履歴書.pdf" class="btn" download data-i18n="download_resume"></a>
     </section>
 
     <!-- Motivation -->
     <section id="motivation" class="container section">
-      <h2 data-i18n="motivation_title">Motivation</h2>
-      <p data-i18n="motivation_text">
-        I attended the company's briefing and factory tour, and I was impressed by their innovative approach to solving social challenges...
-      </p>
+      <h2 data-i18n="motivation_title"></h2>
+      <p data-i18n="motivation_text"></p>
     </section>
 
     <!-- Self Appeal -->
     <section id="appeal" class="container section">
-      <h2 data-i18n="appeal_title">Self-Appeal</h2>
-      <p data-i18n="appeal_text">
-        I'm proactive, communicative, and responsible. I love working in diverse teams, and I bring calm and quick actions even in complex situations.
-      </p>
+      <h2 data-i18n="appeal_title"></h2>
+      <p data-i18n="appeal_text"></p>
     </section>
 
-    <!-- Activities -->
+    <!-- School Activities -->
     <section id="activities" class="container section">
-      <h2 data-i18n="activities_title">School Activities</h2>
+      <h2>Activities</h2>
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="assets/images/graduation.jpg" alt="Graduation Ceremony" />
-          <p data-i18n="gallery.graduation">Graduation Ceremony</p>
+          <img src="assets/images/graduation.jpg" alt="Graduation" loading="lazy" />
+          <p>Graduation Ceremony</p>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/entrepreneurship.jpg" alt="Entrepreneurship Presentation" />
-          <p data-i18n="gallery.entrepreneurship">Entrepreneurship Presentation</p>
+          <img src="assets/images/entrepreneurship.jpg" alt="Entrepreneurship" loading="lazy" />
+          <p>Entrepreneurship Presentation</p>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/school_event.jpg" alt="School Event" />
-          <p data-i18n="gallery.school_event">School Festival Activities</p>
+          <img src="assets/images/school_event.jpg" alt="School Event" loading="lazy" />
+          <p>School Festival Activities</p>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section id="projects" class="container section">
-      <h2 data-i18n="projects_title">Projects</h2>
+      <h2 data-i18n="projects_title"></h2>
+
       <div class="projects-grid">
         <div class="project-item">
-          <img src="assets/images/snake-thumbnail.jpg" alt="Snake Game" />
-          <h3 data-i18n="projects.snake_game_title">Snake Game</h3>
-          <p data-i18n="projects.snake_game_desc">Classic snake game made with pure HTML/CSS/JavaScript.</p>
+          <img src="assets/images/snake-thumbnail.jpg" alt="Snake Game" loading="lazy" />
+          <h3>Snake Game</h3>
+          <p data-i18n="snake_description"></p>
           <a href="#snake" class="btn" data-i18n="projects.play_button">Play Now</a>
         </div>
+
         <div class="project-item">
-          <img src="assets/images/portfolio-project.jpg" alt="Portfolio Project" />
-          <h3 data-i18n="projects.portfolio_title">My Portfolio Website</h3>
-          <p data-i18n="projects.portfolio_desc">A multilingual personal website with live chat and embedded games.</p>
-          <a href="#contact" class="btn" data-i18n="projects.view_more">View More</a>
+          <img src="assets/images/portfolio-project.jpg" alt="Portfolio Website" loading="lazy" />
+          <h3>Portfolio Website</h3>
+          <p>A multilingual personal site with embedded game and live chat.</p>
+          <a href="#contact" class="btn">View More</a>
         </div>
       </div>
 
+      <!-- Snake Game Iframe -->
       <div id="snake" class="snake-container">
         <iframe src="snake/snake.html" frameborder="0" class="snake-iframe"></iframe>
       </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills Section -->
     <section id="skills" class="container section">
-      <h2 data-i18n="skills_title">Skills</h2>
+      <h2 data-i18n="skills_title"></h2>
       <ul class="skills-list">
-        <li>HTML, CSS, JavaScript</li>
-        <li>Java</li>
-        <li>Firebase Realtime Database (Learning)</li>
-        <li>Microsoft Office: Excel, Word, PowerPoint, Access</li>
-        <li>Languages: English, Japanese, Vietnamese, Chinese</li>
+        <li data-i18n="skill_html"></li>
+        <li data-i18n="skill_java"></li>
+        <li data-i18n="skill_itpassport"></li>
+        <li data-i18n="skill_webcreator"></li>
+        <li data-i18n="skill_office"></li>
+        <li data-i18n="skill_languages"></li>
       </ul>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="container section">
-      <h2 data-i18n="contact_title">Contact</h2>
+      <h2 data-i18n="contact_title"></h2>
       <div class="social-buttons">
-        <a href="tel:08073578168" class="btn">Phone</a>
-        <a href="mailto:hennryhoangquanw@ymail.ne.jp" class="btn">Email</a>
-        <a href="https://www.linkedin.com/in/hoangquan-nguyen-henry-48075a361" target="_blank" class="btn">LinkedIn</a>
-        <a href="https://www.facebook.com/share/1Hc4c5eVrS/?mibextid=wwXIfr" target="_blank" class="btn">Facebook</a>
-        <a href="https://github.com/universw" target="_blank" class="btn">GitHub</a>
+        <a href="tel:08073578168" class="btn" data-i18n="phone"></a>
+        <a href="mailto:hennryhoangquanw@ymail.ne.jp" class="btn" data-i18n="email"></a>
+        <a href="https://www.linkedin.com/in/hoangquan-nguyen-henry-48075a361" class="btn" target="_blank" data-i18n="linkedin_link"></a>
+        <a href="https://www.facebook.com/share/1Hc4c5eVrS/?mibextid=wwXIfr" class="btn" target="_blank" data-i18n="facebook_link"></a>
+        <a href="https://github.com/universw" class="btn" target="_blank">GitHub</a>
       </div>
 
       <form id="contact-form">
@@ -174,9 +171,9 @@
       </form>
     </section>
 
-    <!-- Chatbox -->
+    <!-- Chatbox Section -->
     <section id="chatbox" class="container section">
-      <h2 data-i18n="chatbox_title">Live Chat</h2>
+      <h2>Live Chat</h2>
       <div id="chat-messages"></div>
       <form id="chat-form">
         <input type="text" id="chat-input" placeholder="Type your message..." required />
@@ -186,8 +183,9 @@
 
   </main>
 
+  <!-- Footer -->
   <footer class="container footer">
-    <p>&copy; 2025 Henry HoangQuan Nguyen. All rights reserved.</p>
+    <p data-i18n="footer"></p>
   </footer>
 
   <!-- Scripts -->
