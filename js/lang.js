@@ -13,7 +13,7 @@ document.getElementById("lang-switcher").addEventListener("change", function () 
         }
       });
 
-      // Also update the <title> separately if needed
+      // Update page <title> separately if needed
       if (data["site_title"]) {
         document.title = data["site_title"];
       }

@@ -49,7 +49,8 @@ function drawGame() {
 
   // Collision detection
   if (
-    head.x < 0 || head.x >= canvasSize || head.y < 0 || head.y >= canvasSize ||
+    head.x < 0 || head.x >= canvasSize ||
+    head.y < 0 || head.y >= canvasSize ||
     snake.some((segment, index) => index !== 0 && segment.x === head.x && segment.y === head.y)
   ) {
     alert("Game Over! Your score: " + score);

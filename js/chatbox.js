@@ -1,4 +1,4 @@
-// Your web app's Firebase configuration
+// Your Firebase configuration
 const firebaseConfig = {
     apiKey: "YAIzaSyAl0s1Cqgb96Fo-PB-crvwUlgOizxywlIc",
     authDomain: "portfo-38945.firebaseapp.com",
@@ -21,11 +21,11 @@ const chatForm = document.getElementById('chat-form');
 const chatInput = document.getElementById('chat-input');
 const chatMessages = document.getElementById('chat-messages');
 
-// Listen for form submit
+// Submit new message
 chatForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const message = chatInput.value.trim();
-    if (message !== "") {
+    if (message) {
         chatRef.push({
             text: message,
             timestamp: Date.now()
@@ -37,11 +37,11 @@ chatForm.addEventListener('submit', (e) => {
 // Listen for new messages
 chatRef.on('child_added', (snapshot) => {
     const data = snapshot.val();
-    displayMessage(data.text, data.timestamp);
+    displayMessage(data.text);
 });
 
-// Display a message
-function displayMessage(message, timestamp) {
+// Display message
+function displayMessage(message) {
     const div = document.createElement('div');
     div.classList.add('chat-message');
     div.textContent = message;
