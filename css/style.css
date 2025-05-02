@@ -349,3 +349,93 @@ body.dark-mode .chat-message {
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+  header {
+    position: static;
+    padding: 0.8rem 0;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+  }
+
+  #name {
+    font-size: 1.3rem;
+  }
+
+  #tagline {
+    font-size: 0.95rem;
+  }
+
+  .btn,
+  #lang-switcher {
+    width: 90%;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+
+  body {
+    padding-top: 0;
+  }
+}
+.chat-message {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  margin: 0.4rem 0;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.user-message {
+  background-color: #eee;
+  text-align: left;
+}
+
+.admin-message {
+  background-color: #007bff;
+  color: white;
+  margin-left: auto;
+  text-align: right;
+}
+.chat-message {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  margin: 0.4rem 0;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.user-message {
+  background-color: #eee;
+  text-align: left;
+}
+
+.admin-message {
+  background-color: #007bff;
+  color: white;
+  margin-left: auto;
+  text-align: right;
+}
+#chat-messages {
+  display: flex;
+  flex-direction: column;
+}

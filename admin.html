@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Chat Panel</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+
+  <h2>Live Chat Messages</h2>
+  <div id="chat-messages"></div>
+
+  <form id="reply-form">
+    <input type="text" id="admin-input" placeholder="Type admin reply..." required />
+    <button type="submit">Send</button>
+  </form>
+
+  <hr style="margin: 3rem 0;" />
+
+  <h2>Contact Form Submissions</h2>
+  <div id="contact-messages"></div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+  <script>
+    window.onload = function () {
+      // Firebase Config
+      const firebaseConfig = {
+        apiKey: "AIzaSyDjo6SjdfLCNtNN4lT8aKORY7CIP-WJH9U",
+        authDomain: "portfofia.firebaseapp.com",
+        databaseURL: "https://portfofia-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "portfofia",
+        storageBucket: "portfofia.firebasestorage.app",
+        messagingSenderId: "633781124250",
+        appId: "1:633781124250:web:c6680357071539a254f323"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.database();
+
+      // === Live Chat Handling ===
+      const chatRef = db.ref("chatbox");
+      const chatBox = document.getElementById("chat-messages");
+      const input = document.getElementById("admin-input");
+
+      // Load Chat Messages
+      chatRef.on("child_added", snapshot => {
+        const data = snapshot.val();
+        const div = document.createElement("div");
+        div.className = data.sender === "admin" ? "chat-message admin-message" : "chat-message user-message";
+        div.textContent = data.text;
+        chatBox.appendChild(div);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      });
+
+      // Send admin reply
+      document.getElementById("reply-form").addEventListener("submit", e => {
+        e.preventDefault();
+        const message = input.value.trim();
+        if (!message) return;
+
+        chatRef.push({
+          text: message,
+          sender: "admin",
+          timestamp: Date.now()
+        });
+
+        input.value = "";
+      });
+
+      // === Contact Form Submissions Viewer ===
+      const contactRef = db.ref("contacts");
+      const contactBox = document.getElementById("contact-messages");
+
+      contactRef.on("child_added", (snapshot) => {
+        const data = snapshot.val();
+        const div = document.createElement("div");
+        div.className = "contact-entry";
+        div.innerHTML = `
+          <strong>${data.name}</strong> (${data.email})<br/>
+          ${data.message}
+          <hr/>
+        `;
+        contactBox.appendChild(div);
+      });
+    };
+  </script>
+</body>
+</html>
