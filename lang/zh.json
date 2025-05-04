@@ -50,5 +50,6 @@
   "linkedin_link": "LinkedIn",
   "facebook_link": "Facebook",
   "chatbox_title": "实时聊天",
-  "footer": "© 2025年 亨利·黄军。版权所有。"
+  "footer": "© 2025年 亨利·黄军。版权所有。",
+  "login_reminder": "请登录或注册以使用联系表单和聊天功能。"
 }
