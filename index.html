@@ -7,6 +7,7 @@
   <meta name="keywords" content="Portfolio, Web Developer, Multilingual, IT, Japan, Henry, HoangQuan, Nguyen">
   <meta name="author" content="Henry HoangQuan Nguyen">
   <title data-i18n="site_title">Henry HoangQuan Nguyen | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -42,14 +43,15 @@
       </div>
     </div>
   </header>
-    <!-- Main Content -->
+
+  <!-- Main Content -->
   <main>
 
     <!-- About Section -->
     <section id="about" class="container section">
       <h2 data-i18n="about_title">About Me</h2>
       <p data-i18n="about_description">
-        Hello! I'm Henry, a multilingual developer based in Japan with a passion for technology, continuous self-growth, and cross-cultural experiences. I speak English, Japanese, Vietnamese, and basic Chinese. Currently, I am focusing on building my career in the Cloud and DevOps field, aiming to contribute to innovative IT projects and grow as a future-ready engineer.
+        Hello! I'm Henry, a multilingual developer currently living in Japan. I speak English, Japanese, Vietnamese, and basic Chinese. I am passionate about technology, self-growth, and exploring different cultures.
       </p>
     </section>
 
@@ -92,7 +94,7 @@
       </p>
     </section>
 
-    <!-- Self-PR Section -->
+    <!-- Self Appeal Section -->
     <section id="appeal" class="container section">
       <h2 data-i18n="appeal_title">Self-PR</h2>
       <p data-i18n="appeal_text">
@@ -105,15 +107,15 @@
       <h2 data-i18n="activities_title">School Activities</h2>
       <div class="gallery-grid">
         <div class="gallery-item">
-          <img src="assets/images/graduation.jpg" alt="Graduation Ceremony" />
+          <img src="assets/images/graduation.jpg" alt="Graduation Ceremony" loading="lazy" />
           <p data-i18n="gallery_graduation">Graduation Ceremony</p>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/presentation.jpg" alt="Entrepreneurship Presentation" />
+          <img src="assets/images/presentation.jpg" alt="Entrepreneurship Presentation" loading="lazy" />
           <p data-i18n="gallery_entrepreneurship">Entrepreneurship Presentation</p>
         </div>
         <div class="gallery-item">
-          <img src="assets/images/festival.jpg" alt="School Festival" />
+          <img src="assets/images/festival.jpg" alt="School Festival Activities" loading="lazy" />
           <p data-i18n="gallery_school_event">School Festival Activities</p>
         </div>
       </div>
@@ -122,20 +124,24 @@
     <!-- Projects Section -->
     <section id="projects" class="container section">
       <h2 data-i18n="projects_title">Projects</h2>
+
       <div class="projects-grid">
         <div class="project-item">
-          <img src="assets/images/snake.jpg" alt="Snake Game" />
+          <img src="assets/images/snake.jpg" alt="Snake Game" loading="lazy" />
           <h3 data-i18n="snake_game_title">Snake Game</h3>
           <p data-i18n="snake_game_desc">Classic snake game made with pure HTML/CSS/JavaScript.</p>
           <a href="#snake" class="btn" data-i18n="play_button">Play Now</a>
         </div>
+
         <div class="project-item">
-          <img src="assets/images/resume-site.jpg" alt="Portfolio Website" />
+          <img src="assets/images/resume-site.jpg" alt="Portfolio Website" loading="lazy" />
           <h3 data-i18n="portfolio_title">My Portfolio Website</h3>
           <p data-i18n="portfolio_desc">A multilingual personal site with embedded games.</p>
           <a href="https://portfove.vercel.app" class="btn" data-i18n="view_more">View More</a>
         </div>
       </div>
+
+      <!-- Snake Game Iframe -->
       <div id="snake" class="snake-container">
         <iframe src="snake/snake.html" frameborder="0" class="snake-iframe"></iframe>
       </div>
@@ -147,60 +153,54 @@
       <ul class="skills-list">
         <li data-i18n="skill_html">HTML, CSS, JavaScript</li>
         <li data-i18n="skill_java">Java</li>
-        <li data-i18n="skill_itpassport">IT Passport (currently studying for FE)</li>
+        <li data-i18n="skill_itpassport">IT Passport (currently studying for Fundamental Information Technology Engineer Exam)</li>
         <li data-i18n="skill_webcreator">Web Creator</li>
-        <li data-i18n="skill_office">MS Excel, Word, PowerPoint, Access</li>
+        <li data-i18n="skill_office">Microsoft Excel, Word, PowerPoint, Access</li>
         <li data-i18n="skill_languages">English / Japanese / Vietnamese / Chinese (HSK1)</li>
       </ul>
     </section>
-        <!-- Login Reminder -->
-        <div id="login-reminder" class="reminder-box" data-i18n="login_reminder">
-          <!-- This content will be replaced by lang.js -->
-          Please log in or sign up to use the contact form and chat features.
-        </div>
-
-    <!-- User Authentication Section -->
-    <section id="user-login" class="container section">
-      <h2 data-i18n="auth_section_title">User Login & Signup</h2>
-      <input type="email" id="user-email" placeholder="Email" />
-      <input type="password" id="user-password" placeholder="Password" />
-      <button onclick="signUpWithEmail()" class="btn" data-i18n="signup_btn">Sign Up</button>
-      <button onclick="loginWithEmail()" class="btn" data-i18n="login_btn">Login</button>
-      <button onclick="loginWithGoogle()" class="btn" data-i18n="google_login_btn">Login with Google</button>
-      <button onclick="loginWithGithub()" class="btn" data-i18n="github_login_btn">Login with GitHub</button>
-      <button onclick="loginWithFacebook()" class="btn" data-i18n="facebook_login_btn">Login with Facebook</button>
-      <button onclick="userLogout()" class="btn" data-i18n="logout_btn">Logout</button>
-    </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container section" >
+    <section id="contact" class="container section">
       <h2 data-i18n="contact_title">Contact</h2>
       <div class="social-buttons">
         <a href="tel:08073578168" class="btn" data-i18n="phone">Phone</a>
         <a href="mailto:hennryhoangquanw@ymail.ne.jp" class="btn" data-i18n="email">Email</a>
-        <a href="https://www.linkedin.com/in/henry-hoangquan-nguyen-48075a361" class="btn" target="_blank" data-i18n="linkedin_link">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/hoangquan-nguyen-henry-48075a361" class="btn" target="_blank" data-i18n="linkedin_link">LinkedIn</a>
         <a href="https://www.facebook.com/share/1Hc4c5eVrS/?mibextid=wwXIfr" class="btn" target="_blank" data-i18n="facebook_link">Facebook</a>
         <a href="https://github.com/universw" class="btn" target="_blank">GitHub</a>
       </div>
+
       <form id="contact-form">
         <input type="text" placeholder="Name" required />
         <input type="email" placeholder="Email" required />
         <textarea placeholder="Message" required></textarea>
-        <button type="submit" class="btn" data-i18n="send_button">Send</button>
+        <button type="submit" class="btn">Send</button>
       </form>
     </section>
 
     <!-- Chatbox Section -->
-    <section id="chatbox" class="container section" style="display: none;">
+    <section id="chatbox" class="container section">
       <h2 data-i18n="chatbox_title">Live Chat</h2>
       <div id="chat-messages"></div>
       <form id="chat-form">
         <input type="text" id="chat-input" placeholder="Type your message..." required />
-        <button type="submit" class="btn" data-i18n="send_button">Send</button>
+        <button type="submit" class="btn">Send</button>
       </form>
     </section>
+
   </main>
 
   <!-- Footer -->
   <footer class="container footer">
-    <p data-i18n="footer">© 2025 Henry HoangQuan Nguyen. All rights reserv
+    <p data-i18n="footer">© 2025 Henry HoangQuan Nguyen. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/lang.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="js/chatbox.js"></script>
+  <script src="js/contact-form.js"></script>
+</body>
+</html>
