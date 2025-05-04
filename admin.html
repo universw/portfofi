@@ -3,64 +3,178 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Admin Chat Panel</title>
+  <title>Admin Panel</title>
   <link rel="stylesheet" href="css/admin.css" />
 </head>
 <body>
 
-  <h2>Live Chat Messages</h2>
-  <div id="chat-messages"></div>
+  <h1>Admin Panel</h1>
 
-  <form id="reply-form">
+  <!-- AUTH SECTION -->
+  <div id="auth-section">
+    <button id="login-btn">Sign in with Google</button>
+    <button id="logout-btn" style="display: none;">Sign Out</button>
+    <p id="admin-email"></p>
+  </div>
+
+  <!-- CHAT SECTION -->
+  <h2>Live Chat Messages</h2>
+  <div id="chat-messages" style="display: none;"></div>
+
+  <form id="reply-form" style="display: none;">
     <input type="text" id="admin-input" placeholder="Type admin reply..." required />
     <button type="submit">Send</button>
   </form>
+  <button id="clear-chat" class="btn" style="display: none; margin-top: 1rem;">Clear All Chat</button>
 
   <hr style="margin: 3rem 0;" />
 
+  <!-- CONTACT SECTION -->
   <h2>Contact Form Submissions</h2>
-  <div id="contact-messages"></div>
+  <div id="contact-messages" style="display: none;"></div>
+  <button id="clear-contacts" class="btn" style="display: none; margin-top: 1rem;">Clear All Contacts</button>
 
-  <!-- Firebase SDK -->
+  <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
 
   <script>
     window.onload = function () {
-      // Firebase Config
       const firebaseConfig = {
-        apiKey: "AIzaSyDjo6SjdfLCNtNN4lT8aKORY7CIP-WJH9U",
-        authDomain: "portfofia.firebaseapp.com",
-        databaseURL: "https://portfofia-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "portfofia",
-        storageBucket: "portfofia.firebasestorage.app",
-        messagingSenderId: "633781124250",
-        appId: "1:633781124250:web:c6680357071539a254f323"
+        apiKey: "YAIzaSyAl0s1Cqgb96Fo-PB-crvwUlgOizxywlIc",
+        authDomain: "portfo-38945.firebaseapp.com",
+        databaseURL: "https://portfo-38945-default-rtdb.firebaseio.com",
+        projectId: "portfo-38945",
+        storageBucket: "portfo-38945.appspot.com",
+        messagingSenderId: "940278934017",
+        appId: "1:940278934017:web:70a061b04e808eafedae00"
       };
 
-      // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       const db = firebase.database();
+      const auth = firebase.auth();
 
-      // === Live Chat Handling ===
+      const allowedEmails = [
+        "hennryhoangquanw@ymail.ne.jp",
+        "jmiaakgasxomhprmut@gmail.com",
+        "henryhoangquanw@gmail.com"
+      ];
+
+      const loginBtn = document.getElementById("login-btn");
+      const logoutBtn = document.getElementById("logout-btn");
+      const emailDisplay = document.getElementById("admin-email");
+
       const chatRef = db.ref("chatbox");
-      const chatBox = document.getElementById("chat-messages");
-      const input = document.getElementById("admin-input");
+      const contactRef = db.ref("contacts");
 
-      // Load Chat Messages
-      chatRef.on("child_added", snapshot => {
-        const data = snapshot.val();
-        const div = document.createElement("div");
-        div.className = data.sender === "admin" ? "chat-message admin-message" : "chat-message user-message";
-        div.textContent = data.text;
-        chatBox.appendChild(div);
-        chatBox.scrollTop = chatBox.scrollHeight;
+      const chatBox = document.getElementById("chat-messages");
+      const contactBox = document.getElementById("contact-messages");
+      const replyForm = document.getElementById("reply-form");
+      const adminInput = document.getElementById("admin-input");
+
+      const clearChatBtn = document.getElementById("clear-chat");
+      const clearContactsBtn = document.getElementById("clear-contacts");
+
+      loginBtn.onclick = () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        auth.signInWithPopup(provider).then(result => {
+          if (!allowedEmails.includes(result.user.email)) {
+            alert("Access denied.");
+            auth.signOut();
+          }
+        });
+      };
+
+      logoutBtn.onclick = () => {
+        auth.signOut();
+      };
+
+      auth.onAuthStateChanged(user => {
+        const isAdmin = user && allowedEmails.includes(user.email);
+
+        loginBtn.style.display = isAdmin ? "none" : "inline";
+        logoutBtn.style.display = isAdmin ? "inline" : "none";
+        emailDisplay.textContent = isAdmin ? `Logged in as: ${user.email}` : "";
+
+        chatBox.style.display = isAdmin ? "flex" : "none";
+        replyForm.style.display = isAdmin ? "flex" : "none";
+        clearChatBtn.style.display = isAdmin ? "inline" : "none";
+
+        contactBox.style.display = isAdmin ? "block" : "none";
+        clearContactsBtn.style.display = isAdmin ? "inline" : "none";
+
+        if (isAdmin) {
+          loadChat();
+          loadContacts();
+        } else if (user) {
+          alert("Access denied.");
+          auth.signOut();
+        }
       });
 
-      // Send admin reply
-      document.getElementById("reply-form").addEventListener("submit", e => {
+      function loadChat() {
+        chatBox.innerHTML = "";
+        chatRef.off("child_added");
+
+        chatRef.on("child_added", snapshot => {
+          const data = snapshot.val();
+          const key = snapshot.key;
+
+          const div = document.createElement("div");
+          div.className = data.sender === "admin" ? "chat-message admin-message" : "chat-message user-message";
+
+          const span = document.createElement("span");
+          span.textContent = data.text;
+
+          const delBtn = document.createElement("button");
+          delBtn.textContent = "Delete";
+          delBtn.className = "delete-btn";
+          delBtn.onclick = () => {
+            if (confirm("Delete this message?")) {
+              chatRef.child(key).remove();
+              div.remove();
+            }
+          };
+
+          div.appendChild(span);
+          div.appendChild(delBtn);
+          chatBox.appendChild(div);
+          chatBox.scrollTop = chatBox.scrollHeight;
+        });
+      }
+
+      function loadContacts() {
+        contactBox.innerHTML = "";
+        contactRef.off("child_added");
+
+        contactRef.on("child_added", snapshot => {
+          const data = snapshot.val();
+          const key = snapshot.key;
+
+          const div = document.createElement("div");
+          div.className = "contact-entry";
+          div.innerHTML = `<strong>${data.name}</strong> (${data.email})<br/>${data.message}`;
+
+          const delBtn = document.createElement("button");
+          delBtn.textContent = "Delete";
+          delBtn.className = "delete-btn";
+          delBtn.onclick = () => {
+            if (confirm("Delete this contact entry?")) {
+              contactRef.child(key).remove();
+              div.remove();
+            }
+          };
+
+          div.appendChild(document.createElement("hr"));
+          div.appendChild(delBtn);
+          contactBox.appendChild(div);
+        });
+      }
+
+      replyForm.addEventListener("submit", e => {
         e.preventDefault();
-        const message = input.value.trim();
+        const message = adminInput.value.trim();
         if (!message) return;
 
         chatRef.push({
@@ -69,24 +183,22 @@
           timestamp: Date.now()
         });
 
-        input.value = "";
+        adminInput.value = "";
       });
 
-      // === Contact Form Submissions Viewer ===
-      const contactRef = db.ref("contacts");
-      const contactBox = document.getElementById("contact-messages");
+      clearChatBtn.onclick = () => {
+        if (confirm("Clear all chat messages?")) {
+          chatRef.remove();
+          chatBox.innerHTML = "";
+        }
+      };
 
-      contactRef.on("child_added", (snapshot) => {
-        const data = snapshot.val();
-        const div = document.createElement("div");
-        div.className = "contact-entry";
-        div.innerHTML = `
-          <strong>${data.name}</strong> (${data.email})<br/>
-          ${data.message}
-          <hr/>
-        `;
-        contactBox.appendChild(div);
-      });
+      clearContactsBtn.onclick = () => {
+        if (confirm("Clear all contact messages?")) {
+          contactRef.remove();
+          contactBox.innerHTML = "";
+        }
+      };
     };
   </script>
 </body>

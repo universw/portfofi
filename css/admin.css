@@ -4,8 +4,40 @@ body {
   background-color: #f4f4f4;
 }
 
-h2 {
+h1 {
+  font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#auth-section {
+  margin-bottom: 2rem;
+}
+
+#login-btn, #logout-btn {
+  padding: 0.6rem 1.2rem;
+  margin-right: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#login-btn:hover, #logout-btn:hover {
+  background: #0056b3;
+}
+
+#admin-email {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
 }
 
 #chat-messages {
@@ -25,6 +57,7 @@ h2 {
   margin: 0.3rem 0;
   max-width: 70%;
   word-break: break-word;
+  position: relative;
 }
 
 .user-message {
@@ -51,6 +84,7 @@ h2 {
   border: 1px solid #ccc;
 }
 
+/* Common button style */
 button {
   padding: 0.5rem 1rem;
   background: #007bff;
@@ -58,6 +92,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
@@ -73,9 +108,40 @@ button:hover {
 }
 
 .contact-entry {
-  background: #f8f8f8;
-  padding: 0.8rem;
+  background: #f9f9f9;
+  padding: 1rem;
   margin-bottom: 1rem;
   border-left: 4px solid #007bff;
   font-size: 0.95rem;
+  border-radius: 6px;
+}
+
+/* Default delete button style */
+.delete-btn {
+  margin-left: 1rem;
+  padding: 6px 12px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.delete-btn:hover {
+  background: darkred;
+  transform: scale(1.05);
+}
+
+/* User-side delete button style — more colorful */
+.user-message .delete-btn {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-message .delete-btn:hover {
+  background: linear-gradient(135deg, #e94e77, #f9d423);
 }

@@ -1,12 +1,12 @@
 // Firebase config
 const firebaseConfig = {
-  apiKey: "AIzaSyDjo6SjdfLCNtNN4lT8aKORY7CIP-WJH9U",
-  authDomain: "portfofia.firebaseapp.com",
-  databaseURL: "https://portfofia-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "portfofia",
-  storageBucket: "portfofia.firebasestorage.app",
-  messagingSenderId: "633781124250",
-  appId: "1:633781124250:web:c6680357071539a254f323"
+  apiKey: "YAIzaSyAl0s1Cqgb96Fo-PB-crvwUlgOizxywlIc",
+  authDomain: "portfo-38945.firebaseapp.com",
+  databaseURL: "https://portfo-38945-default-rtdb.firebaseio.com",
+  projectId: "portfo-38945",
+  storageBucket: "portfo-38945.appspot.com",
+  messagingSenderId: "940278934017",
+  appId: "1:940278934017:web:70a061b04e808eafedae00"
 };
 
 // Initialize Firebase
