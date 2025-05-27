@@ -1,11 +1,11 @@
-/* ================= RESET ================= */
+/* =============== RESET =============== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ================= VARIABLES ================= */
+/* =============== THEME VARIABLES =============== */
 :root {
   --bg-color: #ffffff;
   --text-color: #333333;
@@ -17,15 +17,18 @@
 body.dark-mode {
   --bg-color: #121212;
   --text-color: #f0f0f0;
+  --primary-color: #1e90ff;
+  --accent-color: #bb86fc;
+  --header-gradient: linear-gradient(135deg, #bb86fc 0%, #3700b3 100%);
 }
 
-/* ================= BASE ================= */
+/* =============== BASE STYLES =============== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
-  transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 .container {
@@ -35,15 +38,15 @@ body {
   padding: 2rem 0;
 }
 
-/* ================= HEADER ================= */
+/* =============== HEADER =============== */
 header {
   background: var(--header-gradient);
   color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 1rem 0;
+  padding: 0.6rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .header-container {
@@ -51,9 +54,9 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-/* ================= PROFILE ================= */
 .header-left {
   display: flex;
   align-items: center;
@@ -61,11 +64,10 @@ header {
 }
 
 .profile-pic {
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 3px solid white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   object-fit: cover;
 }
 
@@ -75,20 +77,21 @@ header {
 }
 
 #name {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
 #tagline {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-style: italic;
 }
 
-/* ================= NAVIGATION ================= */
+/* =============== NAVIGATION =============== */
 .nav-bar {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav-bar a {
@@ -105,7 +108,7 @@ header {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* ================= CONTROLS ================= */
+/* =============== CONTROLS =============== */
 .controls {
   display: flex;
   align-items: center;
@@ -128,11 +131,10 @@ header {
   color: white;
 }
 
-/* ================= SECTION LAYOUTS ================= */
+/* =============== SECTIONS =============== */
 .section {
   padding: 4rem 0;
   text-align: center;
-  animation: fadeIn 1s ease;
 }
 
 .section h2 {
@@ -141,13 +143,7 @@ header {
   margin-bottom: 1.5rem;
 }
 
-/* Fade Animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px);}
-  to { opacity: 1; transform: translateY(0);}
-}
-
-/* ================= BUTTONS ================= */
+/* =============== BUTTONS =============== */
 .btn {
   display: inline-block;
   background: var(--primary-color);
@@ -165,7 +161,7 @@ header {
   background-color: #0056b3;
 }
 
-/* ================= SKILLS ================= */
+/* =============== SKILLS LIST =============== */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -181,16 +177,25 @@ header {
   border-radius: 30px;
 }
 
-/* ================= PROJECTS ================= */
-.projects-grid {
+/* =============== GALLERY / PROJECTS =============== */
+.gallery-grid, .projects-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
+}
+
+.gallery-item, .project-item {
+  width: 260px;
+}
+
+.gallery-item img, .project-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .project-item {
-  width: 300px;
   background: var(--bg-color);
   padding: 1rem;
   border-radius: 12px;
@@ -198,48 +203,12 @@ header {
   transition: transform 0.3s;
 }
 
-.project-item img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-}
-
 .project-item:hover {
   transform: translateY(-5px);
 }
 
-/* ================= GALLERY ================= */
-.gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
 
-.gallery-item {
-  width: 250px;
-}
-
-.gallery-item img {
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* ================= SNAKE GAME ================= */
-.snake-container {
-  margin-top: 2rem;
-}
-
-.snake-iframe {
-  width: 100%;
-  max-width: 500px;
-  height: 500px;
-  border: 2px solid var(--primary-color);
-  border-radius: 12px;
-}
-
-/* ================= CONTACT FORM ================= */
+/* =============== CONTACT =============== */
 .social-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -255,7 +224,7 @@ header {
   gap: 0.8rem;
 }
 
-#contact-form input, 
+#contact-form input,
 #contact-form textarea {
   width: 100%;
   max-width: 500px;
@@ -264,7 +233,7 @@ header {
   border-radius: 8px;
 }
 
-/* ================= CHATBOX ================= */
+/* =============== CHATBOX =============== */
 #chatbox {
   background: var(--bg-color);
   padding: 1.5rem;
@@ -279,38 +248,87 @@ header {
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat-message {
-  background: #e0e0e0;
-  padding: 0.8rem;
-  border-radius: 8px;
-  margin-bottom: 0.6rem;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  margin: 0.4rem 0;
+  max-width: 80%;
   word-break: break-word;
-}
-
-body.dark-mode #chat-messages {
-  background: #2c2c2c;
-}
-
-body.dark-mode .chat-message {
-  background: #3a3a3a;
-  color: #fff;
-}
-
-#chat-form {
   display: flex;
-  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#chat-input {
-  flex: 1;
-  padding: 0.7rem;
-  border-radius: 8px;
+.chat-message.user-message {
+  background-color: #eee;
+}
+
+.chat-message.admin-message {
+  background-color: #007bff;
+  color: white;
+  margin-left: auto;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* =============== LOGIN & SIGNUP BOX =============== */
+#user-login {
+  background: #f4f4f4;
   border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* ================= FOOTER ================= */
+#user-login input,
+#user-login button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#user-login button {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+#user-login button:hover {
+  background-color: #3367D6;
+}
+
+/* =============== LOGIN REMINDER BOX =============== */
+.reminder-box {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  padding: 1rem 1.5rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+/* =============== FOOTER =============== */
 .footer {
   text-align: center;
   font-size: 0.9rem;
@@ -319,123 +337,216 @@ body.dark-mode .chat-message {
   border-top: 1px solid #ccc;
 }
 
-/* ================= RESPONSIVE ================= */
+/* =============== RESPONSIVE FIXES =============== */
 @media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  header {
+    position: relative;
+    padding: 0.3rem 0;
   }
 
-  .header-left {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .nav-bar {
-    justify-content: center;
-  }
-
-  .profile-pic {
-    width: 70px;
-    height: 70px;
-  }
-
-  .gallery-grid, 
+  .header-container,
+  .header-left,
+  .nav-bar,
+  .gallery-grid,
   .projects-grid,
   .skills-list,
   .social-buttons {
     flex-direction: column;
     align-items: center;
-  }
-}
-@media (max-width: 768px) {
-  header {
-    position: static;
-    padding: 0.8rem 0;
-  }
-
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .header-left {
-    flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .nav-bar {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-  }
-
   .profile-pic {
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
   }
 
   #name {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   #tagline {
-    font-size: 0.95rem;
+    font-size: 0.75rem;
   }
 
-  .btn,
-  #lang-switcher {
-    width: 90%;
-    font-size: 1rem;
-    padding: 0.6rem;
+  .nav-bar a {
+    font-size: 0.85rem;
+    padding: 4px 6px;
   }
 
-  body {
-    padding-top: 0;
+  .controls {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  #lang-switcher,
+  #theme-toggle {
+    font-size: 0.8rem;
+    padding: 4px 6px;
   }
 }
-.chat-message {
-  padding: 0.7rem 1rem;
-  border-radius: 10px;
-  margin: 0.4rem 0;
-  max-width: 80%;
-  word-break: break-word;
+  .notification {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    min-width: 300px;
+    max-width: 90%;
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #ff4444 !important;              /* Bright red text */
+    background-color: #000000 !important;    /* Pure black background */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+    border: 2px solid #ff4444;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 0.4s ease, transform 0.3s ease;
+  }
+  
+  /* Show state */
+  .notification.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  
+  .notification .icon {
+    font-size: 22px;
+    color: #ff4444 !important;
+  }
+  
+  .notification .message {
+    flex: 1;
+  }
+  
+  .notification .close-btn {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff4444 !important;
+  }
+  /* Comment Section */
+#guestbook {
+  margin-top: 3rem;
 }
 
-.user-message {
-  background-color: #eee;
+#comment-form {
+  margin-bottom: 2rem;
+  text-align: left;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+#comment-form input,
+#comment-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color, #ccc);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+#comment-list {
+  max-width: 800px;
+  margin: auto;
   text-align: left;
 }
 
-.admin-message {
-  background-color: #007bff;
-  color: white;
-  margin-left: auto;
-  text-align: right;
-}
-.chat-message {
-  padding: 0.7rem 1rem;
-  border-radius: 10px;
-  margin: 0.4rem 0;
-  max-width: 80%;
-  word-break: break-word;
+.comment-entry {
+  border-top: 1px solid var(--border-color, #ccc);
+  padding: 1rem 0;
 }
 
-.user-message {
-  background-color: #eee;
-  text-align: left;
+.comment-entry strong {
+  color: var(--primary-color);
 }
 
-.admin-message {
-  background-color: #007bff;
-  color: white;
-  margin-left: auto;
-  text-align: right;
+.admin-reply {
+  margin-top: 0.5rem;
+  padding: 0.8rem;
+  background-color: #f0f8ff;
+  border-left: 4px solid var(--primary-color);
+  font-style: italic;
+  border-radius: 4px;
 }
-#chat-messages {
-  display: flex;
-  flex-direction: column;
+/* Make the video section pop visually */
+/* Project Video Container */
+.standout-video {
+  grid-column: span 2;
+  background: linear-gradient(to right, #e0f2ff, #ffffff);
+  border: 2px solid #007acc;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 122, 204, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.standout-video:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 122, 204, 0.3);
+}
+
+/* Responsive YouTube video */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+/* YouTube-styled Button */
+.youtube-btn {
+  display: inline-block;
+  background-color: #ff0000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.youtube-btn:hover {
+  background-color: #cc0000;
+}
+/* =============== SNAKE GAME =============== */
+
+
+.snake-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+
+.snake-iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 620px;
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+button:focus, a:focus, input:focus, textarea:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
 }

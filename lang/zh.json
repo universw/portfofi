@@ -1,6 +1,7 @@
 {
   "site_title": "亨利·黄军 | 个人作品集",
   "tagline": "多语言开发者 | IT爱好者 | 热爱阅读与旅行",
+
   "nav_about": "关于我",
   "nav_resume": "简历",
   "nav_activities": "学校活动",
@@ -8,47 +9,86 @@
   "nav_skills": "技能",
   "nav_contact": "联系方式",
   "nav_chatbox": "聊天",
+
   "about_title": "关于我",
-  "about_description": "你好！我是亨利，目前居住在日本的多语言开发者。我能说英语、日语、越南语和基础中文。我热衷于技术、自我成长和探索不同文化。",
+  "about_description": "大家好，我是Henry，一名居住在日本的多语言开发者，能够使用英语、日语、越南语和基础中文。我热爱技术，致力于持续学习，并喜欢在多元文化的环境中工作。目前，我专注于云计算和DevOps领域（AWS、Azure、GCP、Vercel），希望为创新的IT项目做出贡献，并成长为具备未来竞争力的工程师，创造有意义的技术价值。",
+
   "resume_title": "简历",
   "education": "教育背景",
-  "edu_akamonkai": "赤门会日本语学校 (2018–2020)",
-  "edu_chibamode": "千叶模特商业学院 - 国际商务IT课程 (2023–2025)",
+  "edu_akamonkai": "赤门会日本语学校（2018–2020）",
+  "edu_chibamode": "千叶模特商业学院 - 国际商务IT课程（2023–2025）",
+
   "work_experience": "工作经验",
   "work_yamato": "大和运输 - 兼职",
   "work_sukiya": "Sukiya - 兼职",
+
   "certifications": "证书",
-  "cert_jlpt": "JLPT N2（已完成N1准备课程）",
-  "cert_toeic": "TOEIC 590分",
+  "cert_jlpt": "JLPT N2 - 2019（已完成N1准备课程）",
+  "cert_toeic": "TOEIC 590分 - 2021",
   "cert_mos": "MOS证书",
-  "download_resume": "下载简历 (PDF)",
+
+  "download_resume": "下载简历（PDF）",
+
   "motivation_title": "应聘动机",
   "motivation_text": "在参加了贵公司的说明会和工厂参观后，我深受贵公司通过最先进技术解决社会问题的愿景所感动，尤其是应对少子高龄化社会挑战的努力。我希望通过我的开发技能为贵公司做出贡献，并与公司共同成长。",
+
   "appeal_title": "自我介绍",
   "appeal_text": "我是一个积极主动、沟通能力强且责任感强的人。即使在复杂情况下，我也能冷静、迅速地应对，并能在多样化团队中建立良好的人际关系。我相信这些素质能够让我为贵公司做出有意义的贡献。",
+
   "activities_title": "学校活动",
   "gallery_graduation": "毕业典礼",
   "gallery_entrepreneurship": "创业演讲",
   "gallery_school_event": "学校节日活动",
+   "akamonkai_japanese_school": "赤门会日本语学校",
+
   "projects_title": "项目",
+  "presentation_title": "创业演讲",
+  "presentation_desc": "我在千叶Mode商业专门学校用日语进行的创业演讲",
+  "view_full_video": "在YouTube上观看完整视频",
   "snake_game_title": "贪吃蛇游戏",
-  "snake_description": "使用HTML/CSS/JavaScript制作的经典贪吃蛇游戏。",
+  "snake_description": "使用 HTML/CSS/JavaScript 制作的经典贪吃蛇游戏。",
   "play_button": "立即游戏",
   "portfolio_title": "我的作品集网站",
-  "portfolio_desc": "多语言个人网站，内嵌小游戏和实时聊天。",
+  "portfolio_desc": "多语言个人网站，内嵌小游戏和实时聊天功能。",
   "view_more": "查看更多",
+
   "skills_title": "技能",
   "skill_html": "HTML、CSS、JavaScript",
   "skill_java": "Java",
-  "skill_itpassport": "IT护照（正在学习基本信息工程师考试）",
+  "skill_itpassport": "IT护照（正在准备基本信息工程师考试）",
   "skill_webcreator": "网页创作者",
   "skill_office": "Microsoft Excel、Word、PowerPoint、Access",
   "skill_languages": "英语 / 日语 / 越南语 / 中文（HSK1）",
+
+  "login_reminder": "请登录或注册以使用联系表单和聊天功能。",
+  "auth_section_title": "用户登录与注册",
+  "signup_btn": "注册",
+  "login_btn": "登录",
+  "logout_btn": "登出",
+  "google_login_btn": "使用 Google 登录",
+  "github_login_btn": "使用 GitHub 登录",
+  "facebook_login_btn": "使用 Facebook 登录",
+
   "contact_title": "联系方式",
   "phone": "电话",
   "email": "邮箱",
   "linkedin_link": "LinkedIn",
   "facebook_link": "Facebook",
+  "github_link": "GitHub",
+
+  "contact_name": "姓名",
+  "contact_email": "电子邮件",
+  "contact_message": "留言",
+  "send_button": "发送",
+
   "chatbox_title": "实时聊天",
-  "footer": "© 2025年 亨利·黄军。版权所有。"
+  "chat_input_placeholder": "请输入您的消息...",
+
+  "footer": "© 2025年 亨利·黄军。版权所有。",
+  "comment_section_title": "留言簿与评论",
+  "comment_name": "你的名字",
+  "comment_message": "写下你的评论...",
+  "submit_comment": "发表评论",
+  "skill_backend": "RENDER / FIREBASE / VS Code（代码编辑器）/ IntelliJ IDEA（集成开发环境）/ Eclipse IDE（集成开发环境）",
+   "skill_git": "GitHub / GitLab（代码托管平台）"
 }

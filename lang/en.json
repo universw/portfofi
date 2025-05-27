@@ -1,6 +1,7 @@
 {
   "site_title": "Henry HoangQuan Nguyen | Portfolio",
   "tagline": "Multilingual Developer | IT Enthusiast | Avid Reader and Traveler",
+
   "nav_about": "About Me",
   "nav_resume": "Resume",
   "nav_activities": "Activities",
@@ -8,35 +9,49 @@
   "nav_skills": "Skills",
   "nav_contact": "Contact",
   "nav_chatbox": "Chat",
+
   "about_title": "About Me",
-  "about_description": "Hello! I'm Henry, a multilingual developer currently living in Japan. I speak English, Japanese, Vietnamese, and basic Chinese. I am passionate about technology, self-growth, and exploring different cultures.",
+  "about_description": "Hello and welcome! I'm Henry, a multilingual and motivated developer based in Japan, fluent in English, Japanese, Vietnamese, and basic Chinese. I am deeply passionate about technology, continuous learning, and working in diverse, cross-cultural environments. Currently, I am focusing on Cloud and DevOps (AWS, Azure, GCP, Vercel), aiming to contribute to innovative IT projects and grow into a future-ready engineer who creates meaningful impact through technology.",
+
   "resume_title": "Resume",
   "education": "Education",
   "edu_akamonkai": "Akamonkai Japanese Language School (2018–2020)",
   "edu_chibamode": "Chiba Mode Business College - International Business IT Course (2023–2025)",
+
   "work_experience": "Work Experience",
   "work_yamato": "Yamato Transport - Part-time",
   "work_sukiya": "Sukiya - Part-time",
+
   "certifications": "Certifications",
-  "cert_jlpt": "JLPT N2 (Completed N1 Preparation Program)",
-  "cert_toeic": "TOEIC 590",
+  "cert_jlpt": "JLPT N2 - 2019 (Completed N1 Preparation Program)",
+  "cert_toeic": "TOEIC 590 - 2021",
   "cert_mos": "MOS Certification",
+
   "download_resume": "Download Resume (PDF)",
+
   "motivation_title": "Motivation for Application",
   "motivation_text": "After attending your company’s information session and factory tour, I was deeply impressed by your innovative use of cutting-edge technology. I am particularly drawn to your vision for addressing societal challenges such as the declining birthrate and aging population. I aspire to contribute with my development skills and grow together with your company.",
+
   "appeal_title": "Self-PR",
   "appeal_text": "I am proactive, possess strong communication skills, and have a strong sense of responsibility. I can act calmly and swiftly even in complex situations, and have built smooth relationships within diverse teams. My strong sense of responsibility is rooted in Japanese culture, and I believe these qualities will allow me to make meaningful contributions to your company.",
+
   "activities_title": "School Activities",
   "gallery_graduation": "Graduation Ceremony",
   "gallery_entrepreneurship": "Entrepreneurship Presentation",
   "gallery_school_event": "School Festival Activities",
+  "akamonkai_japanese_school": "Akamonkai Japanese Language School",
+
   "projects_title": "Projects",
+  "presentation_title": "Entrepreneur Presentation",
+  "view_full_video"  : "View Full Video on YouTube",
+  "presentation_desc": "My entrepreneurship presentation at Chiba Mode Business College, delivered in Japanese",
   "snake_game_title": "Snake Game",
   "snake_description": "Classic snake game made with pure HTML/CSS/JavaScript.",
   "play_button": "Play Now",
   "portfolio_title": "Portfolio Website",
   "portfolio_desc": "A multilingual personal site with embedded game and live chat.",
   "view_more": "View More",
+
   "skills_title": "Skills",
   "skill_html": "HTML, CSS, JavaScript",
   "skill_java": "Java",
@@ -44,11 +59,36 @@
   "skill_webcreator": "Web Creator",
   "skill_office": "Microsoft Excel, Word, PowerPoint, Access",
   "skill_languages": "English / Japanese / Vietnamese / Chinese (HSK1)",
+
+  "login_reminder": "Please log in or sign up to use the contact form and chat features.",
+  "auth_section_title": "User Login & Signup",
+  "signup_btn": "Sign Up",
+  "login_btn": "Login",
+  "logout_btn": "Logout",
+  "google_login_btn": "Login with Google",
+  "github_login_btn": "Login with GitHub",
+  "facebook_login_btn": "Login with Facebook",
+
   "contact_title": "Contact",
   "phone": "Phone",
   "email": "Email",
   "linkedin_link": "LinkedIn",
   "facebook_link": "Facebook",
+  "github_link": "GitHub",
+
+  "contact_name": "Name",
+  "contact_email": "Email",
+  "contact_message": "Message",
+  "send_button": "Send",
+
   "chatbox_title": "Live Chat",
-  "footer": "© 2025 Henry HoangQuan Nguyen. All rights reserved."
+  "chat_input_placeholder": "Type your message...",
+
+  "footer": "© 2025 Henry HoangQuan Nguyen. All rights reserved.",
+  "comment_section_title": "Guestbook & Comments",
+   "comment_name": "Your Name",
+   "comment_message": "Write your comment...",
+   "submit_comment": "Post Comment",
+   "skill_backend" : "RENDER / FIREBASE / VS Code / IntelliJ IDEA / Eclipse IDEIDE",
+   "skill_git":"GitHub/ gitlab"
 }

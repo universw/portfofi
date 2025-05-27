@@ -20,14 +20,23 @@ function loadLanguage(lang) {
 }
 
 function applyTranslations(translations) {
-  document.querySelectorAll('[data-i18n]').forEach((element) => {
-    const key = element.getAttribute('data-i18n');
+  // Text content translation
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    const key = el.getAttribute('data-i18n');
     if (translations[key]) {
-      element.innerHTML = translations[key];
+      el.innerHTML = translations[key];
     }
   });
 
-  // Also update page <title> separately if needed
+  // Placeholder translation
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[key]) {
+      el.placeholder = translations[key];
+    }
+  });
+
+  // Page title
   if (translations['site_title']) {
     document.title = translations['site_title'];
   }

@@ -1,6 +1,7 @@
 {
   "site_title": "ヘンリー・ホアン・クアン・グエン | ポートフォリオ",
   "tagline": "多言語対応開発者 | IT愛好者 | 読書と旅行好き",
+
   "nav_about": "自己紹介",
   "nav_resume": "履歴書",
   "nav_activities": "学校活動",
@@ -8,35 +9,46 @@
   "nav_skills": "スキル",
   "nav_contact": "連絡先",
   "nav_chatbox": "チャット",
-  "about_title": "自己紹介",
-  "about_description": "こんにちは！私はヘンリー、日本に住む多言語対応の開発者です。英語、日本語、ベトナム語、基本的な中国語を話します。技術、自己成長、文化探求に情熱を持っています。",
+   "about_title": "自己紹介",
+  "about_description": "こんにちは、ヘンリーと申します。日本在住の多言語対応の意欲的な開発者で、英語、日本語、ベトナム語、そして初級レベルの中国語を話します。技術への情熱、継続的な学習、多文化な環境での協働を大切にしています。現在は、クラウドとDevOps（AWS、Azure、GCP、Vercel）を中心にキャリアを構築中で、革新的なITプロジェクトに貢献し、未来に対応できるエンジニアとして成長することを目指しています。",
   "resume_title": "履歴書",
   "education": "学歴",
-  "edu_akamonkai": "赤門会日本語学校 (2018–2020)",
-  "edu_chibamode": "千葉モードビジネスカレッジ - 国際ビジネスITコース (2023–2025)",
+  "edu_akamonkai": "赤門会日本語学校（2018年～2020年）",
+  "edu_chibamode": "千葉モードビジネスカレッジ - 国際ビジネスITコース（2023年～2025年）",
+
   "work_experience": "職歴",
   "work_yamato": "ヤマト運輸 - アルバイト",
   "work_sukiya": "すき家 - アルバイト",
+
   "certifications": "資格",
-  "cert_jlpt": "JLPT N2（N1準備プログラム修了）",
-  "cert_toeic": "TOEIC 590",
+  "cert_jlpt": "JLPT N2 - 2019（N1準備プログラム修了）",
+  "cert_toeic": "TOEIC 590 - 2021",
   "cert_mos": "MOS認定資格",
-  "download_resume": "履歴書をダウンロード (PDF)",
+
+  "download_resume": "履歴書をダウンロード（PDF）",
+
   "motivation_title": "応募動機",
   "motivation_text": "貴社の説明会と工場見学に参加し、最先端技術を駆使した革新的な取り組みに深く感銘を受けました。特に少子高齢化といった社会課題に取り組むビジョンに共感しました。私は自らの開発スキルを生かし、貴社と共に成長したいと考えています。",
+
   "appeal_title": "自己アピール",
   "appeal_text": "私は積極的で、コミュニケーション能力に優れ、責任感が強い人間です。複雑な状況でも冷静かつ迅速に対応でき、多様なチームで円滑な人間関係を築いてきました。日本文化に根ざした責任感を持ち、貴社への貢献に自信があります。",
+
   "activities_title": "学校活動",
   "gallery_graduation": "卒業式",
-  "gallery_entrepreneurship": "起業家プレゼンテーション",
+  "gallery_entrepreneurship": "起業プレゼンテーション",
   "gallery_school_event": "学園祭活動",
+  "akamonkai_japanese_school": "赤門会日本語学校",
   "projects_title": "プロジェクト",
+   "presentation_title": "起業プレゼンテーション",
+   "view_full_video": "YouTubeでフル動画を見る",
+  "presentation_desc": "千葉モードビジネス専門学校で日本語で行った起業プレゼンテーションです",
   "snake_game_title": "スネークゲーム",
-  "snake_description": "HTML/CSS/JavaScriptで作成したクラシックなスネークゲームです。",
+  "snake_description": "HTML/CSS/JavaScriptで作成したクラシックなスネークゲーム。",
   "play_button": "今すぐプレイ",
   "portfolio_title": "ポートフォリオサイト",
   "portfolio_desc": "多言語対応の個人サイト。ゲームとライブチャットを組み込みました。",
-  "view_more": "詳細を見る",
+  "view_more": "もっと見る",
+
   "skills_title": "スキル",
   "skill_html": "HTML、CSS、JavaScript",
   "skill_java": "Java",
@@ -44,11 +56,36 @@
   "skill_webcreator": "Webクリエイター",
   "skill_office": "Microsoft Excel、Word、PowerPoint、Access",
   "skill_languages": "英語 / 日本語 / ベトナム語 / 中国語（HSK1）",
+
+  "login_reminder": "お問い合わせフォームとチャット機能を利用するには、ログインまたはサインアップしてください。",
+  "auth_section_title": "ユーザー ログイン・サインアップ",
+  "signup_btn": "サインアップ",
+  "login_btn": "ログイン",
+  "logout_btn": "ログアウト",
+  "google_login_btn": "Googleでログイン",
+  "github_login_btn": "GitHubでログイン",
+  "facebook_login_btn": "Facebookでログイン",
+
   "contact_title": "連絡先",
-  "phone": "電話番号",
+  "phone": "電話",
   "email": "メール",
   "linkedin_link": "LinkedIn",
   "facebook_link": "Facebook",
+  "github_link": "GitHub",
+
+  "contact_name": "お名前",
+  "contact_email": "メールアドレス",
+  "contact_message": "メッセージ",
+  "send_button": "送信",
+
   "chatbox_title": "ライブチャット",
-  "footer": "© 2025年 ヘンリー・ホアン・クアン・グエン。無断複写・転載を禁じます。"
+  "chat_input_placeholder": "メッセージを入力してください...",
+
+  "footer": "© 2025年 ヘンリー・ホアン・クアン・グエン。全著作権所有。",
+  "comment_section_title": "ゲストブックとコメント",
+  "comment_name": "あなたの名前",
+  "comment_message": "コメントを入力してください...",
+  "submit_comment": "コメントを投稿",
+  "skill_backend": "RENDER / FIREBASE / VS Code（ブイエスコード）/ IntelliJ IDEA（インテリジェイ）/ Eclipse IDE（エクリプス）",
+  "skill_git": "GitHub / GitLab（ギットラボ）"
 }
