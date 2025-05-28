@@ -227,13 +227,28 @@
   
     <!-- Chatbox Section -->
     <section id="chatbox" class="container section" style="display: none;">
-      <h2 data-i18n="chatbox_title">Live Chat</h2>
-      <div id="chat-messages"></div>
-      <form id="chat-form">
-        <input type="text" id="chat-input" placeholder="Type your message..." required data-i18n-placeholder="chat_input_placeholder" />
-        <button type="submit" class="btn" data-i18n="send_button">Send</button>
-      </form>
-    </section>
+  　　　<h2 data-i18n="chatbox_title">Live Chat</h2>
+
+  <!-- Chat messages container -->
+  <div id="chat-messages" class="chat-messages"></div>
+
+  <!-- Typing indicator -->
+  <div id="typing-indicator" class="typing-indicator" style="display:none;">Someone is typing...</div>
+
+  <!-- Chat input form -->
+  <form id="chat-form" autocomplete="off">
+    <input
+      type="text"
+      id="chat-input"
+      placeholder="Type your message..."
+      required
+      data-i18n-placeholder="chat_input_placeholder"
+      autocomplete="off"
+      spellcheck="false"
+    />
+    <button type="submit" class="btn" data-i18n="send_button">Send</button>
+  </form>
+</section>
   </main>
   <div id="notification" class="notification">
     <span id="notification-icon" class="icon">ℹ️</span>
