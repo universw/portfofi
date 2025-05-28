@@ -70,7 +70,7 @@ I'm an aspiring **DevOps and Cloud Engineer**, passionate about building scalabl
 
 ## 📫 Contact Me
 
-- 🌍 LinkedIn: linkedin.com/in/henry-hoangquan-nguyen
+- 🌍 LinkedIn: https://www.linkedin.com/in/henry-hoangquan-nguyen
 - 💻 Portfolio: https://portfo-38945.web.app/
 - 🐙 GitHub: https://github.com/universw
 - 📧 Email: henryhoangquanw@gmail.com
