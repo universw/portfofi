@@ -34,7 +34,7 @@ This project was developed using the following technologies:
 **Backend / Realtime Features**
 - 🔥 **Firebase**
   - Firebase Authentication (auth)
-  - Realtime Database (chatbox)
+  - Firebase Realtime Database (chatbox)
   - Firebase Hosting
 - 🔥 **Render**
   - Render (guestbook & comments)
