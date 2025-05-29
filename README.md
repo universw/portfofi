@@ -6,14 +6,14 @@ Welcome! This is my personal multilingual portfolio website, built to showcase m
 
 ## 👨‍💻 Author & Ownership
 
-This project was independently designed and developed by **Henry HoangQuan Nguyen**-**All rights reserved.** .  
+This project was independently designed and developed by **Henry HoangQuan Nguyen** - **All rights reserved.**   
 All source code in this repository is original and owned by the author unless otherwise stated.  
 
 ---
 
 ## 🧩 Key Features
 
-- 🌐 **Multilingual Support** – English, Japanese, Vietnamese, chinese
+- 🌐 **Multilingual Support** – English, Japanese, Vietnamese, Chinese
 - 🔐 **Firebase Authentication** – Secure user login/logout system
 - 💬 **Realtime Chatbox** – Live messaging with automated responses using Firestore
 - ✍️ **Guestbook** – Users can leave public comments with timestamps
@@ -36,6 +36,7 @@ This project was developed using the following technologies:
   - Firebase Authentication (auth)
   - Realtime Database (chatbox)
   - Firebase Hosting
+- 🔥 **Render**
   - Render (guestbook & comments)
 
 **Media Management**
