@@ -11,7 +11,7 @@
   "nav_chatbox": "Trò chuyện",
 
   "about_title": "Giới thiệu bản thân",
-  "about_description": "Xin chào, mình là Henry — một lập trình viên đa ngôn ngữ đầy nhiệt huyết hiện đang sinh sống tại Nhật Bản. Mình có thể sử dụng tiếng Anh, tiếng Nhật, tiếng Việt và tiếng Trung cơ bản. Mình đam mê công nghệ, không ngừng học hỏi và yêu thích làm việc trong môi trường đa văn hóa. Hiện tại, mình đang tập trung phát triển sự nghiệp trong lĩnh vực Cloud và DevOps (AWS, Azure, GCP, Vercel), với mục tiêu đóng góp cho các dự án công nghệ sáng tạo và trở thành một kỹ sư sẵn sàng cho tương lai.",
+  "about_description": "Xin chào, mình là Henry — một lập trình viên đa ngôn ngữ đang sinh sống tại Nhật Bản. Mình sử dụng thành thạo tiếng Anh, tiếng Nhật, tiếng Việt và có kiến thức cơ bản về tiếng Trung. Mình đặc biệt đam mê công nghệ, học hỏi không ngừng và làm việc trong môi trường đa văn hóa. Hiện tại, mình đang tập trung vào các công nghệ Cloud và DevOps như AWS, Azure, GCP và Vercel, với kinh nghiệm triển khai các ứng dụng web hiện đại. Mình đang tìm kiếm vị trí thực tập, tập sự hoặc công việc entry-level trong lĩnh vực Cloud/DevOps, nơi mình có thể đóng góp vào các dự án công nghệ đổi mới và phát triển thành một kỹ sư hiện đại, tạo ra tác động tích cực thông qua công nghệ.",
    "resume_title": "Sơ yếu lý lịch",
   "education": "Học vấn",
   "edu_akamonkai": "Trường Nhật ngữ Akamonkai (2018–2020)",
@@ -47,7 +47,7 @@
   "snake_description": "Trò chơi rắn cổ điển được xây dựng bằng HTML/CSS/JavaScript.",
   "play_button": "Chơi ngay",
   "portfolio_title": "Website hồ sơ cá nhân",
-  "portfolio_desc": "Website cá nhân đa ngôn ngữ, tích hợp trò chơi và trò chuyện trực tuyến.",
+  "portfolio_desc": "Website cá nhân đa ngôn ngữ, tích hợp trò chơi ",
   "view_more": "Xem thêm",
 
   "skills_title": "Kỹ năng",

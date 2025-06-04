@@ -11,7 +11,7 @@
   "nav_chatbox": "聊天",
 
   "about_title": "关于我",
-  "about_description": "大家好，我是Henry，一名居住在日本的多语言开发者，能够使用英语、日语、越南语和基础中文。我热爱技术，致力于持续学习，并喜欢在多元文化的环境中工作。目前，我专注于云计算和DevOps领域（AWS、Azure、GCP、Vercel），希望为创新的IT项目做出贡献，并成长为具备未来竞争力的工程师，创造有意义的技术价值。",
+  "about_description": "您好，我叫 Henry，是一名多语言开发者，目前居住在日本。我精通英语、日语、越南语，并掌握基础中文。我对技术充满热情，热爱持续学习，并乐于在多元文化的环境中工作。目前，我专注于云计算和 DevOps 相关技术，包括 AWS、Azure、GCP 和 Vercel，并拥有构建与部署现代 Web 应用的实践经验。我正在积极寻找云计算/DevOps 方向的实习生、培训生或初级岗位，希望能为创新 IT 项目做出贡献，并成长为一名通过技术创造有意义影响的未来型工程师。",
 
   "resume_title": "简历",
   "education": "教育背景",
@@ -49,7 +49,7 @@
   "snake_description": "使用 HTML/CSS/JavaScript 制作的经典贪吃蛇游戏。",
   "play_button": "立即游戏",
   "portfolio_title": "我的作品集网站",
-  "portfolio_desc": "多语言个人网站，内嵌小游戏和实时聊天功能。",
+  "portfolio_desc": "多语言个人网站，内嵌小游戏",
   "view_more": "查看更多",
 
   "skills_title": "技能",

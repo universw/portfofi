@@ -11,8 +11,7 @@
   "nav_chatbox": "Chat",
 
   "about_title": "About Me",
-  "about_description": "Hello and welcome! I'm Henry, a multilingual and motivated developer based in Japan, fluent in English, Japanese, Vietnamese, and basic Chinese. I am deeply passionate about technology, continuous learning, and working in diverse, cross-cultural environments. Currently, I am focusing on Cloud and DevOps (AWS, Azure, GCP, Vercel), aiming to contribute to innovative IT projects and grow into a future-ready engineer who creates meaningful impact through technology.",
-
+  "about_description": "Hello and welcome! I'm Henry, a multilingual and motivated developer based in Japan, fluent in English, Japanese, Vietnamese, and basic Chinese. I am deeply passionate about technology, continuous learning, and working in diverse, cross-cultural environments. Currently, I am focusing on Cloud and DevOps technologies, including AWS, Azure, GCP, and Vercel, with hands-on experience building and deploying modern web applications. I am actively seeking internship, trainee, or entry-level opportunities in the Cloud/DevOps field, where I can contribute to innovative IT projects and grow into a future-ready engineer who creates meaningful impact through technology",
   "resume_title": "Resume",
   "education": "Education",
   "edu_akamonkai": "Akamonkai Japanese Language School (2018–2020)",
@@ -30,7 +29,7 @@
   "download_resume": "Download Resume (PDF)",
 
   "motivation_title": "Motivation for Application",
-  "motivation_text": "After attending your company’s information session and factory tour, I was deeply impressed by your innovative use of cutting-edge technology. I am particularly drawn to your vision for addressing societal challenges such as the declining birthrate and aging population. I aspire to contribute with my development skills and grow together with your company.",
+  "motivation_text": "After attending your company’s information session and company tour, I was deeply impressed by your innovative use of cutting-edge technology. I am particularly drawn to your vision for addressing societal challenges such as the declining birthrate and aging population. I aspire to contribute with my development skills and grow together with your company.",
 
   "appeal_title": "Self-PR",
   "appeal_text": "I am proactive, possess strong communication skills, and have a strong sense of responsibility. I can act calmly and swiftly even in complex situations, and have built smooth relationships within diverse teams. My strong sense of responsibility is rooted in Japanese culture, and I believe these qualities will allow me to make meaningful contributions to your company.",
@@ -49,7 +48,7 @@
   "snake_description": "Classic snake game made with pure HTML/CSS/JavaScript.",
   "play_button": "Play Now",
   "portfolio_title": "Portfolio Website",
-  "portfolio_desc": "A multilingual personal site with embedded game and live chat.",
+  "portfolio_desc": "A multilingual personal site with embedded game",
   "view_more": "View More",
 
   "skills_title": "Skills",
