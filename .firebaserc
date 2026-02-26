@@ -1,5 +1,7 @@
 {
   "projects": {
     "default": "portfo-38945"
-  }
+  },
+  "targets": {},
+  "etags": {}
 }
