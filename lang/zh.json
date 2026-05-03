@@ -28,6 +28,12 @@
   "cert_mos": "MOS证书",
 
   "download_resume": "下载简历（PDF）",
+  "download_resume_title": "下载简历",
+  "cert_gallery_title": "证书照片",
+  "cert_gallery_hint": "点击图片可查看大图，或使用下载按钮。",
+  "cert_jlpt_label": "JLPT N2（2019年）",
+  "cert_toeic_label": "TOEIC 665（2025年）",
+  "download_image": "下载图片",
 
   "motivation_title": "应聘动机",
   "motivation_text": "在参加了贵公司的说明会和参观后，我深受贵公司通过最先进技术解决社会问题的愿景所感动，尤其是应对少子高龄化社会挑战的努力。我希望通过我的开发技能为贵公司做出贡献，并与公司共同成长。",
