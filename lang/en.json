@@ -27,6 +27,12 @@
   "cert_mos": "MOS Certification",
 
   "download_resume": "Download Resume (PDF)",
+  "download_resume_title": "Download Resume",
+  "cert_gallery_title": "Certificate Photos",
+  "cert_gallery_hint": "Click any image to view full size, or use the download button.",
+  "cert_jlpt_label": "JLPT N2 (2019)",
+  "cert_toeic_label": "TOEIC 665 (2025)",
+  "download_image": "Download Image",
 
   "motivation_title": "Motivation for Application",
   "motivation_text": "After attending your company’s information session and company tour, I was deeply impressed by your innovative use of cutting-edge technology. I am particularly drawn to your vision for addressing societal challenges such as the declining birthrate and aging population. I aspire to contribute with my development skills and grow together with your company.",

@@ -113,9 +113,30 @@
       <li data-i18n="cert_mos">MOS Certification</li>
     </ul>
 
-    <a href="assets/resume/Henry_Resume.pdf" class="btn" download data-i18n="download_resume">
-      Download Resume (PDF)
-    </a>
+    <!-- Certificate Photos -->
+    <h3 data-i18n="cert_gallery_title">Certificate Photos</h3>
+    <p class="section-hint" data-i18n="cert_gallery_hint">Click any image to view full size, or use the download button.</p>
+    <div class="gallery-grid cert-gallery">
+      <div class="gallery-item">
+        <img src="assets/certs/JLPT.jpeg" alt="JLPT N2 certificate (Japanese Language Proficiency Test)" loading="lazy" decoding="async" data-zoomable />
+        <p data-i18n="cert_jlpt_label">JLPT N2 (2019)</p>
+        <a href="assets/certs/JLPT.jpeg" class="btn" download data-i18n="download_image">Download Image</a>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/certs/Toeic.jpeg" alt="TOEIC certificate, score 665" loading="lazy" decoding="async" data-zoomable />
+        <p data-i18n="cert_toeic_label">TOEIC 665 (2025)</p>
+        <a href="assets/certs/Toeic.jpeg" class="btn" download data-i18n="download_image">Download Image</a>
+      </div>
+    </div>
+
+    <!-- Resume Downloads (4 languages) -->
+    <h3 data-i18n="download_resume_title">Download Resume</h3>
+    <div class="resume-downloads social-buttons">
+      <a href="assets/resume/Henry_Nguyen_Resume_EN.pdf" class="btn" download>English (PDF)</a>
+      <a href="assets/resume/Henry_Nguyen_Resume_JP.pdf" class="btn" download>日本語 (PDF)</a>
+      <a href="assets/resume/Henry_Nguyen_Resume_VI.pdf" class="btn" download>Tiếng Việt (PDF)</a>
+      <a href="assets/resume/Henry_Nguyen_Resume_ZH.pdf" class="btn" download>中文 (PDF)</a>
+    </div>
   </section>
 
   <!-- Motivation Section -->
@@ -356,5 +377,6 @@
   <script src="js/theme.js"></script>
   <script src="js/auth.js"></script>
   <script src="js/comments.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 </html>

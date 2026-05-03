@@ -26,6 +26,12 @@
   "cert_mos": "MOS認定資格",
 
   "download_resume": "履歴書をダウンロード（PDF）",
+  "download_resume_title": "履歴書をダウンロード",
+  "cert_gallery_title": "資格証明書",
+  "cert_gallery_hint": "画像をクリックすると拡大表示されます。またはダウンロードボタンをご利用ください。",
+  "cert_jlpt_label": "JLPT N2（2019年）",
+  "cert_toeic_label": "TOEIC 665（2025年）",
+  "download_image": "画像をダウンロード",
 
   "motivation_title": "応募動機",
   "motivation_text": "貴社の説明会と会社見学に参加し、最先端技術を駆使した革新的な取り組みに深く感銘を受けました。特に少子高齢化といった社会課題に取り組むビジョンに共感しました。私は自らの開発スキルを生かし、貴社と共に成長したいと考えています。",
