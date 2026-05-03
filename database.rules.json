@@ -1,6 +1,20 @@
 {
   "rules": {
-    ".read": "true",
-    ".write": "true"
+    "chatbox": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "typing": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "contacts": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    },
+    "$other": {
+      ".read": false,
+      ".write": false
+    }
   }
 }
