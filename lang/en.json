@@ -56,6 +56,10 @@
   "portfolio_title": "Portfolio Website",
   "portfolio_desc": "A multilingual personal site with embedded game",
   "view_more": "View More",
+  "securevault_title": "SecureVault",
+  "securevault_desc": "A serverless personal cloud storage app built on AWS — Cognito auth, Lambda + API Gateway backend, and per-user S3 isolation via presigned URLs. Built as a hands-on exercise in serverless architecture, IAM, and DevOps fundamentals.",
+  "view_demo": "View Demo",
+  "view_source": "View Source",
 
   "skills_title": "Skills",
   "skill_html": "HTML, CSS, JavaScript",

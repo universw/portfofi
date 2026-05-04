@@ -57,6 +57,10 @@
   "portfolio_title": "我的作品集网站",
   "portfolio_desc": "多语言个人网站，内嵌小游戏",
   "view_more": "查看更多",
+  "securevault_title": "SecureVault",
+  "securevault_desc": "基于 AWS 构建的无服务器个人云存储应用——使用 Cognito 进行身份认证，后端采用 Lambda + API Gateway，通过预签名 URL 实现按用户隔离的 S3 存储。这是一个实践无服务器架构、IAM 与 DevOps 基础的项目。",
+  "view_demo": "查看演示",
+  "view_source": "查看源码",
 
   "skills_title": "技能",
   "skill_html": "HTML、CSS、JavaScript",
