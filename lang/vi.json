@@ -55,6 +55,10 @@
   "portfolio_title": "Website hồ sơ cá nhân",
   "portfolio_desc": "Website cá nhân đa ngôn ngữ, tích hợp trò chơi ",
   "view_more": "Xem thêm",
+  "securevault_title": "SecureVault",
+  "securevault_desc": "Ứng dụng lưu trữ đám mây cá nhân không máy chủ được xây dựng trên AWS — xác thực qua Cognito, backend Lambda + API Gateway, và phân tách dữ liệu S3 theo từng người dùng thông qua presigned URL. Một dự án thực hành về kiến trúc serverless, IAM và nền tảng DevOps.",
+  "view_demo": "Xem demo",
+  "view_source": "Xem mã nguồn",
 
   "skills_title": "Kỹ năng",
   "skill_html": "HTML, CSS, JavaScript",
