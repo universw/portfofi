@@ -27,6 +27,8 @@
 
   "download_resume": "履歴書をダウンロード（PDF）",
   "download_resume_title": "履歴書をダウンロード",
+  "resume_preview_title": "履歴書プレビュー",
+  "resume_preview_hint": "下のタブで言語を切り替えられます。PDFが表示されない場合はダウンロードボタンをご利用ください。",
   "cert_gallery_title": "資格証明書",
   "cert_gallery_hint": "画像をクリックすると拡大表示されます。またはダウンロードボタンをご利用ください。",
   "cert_jlpt_label": "JLPT N2（2019年）",

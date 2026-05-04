@@ -129,6 +129,19 @@
       </div>
     </div>
 
+    <!-- Resume Inline Preview -->
+    <h3 data-i18n="resume_preview_title">Resume Preview</h3>
+    <p class="section-hint" data-i18n="resume_preview_hint">Switch language with the tabs below. Use the download buttons if your browser can't display the embedded PDF.</p>
+    <div class="resume-viewer">
+      <div class="resume-tabs" role="tablist" aria-label="Resume language">
+        <button type="button" class="resume-tab active" role="tab" aria-selected="true" data-pdf="assets/resume/Henry_Nguyen_Resume_EN.pdf">English</button>
+        <button type="button" class="resume-tab" role="tab" aria-selected="false" data-pdf="assets/resume/Henry_Nguyen_Resume_JP.pdf">日本語</button>
+        <button type="button" class="resume-tab" role="tab" aria-selected="false" data-pdf="assets/resume/Henry_Nguyen_Resume_VI.pdf">Tiếng Việt</button>
+        <button type="button" class="resume-tab" role="tab" aria-selected="false" data-pdf="assets/resume/Henry_Nguyen_Resume_ZH.pdf">中文</button>
+      </div>
+      <iframe class="resume-frame" src="assets/resume/Henry_Nguyen_Resume_EN.pdf#view=FitH" title="Resume preview" loading="lazy"></iframe>
+    </div>
+
     <!-- Resume Downloads (4 languages) -->
     <h3 data-i18n="download_resume_title">Download Resume</h3>
     <div class="resume-downloads social-buttons">
@@ -374,6 +387,22 @@
         window.scrollTo({
           top: snakeContainer.offsetTop,
           behavior: "smooth"
+        });
+      });
+    }
+
+    const resumeFrame = document.querySelector(".resume-frame");
+    const resumeTabs = document.querySelectorAll(".resume-tab");
+    if (resumeFrame && resumeTabs.length) {
+      resumeTabs.forEach(function (tab) {
+        tab.addEventListener("click", function () {
+          resumeTabs.forEach(function (t) {
+            t.classList.remove("active");
+            t.setAttribute("aria-selected", "false");
+          });
+          tab.classList.add("active");
+          tab.setAttribute("aria-selected", "true");
+          resumeFrame.src = tab.dataset.pdf + "#view=FitH";
         });
       });
     }

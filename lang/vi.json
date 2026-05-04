@@ -28,6 +28,8 @@
 
   "download_resume": "Tải sơ yếu lý lịch (PDF)",
   "download_resume_title": "Tải sơ yếu lý lịch",
+  "resume_preview_title": "Xem trước sơ yếu lý lịch",
+  "resume_preview_hint": "Dùng các tab bên dưới để chuyển ngôn ngữ. Nếu trình duyệt không hiển thị được PDF, vui lòng dùng nút tải xuống.",
   "cert_gallery_title": "Hình ảnh chứng chỉ",
   "cert_gallery_hint": "Nhấp vào hình ảnh để xem kích thước đầy đủ, hoặc dùng nút tải xuống.",
   "cert_jlpt_label": "JLPT N2 (2019)",
