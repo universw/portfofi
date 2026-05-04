@@ -28,6 +28,8 @@
 
   "download_resume": "Download Resume (PDF)",
   "download_resume_title": "Download Resume",
+  "resume_preview_title": "Resume Preview",
+  "resume_preview_hint": "Switch language with the tabs below. Use the download buttons if your browser can't display the embedded PDF.",
   "cert_gallery_title": "Certificate Photos",
   "cert_gallery_hint": "Click any image to view full size, or use the download button.",
   "cert_jlpt_label": "JLPT N2 (2019)",
