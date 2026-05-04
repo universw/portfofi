@@ -54,6 +54,10 @@
   "portfolio_title": "ポートフォリオサイト",
   "portfolio_desc": "多言語対応の個人サイトとゲームを組み込みました。",
   "view_more": "もっと見る",
+  "securevault_title": "SecureVault",
+  "securevault_desc": "AWS上に構築したサーバーレスのパーソナルクラウドストレージアプリ。Cognito認証、Lambda + API Gatewayバックエンド、署名付きURLによるユーザーごとのS3隔離を実装。サーバーレスアーキテクチャ、IAM、DevOpsの基礎を実践的に学ぶプロジェクトとして開発しました。",
+  "view_demo": "デモを見る",
+  "view_source": "ソースコードを見る",
 
   "skills_title": "スキル",
   "skill_html": "HTML、CSS、JavaScript",
