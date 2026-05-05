@@ -23,7 +23,12 @@ contactRef.on("child_added", (snapshot) => {
   const key = snapshot.key;
   const div = document.createElement("div");
   div.className = "contact-entry";
-  div.innerHTML = `<strong>${data.name}</strong> (${data.email})<br/>${data.message}`;
+  const nameEl = document.createElement("strong");
+  nameEl.textContent = data.name;
+  div.appendChild(nameEl);
+  div.appendChild(document.createTextNode(` (${data.email})`));
+  div.appendChild(document.createElement("br"));
+  div.appendChild(document.createTextNode(data.message));
 
   const delBtn = document.createElement("button");
   delBtn.textContent = "Delete";
