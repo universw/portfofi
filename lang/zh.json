@@ -77,6 +77,7 @@
   "signup_btn": "注册",
   "login_btn": "登录",
   "logout_btn": "登出",
+  "password_placeholder": "密码",
   "google_login_btn": "使用 Google 登录",
   "github_login_btn": "使用 GitHub 登录",
   "facebook_login_btn": "使用 Facebook 登录",
