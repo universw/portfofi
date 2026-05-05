@@ -75,6 +75,7 @@
   "signup_btn": "Đăng ký",
   "login_btn": "Đăng nhập",
   "logout_btn": "Đăng xuất",
+  "password_placeholder": "Mật khẩu",
   "google_login_btn": "Đăng nhập bằng Google",
   "github_login_btn": "Đăng nhập bằng GitHub",
   "facebook_login_btn": "Đăng nhập bằng Facebook",

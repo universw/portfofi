@@ -76,6 +76,7 @@
   "auth_section_title": "Benutzer-Login & Registrierung",
   "signup_btn": "Registrieren",
   "login_btn": "Anmelden",
+  "password_placeholder": "Passwort",
   "logout_btn": "Abmelden",
   "google_login_btn": "Mit Google anmelden",
   "github_login_btn": "Mit GitHub anmelden",

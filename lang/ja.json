@@ -74,6 +74,7 @@
   "signup_btn": "サインアップ",
   "login_btn": "ログイン",
   "logout_btn": "ログアウト",
+  "password_placeholder": "パスワード",
   "google_login_btn": "Googleでログイン",
   "github_login_btn": "GitHubでログイン",
   "facebook_login_btn": "Facebookでログイン",

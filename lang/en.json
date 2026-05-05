@@ -100,6 +100,7 @@
    "comment_name": "Your Name",
    "comment_message": "Write your comment...",
    "submit_comment": "Post Comment",
-   "skill_backend" : "RENDER / FIREBASE / VS Code / IntelliJ IDEA / Eclipse IDEIDE",
-   "skill_git":"GitHub/ gitlab"
+   "skill_backend" : "RENDER / FIREBASE / VS Code / IntelliJ IDEA / Eclipse IDE",
+   "skill_git": "GitHub / GitLab",
+   "password_placeholder": "Password"
 }
