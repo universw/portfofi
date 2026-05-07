@@ -2,16 +2,20 @@ const API = "https://portbackend-yp1j.onrender.com/api/comments";
 
 // Load Comments
 async function loadComments() {
+  const container = document.getElementById("comments");
+  if (!container) return;
+
   try {
     const res = await fetch(API);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     const comments = await res.json();
-    const container = document.getElementById("comments");
     container.innerHTML = "";
 
     if (comments.length === 0) {
-      container.innerHTML = "<p>No comments yet.</p>";
+      const empty = document.createElement("p");
+      empty.textContent = "No comments yet.";
+      container.appendChild(empty);
       return;
     }
 
@@ -25,35 +29,59 @@ async function loadComments() {
       const div = document.createElement("div");
       div.classList.add("comment");
 
-      div.innerHTML = `
-        <strong>${comment.name}</strong><br>
-        <p>${comment.message}</p>
-        <small>${new Date(comment.timestamp).toLocaleString()}</small>
+      const name = document.createElement("strong");
+      name.textContent = comment.name || "Guest";
+      const message = document.createElement("p");
+      message.textContent = comment.message || "";
+      const timestamp = document.createElement("small");
+      timestamp.textContent = comment.timestamp ? new Date(comment.timestamp).toLocaleString() : "";
 
-        ${comment.adminReply
-          ? `<div class="admin-reply"><strong>Admin:</strong> ${comment.adminReply}</div>`
-          : `
-            <div class="reply-box">
-              <textarea id="reply-${comment.id}" placeholder="Write admin reply..."></textarea>
-              <button onclick="submitReply(${comment.id})">Send Reply</button>
-            </div>
-          `}
-        <div class="delete-box">
-          <button onclick="deleteComment(${comment.id})">Delete</button>
-        </div>
-      `;
+      div.appendChild(name);
+      div.appendChild(document.createElement("br"));
+      div.appendChild(message);
+      div.appendChild(timestamp);
+
+      if (comment.adminReply) {
+        const adminReply = document.createElement("div");
+        adminReply.className = "admin-reply";
+        const label = document.createElement("strong");
+        label.textContent = "Admin: ";
+        adminReply.appendChild(label);
+        adminReply.appendChild(document.createTextNode(comment.adminReply));
+        div.appendChild(adminReply);
+      } else {
+        const replyBox = document.createElement("div");
+        replyBox.className = "reply-box";
+        const textarea = document.createElement("textarea");
+        textarea.id = `reply-${comment.id}`;
+        textarea.placeholder = "Write admin reply...";
+        const replyButton = document.createElement("button");
+        replyButton.textContent = "Send Reply";
+        replyButton.addEventListener("click", () => submitReply(comment.id));
+        replyBox.appendChild(textarea);
+        replyBox.appendChild(replyButton);
+        div.appendChild(replyBox);
+      }
+
+      const deleteBox = document.createElement("div");
+      deleteBox.className = "delete-box";
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "Delete";
+      deleteButton.addEventListener("click", () => deleteComment(comment.id));
+      deleteBox.appendChild(deleteButton);
+      div.appendChild(deleteBox);
 
       container.appendChild(div);
     });
   } catch (err) {
     console.error("Error loading comments:", err);
-    document.getElementById("comments").innerText = "Failed to load comments.";
+    container.innerText = "Failed to load comments.";
   }
 }
 
 // Send Admin Reply
 async function submitReply(id) {
-  const reply = document.getElementById(`reply-${id}`).value.trim();
+  const reply = document.getElementById(`reply-${id}`)?.value.trim();
   if (!reply) return;
 
   try {

@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   if (savedTheme === 'dark') {
     body.classList.add('dark-mode');
   }
+  updateThemeLabel();
 });
 
 // Toggle theme and save preference
@@ -15,4 +16,11 @@ themeToggle?.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
   const isDark = body.classList.contains('dark-mode');
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  updateThemeLabel();
 });
+
+function updateThemeLabel() {
+  if (!themeToggle) return;
+  const isDark = body.classList.contains('dark-mode');
+  themeToggle.textContent = isDark ? 'Light' : 'Dark';
+}

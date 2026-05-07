@@ -102,5 +102,21 @@
    "submit_comment": "Post Comment",
    "skill_backend" : "RENDER / FIREBASE / VS Code / IntelliJ IDEA / Eclipse IDE",
    "skill_git": "GitHub / GitLab",
-   "password_placeholder": "Password"
+   "password_placeholder": "Password",
+   "hero_eyebrow": "Cloud & DevOps portfolio",
+   "view_projects": "View Projects",
+   "download_resume_short": "Download Resume",
+   "stat_languages": "Languages",
+   "stat_projects": "Projects",
+   "stat_jlpt": "JLPT",
+   "seeking_label": "Seeking",
+   "seeking_roles": "Cloud / DevOps Internship, Trainee, Entry-Level Roles",
+   "selected_work": "Selected work",
+   "project_label_securevault": "AWS Serverless",
+   "project_label_snake": "JavaScript Game",
+   "project_label_presentation": "Japanese Presentation",
+   "toolbox_eyebrow": "Toolbox",
+   "skill_clouds": "AWS / Azure / GCP",
+   "resume_eyebrow": "Experience & proof",
+   "campus_life": "Campus life"
 }

@@ -8,12 +8,16 @@ const chatInput = document.getElementById("chat-input");
 const chatMessages = document.getElementById("chat-messages");
 const typingIndicator = document.createElement("div");
 typingIndicator.className = "typing-indicator";
-chatMessages.parentNode.insertBefore(typingIndicator, chatMessages.nextSibling);
-const messageSound = new Audio("pop.mp3");
+if (chatMessages?.parentNode) {
+  chatMessages.parentNode.insertBefore(typingIndicator, chatMessages.nextSibling);
+}
+const messageSound = new Audio("assets/sounds/click.mp3");
+let chatListenerActive = false;
+let typingListenerActive = false;
 
 // Escape HTML to prevent XSS
 function escapeHTML(str) {
-  return str.replace(/[&<>"']/g, m => ({
+  return String(str || "").replace(/[&<>"']/g, m => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
   }[m]));
 }
@@ -23,12 +27,17 @@ function showNotification(message, type = "info") {
   const notif = document.getElementById("notification");
   const notifText = document.getElementById("notification-text");
   const notifIcon = document.getElementById("notification-icon");
+  if (!notif || !notifText || !notifIcon) return;
 
   notifText.textContent = message;
   notifIcon.textContent = type === "success" ? "✅" : type === "error" ? "❌" : "ℹ️";
 
-  notif.style.display = "flex";
-  setTimeout(() => notif.style.display = "none", 4000);
+  notif.classList.add("show");
+  setTimeout(() => notif.classList.remove("show"), 4000);
+}
+
+function userKey(user) {
+  return user?.email ? user.email.replace(/[.#$\[\]]/g, '_') : "";
 }
 
 // Typing Indicator Logic
@@ -36,18 +45,17 @@ let typingTimeout;
 chatInput?.addEventListener("input", () => {
   const user = firebase.auth().currentUser;
   if (user) {
-    db.ref("typing").child(user.email.replace(/[.#$\[\]]/g, '_')).set(true);
+    db.ref("typing").child(userKey(user)).set(true);
     clearTimeout(typingTimeout);
     typingTimeout = setTimeout(() => {
-      db.ref("typing").child(user.email.replace(/[.#$\[\]]/g, '_')).remove();
+      db.ref("typing").child(userKey(user)).remove();
     }, 2000);
   }
 });
 
-db.ref("typing").on("value", (snapshot) => {
+function handleTyping(snapshot) {
   const typingUsers = snapshot.val() || {};
-  const user = firebase.auth().currentUser;
-  const currentEmail = user ? user.email.replace(/[.#$\[\]]/g, '_') : "";
+  const currentEmail = userKey(firebase.auth().currentUser);
   const othersTyping = Object.keys(typingUsers).filter(email => email !== currentEmail);
   if (othersTyping.length > 0) {
     typingIndicator.textContent = "Someone is typing...";
@@ -55,11 +63,12 @@ db.ref("typing").on("value", (snapshot) => {
   } else {
     typingIndicator.style.display = "none";
   }
-});
+}
 
 // Send Message
 chatForm?.addEventListener("submit", (e) => {
   e.preventDefault();
+  if (!chatInput) return;
   const message = chatInput.value.trim();
   const user = firebase.auth().currentUser;
 
@@ -74,24 +83,29 @@ chatForm?.addEventListener("submit", (e) => {
       showNotification("Failed to send message: " + err.message, "error");
     });
     chatInput.value = "";
-    db.ref("typing").child(user.email.replace(/[.#$\[\]]/g, '_')).remove();
+    db.ref("typing").child(userKey(user)).remove();
   } else {
     showNotification("You must be logged in to send a message.", "warning");
   }
 });
 
 // Render Message
-chatRef.on("child_added", (snapshot) => {
+function handleChatMessage(snapshot) {
+  if (!chatMessages) return;
   const data = snapshot.val();
   const key = snapshot.key;
+  if (!data || !data.text || !data.sender) return;
 
   const msgDiv = document.createElement("div");
-  const isAdmin = data.sender.toLowerCase().includes("admin");
+  const sender = String(data.sender);
+  const isAdmin = sender.toLowerCase().includes("admin");
   msgDiv.className = "chat-message " + (isAdmin ? "admin-message" : "user-message");
 
   const msgText = document.createElement("span");
-  const senderName = isAdmin ? "Admin" : escapeHTML(data.sender);
-  msgText.innerHTML = `<strong>${senderName}:</strong> ${escapeHTML(data.text)}`;
+  const senderLabel = document.createElement("strong");
+  senderLabel.textContent = `${isAdmin ? "Admin" : sender}: `;
+  msgText.appendChild(senderLabel);
+  msgText.appendChild(document.createTextNode(data.text));
 
   const delBtn = document.createElement("button");
   delBtn.textContent = "Delete";
@@ -112,5 +126,41 @@ chatRef.on("child_added", (snapshot) => {
   chatMessages.appendChild(msgDiv);
 
   chatMessages.scrollTop = chatMessages.scrollHeight;
-  messageSound.play();
+  messageSound.play().catch(() => {});
+}
+
+function startChatListeners() {
+  if (!chatMessages) return;
+
+  if (!typingListenerActive) {
+    db.ref("typing").on("value", handleTyping);
+    typingListenerActive = true;
+  }
+
+  if (!chatListenerActive) {
+    chatRef.on("child_added", handleChatMessage);
+    chatListenerActive = true;
+  }
+}
+
+function stopChatListeners() {
+  if (typingListenerActive) {
+    db.ref("typing").off("value", handleTyping);
+    typingListenerActive = false;
+  }
+
+  if (chatListenerActive) {
+    chatRef.off("child_added", handleChatMessage);
+    chatListenerActive = false;
+  }
+
+  typingIndicator.style.display = "none";
+}
+
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    startChatListeners();
+  } else {
+    stopChatListeners();
+  }
 });

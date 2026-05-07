@@ -101,5 +101,21 @@
   "comment_message": "Viết bình luận của bạn...",
    "submit_comment": "Gửi bình luận",
    "skill_backend": "RENDER / FIREBASE / VS Code (Trình chỉnh sửa mã) / IntelliJ IDEA / Eclipse IDE",
-   "skill_git": "GitHub / GitLab"
+   "skill_git": "GitHub / GitLab",
+   "hero_eyebrow": "Hồ sơ Cloud & DevOps",
+   "view_projects": "Xem dự án",
+   "download_resume_short": "Tải CV",
+   "stat_languages": "Ngôn ngữ",
+   "stat_projects": "Dự án",
+   "stat_jlpt": "JLPT",
+   "seeking_label": "Đang tìm kiếm",
+   "seeking_roles": "Thực tập sinh / Fresher / Trainee Cloud & DevOps",
+   "selected_work": "Sản phẩm nổi bật",
+   "project_label_securevault": "AWS Serverless",
+   "project_label_snake": "Trò chơi JavaScript",
+   "project_label_presentation": "Thuyết trình tiếng Nhật",
+   "toolbox_eyebrow": "Bộ kỹ năng",
+   "skill_clouds": "AWS / Azure / GCP",
+   "resume_eyebrow": "Kinh nghiệm & minh chứng",
+   "campus_life": "Hoạt động trường học"
 }

@@ -103,5 +103,21 @@
   "comment_message": "写下你的评论...",
   "submit_comment": "发表评论",
   "skill_backend": "RENDER / FIREBASE / VS Code（代码编辑器）/ IntelliJ IDEA（集成开发环境）/ Eclipse IDE（集成开发环境）",
-   "skill_git": "GitHub / GitLab（代码托管平台）"
+   "skill_git": "GitHub / GitLab（代码托管平台）",
+   "hero_eyebrow": "云计算与 DevOps 作品集",
+   "view_projects": "查看项目",
+   "download_resume_short": "下载简历",
+   "stat_languages": "语言",
+   "stat_projects": "项目",
+   "stat_jlpt": "日语能力",
+   "seeking_label": "求职方向",
+   "seeking_roles": "云计算 / DevOps 实习、培训、初级岗位",
+   "selected_work": "精选作品",
+   "project_label_securevault": "AWS 无服务器",
+   "project_label_snake": "JavaScript 游戏",
+   "project_label_presentation": "日语演讲",
+   "toolbox_eyebrow": "技能工具箱",
+   "skill_clouds": "AWS / Azure / GCP",
+   "resume_eyebrow": "经历与证明",
+   "campus_life": "校园生活"
 }

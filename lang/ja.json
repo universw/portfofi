@@ -100,5 +100,21 @@
   "comment_message": "コメントを入力してください...",
   "submit_comment": "コメントを投稿",
   "skill_backend": "RENDER / FIREBASE / VS Code（ブイエスコード）/ IntelliJ IDEA（インテリジェイ）/ Eclipse IDE（エクリプス）",
-  "skill_git": "GitHub / GitLab（ギットラボ）"
+  "skill_git": "GitHub / GitLab（ギットラボ）",
+  "hero_eyebrow": "クラウド・DevOpsポートフォリオ",
+  "view_projects": "プロジェクトを見る",
+  "download_resume_short": "履歴書をダウンロード",
+  "stat_languages": "対応言語",
+  "stat_projects": "プロジェクト",
+  "stat_jlpt": "日本語能力",
+  "seeking_label": "希望職種",
+  "seeking_roles": "クラウド / DevOps インターン・研修・エントリーレベル職",
+  "selected_work": "主な制作物",
+  "project_label_securevault": "AWSサーバーレス",
+  "project_label_snake": "JavaScriptゲーム",
+  "project_label_presentation": "日本語プレゼン",
+  "toolbox_eyebrow": "スキルセット",
+  "skill_clouds": "AWS / Azure / GCP",
+  "resume_eyebrow": "経験と実績",
+  "campus_life": "学校生活"
 }

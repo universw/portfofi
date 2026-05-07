@@ -40,9 +40,8 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
 
   <script>
-    window.onload = function () {
+      window.onload = function () {
       const firebaseConfig = {
-        apiKey: "AIzaSyDjo6SjdfLCNtNN4lT8aKORY7CIP-WJH9U",
         apiKey: "AIzaSyAl0s1Cqgb96Fo-PB-crvwUlgOizxywlIc",
         authDomain: "portfo-38945.firebaseapp.com",
         databaseURL: "https://portfo-38945-default-rtdb.firebaseio.com",
@@ -157,7 +156,13 @@
 
           const div = document.createElement("div");
           div.className = "contact-entry";
-          div.innerHTML = `<strong>${data.name}</strong> (${data.email})<br/>${data.message}`;
+
+          const name = document.createElement("strong");
+          name.textContent = data.name || "Unknown";
+          div.appendChild(name);
+          div.appendChild(document.createTextNode(` (${data.email || "no email"})`));
+          div.appendChild(document.createElement("br"));
+          div.appendChild(document.createTextNode(data.message || ""));
 
           const delBtn = document.createElement("button");
           delBtn.textContent = "Delete";

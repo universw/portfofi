@@ -50,103 +50,225 @@
 </head>
 <body>
  <a class="skip-link" href="#main-content">Skip to main content</a>
- <header>
+ <header class="site-header">
   <div class="container header-container">
-    <div class="header-left">
-      <img src="assets/images/profile.jpg" alt="Portrait of Henry HoangQuan Nguyen" class="profile-pic" width="60" height="60" />
-      <div class="name-tagline">
-        <h1 id="name">Henry HoangQuan Nguyen</h1>
-        <p id="tagline" data-i18n="tagline">Multilingual Developer | IT Enthusiast | Avid Reader and Traveler</p>
-      </div>
-    </div>
+    <a class="brand" href="#main-content" aria-label="Henry HoangQuan Nguyen home">
+      <img src="assets/images/profile.jpg" alt="Portrait of Henry HoangQuan Nguyen" class="profile-pic" width="52" height="52" />
+      <span>
+        <strong id="name">Henry HoangQuan Nguyen</strong>
+        <small data-i18n="tagline">Multilingual Developer | IT Enthusiast | Avid Reader and Traveler</small>
+      </span>
+    </a>
 
-    <nav class="nav-bar">
-      <a href="#about" data-i18n="nav_about">About Me</a>
-      <a href="#resume" data-i18n="nav_resume">Resume</a>
-      <a href="#activities" data-i18n="nav_activities">Activities</a>
+    <nav class="nav-bar" aria-label="Primary navigation">
       <a href="#projects" data-i18n="nav_projects">Projects</a>
       <a href="#skills" data-i18n="nav_skills">Skills</a>
+      <a href="#resume" data-i18n="nav_resume">Resume</a>
+      <a href="#activities" data-i18n="nav_activities">Activities</a>
       <a href="#contact" data-i18n="nav_contact">Contact</a>
       <a href="#chatbox" data-i18n="nav_chatbox">Chat</a>
     </nav>
 
-    <div class="controls">
-      <select id="lang-switcher">
+    <div class="controls" aria-label="Site preferences">
+      <select id="lang-switcher" aria-label="Language">
         <option value="en">EN</option>
         <option value="ja">日本語</option>
         <option value="vi">Tiếng Việt</option>
         <option value="zh">中文</option>
         <option value="de">Deutsch</option>
       </select>
-      <button id="theme-toggle" class="btn">Light/Dark</button>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">Light/Dark</button>
     </div>
   </div>
 </header>
 <main id="main-content">
 
-  <!-- About Section -->
-  <section id="about" class="container section">
-    <h2 data-i18n="about_title">About Me</h2>
-    <p data-i18n="about_description">
-      Hello and welcome! I'm Henry, a multilingual and motivated developer based in Ho Chi Minh City, Vietnam, fluent in English, Japanese, Vietnamese, and basic Chinese. I am deeply passionate about technology, continuous learning, and working in diverse, cross-cultural environments.
-      Currently, I am focusing on Cloud and DevOps technologies, including AWS, Azure, GCP, and Vercel, with hands-on experience building and deploying modern web applications. I am actively seeking internship, trainee, or entry-level opportunities in the Cloud/DevOps field, where I can contribute to innovative IT projects and grow into a future-ready engineer who creates meaningful impact through technology
-    </p>
+  <section id="about" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero_eyebrow">Cloud & DevOps portfolio</p>
+        <h1>Henry HoangQuan Nguyen</h1>
+        <p class="hero-subtitle" data-i18n="tagline">Multilingual Developer | IT Enthusiast | Avid Reader and Traveler</p>
+        <p class="hero-description" data-i18n="about_description">
+          Hello and welcome! I'm Henry, a multilingual and motivated developer based in Ho Chi Minh City, Vietnam, fluent in English, Japanese, Vietnamese, and basic Chinese. I am deeply passionate about technology, continuous learning, and working in diverse, cross-cultural environments.
+          Currently, I am focusing on Cloud and DevOps technologies, including AWS, Azure, GCP, and Vercel, with hands-on experience building and deploying modern web applications. I am actively seeking internship, trainee, or entry-level opportunities in the Cloud/DevOps field, where I can contribute to innovative IT projects and grow into a future-ready engineer who creates meaningful impact through technology
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn" data-i18n="view_projects">View Projects</a>
+          <a href="assets/resume/Henry_Nguyen_Resume_EN.pdf" class="btn btn-secondary" download data-i18n="download_resume_short">Download Resume</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Portfolio highlights">
+        <img src="assets/images/profile.jpg" alt="Portrait of Henry HoangQuan Nguyen" class="hero-photo" width="260" height="260" />
+        <div class="quick-stats">
+          <div><strong>5</strong><span data-i18n="stat_languages">Languages</span></div>
+          <div><strong>3</strong><span data-i18n="stat_projects">Projects</span></div>
+          <div><strong>N2</strong><span data-i18n="stat_jlpt">JLPT</span></div>
+        </div>
+        <div class="availability-card">
+          <span data-i18n="seeking_label">Seeking</span>
+          <strong data-i18n="seeking_roles">Cloud / DevOps Internship, Trainee, Entry-Level Roles</strong>
+        </div>
+      </aside>
+    </div>
   </section>
 
-  <!-- Resume Section -->
+  <section id="projects" class="container section">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="selected_work">Selected work</p>
+      <h2 data-i18n="projects_title">Projects</h2>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-item featured-project">
+        <img src="assets/images/securevault.jpg" alt="Screenshot of the SecureVault dashboard — a serverless personal cloud storage app on AWS" loading="lazy" decoding="async" />
+        <div class="project-content">
+          <span class="project-label" data-i18n="project_label_securevault">AWS Serverless</span>
+          <h3 data-i18n="securevault_title">SecureVault</h3>
+          <p data-i18n="securevault_desc">A serverless personal cloud storage app built on AWS — Cognito auth, Lambda + API Gateway backend, and per-user S3 isolation via presigned URLs. Built as a hands-on exercise in serverless architecture, IAM, and DevOps fundamentals.</p>
+          <ul class="project-tech" aria-label="Tech stack">
+            <li>React 19</li>
+            <li>Vite</li>
+            <li>AWS Cognito</li>
+            <li>AWS Lambda</li>
+            <li>API Gateway</li>
+            <li>Amazon S3</li>
+            <li>Vercel</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://securevault-cloud.vercel.app/" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="view_demo">View Demo</a>
+            <a href="https://github.com/universw/securevault-cloud" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" data-i18n="view_source">View Source</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-item">
+        <img src="assets/images/snake.jpg" alt="Screenshot of a Snake game built with HTML, CSS, and JavaScript" loading="lazy" decoding="async" />
+        <div class="project-content">
+          <span class="project-label" data-i18n="project_label_snake">JavaScript Game</span>
+          <h3 data-i18n="snake_game_title">Snake Game</h3>
+          <p data-i18n="snake_description">Classic snake game made with pure HTML/CSS/JavaScript.</p>
+          <ul class="project-tech" aria-label="Tech stack">
+            <li>JavaScript</li>
+            <li>HTML5 Canvas</li>
+          </ul>
+          <a href="#snake" class="btn" data-i18n="play_button">Play Now</a>
+        </div>
+      </article>
+
+      <article class="project-item project-video">
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/9p-opVgInaQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="project-video-player"
+            aria-label="Entrepreneur Presentation Video"
+          ></iframe>
+        </div>
+        <div class="project-content">
+          <span class="project-label" data-i18n="project_label_presentation">Japanese Presentation</span>
+          <h3 data-i18n="presentation_title">Entrepreneur Presentation</h3>
+          <p data-i18n="presentation_desc">My entrepreneurship presentation at Chiba Mode Business College, delivered in Japanese.</p>
+          <a href="https://youtu.be/9p-opVgInaQ" target="_blank" class="btn btn-secondary" data-i18n="view_full_video" rel="noopener noreferrer">View Full Video on YouTube</a>
+        </div>
+      </article>
+    </div>
+
+    <div id="snake" class="snake-container" style="display: none;">
+      <iframe src="snake/snake.html" frameborder="0" class="snake-iframe" title="Playable Snake game"></iframe>
+    </div>
+  </section>
+
+  <section id="skills" class="container section">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="toolbox_eyebrow">Toolbox</p>
+      <h2 data-i18n="skills_title">Skills</h2>
+    </div>
+    <ul class="skills-list">
+      <li data-i18n="skill_html">HTML, CSS, JavaScript</li>
+      <li data-i18n="skill_java">Java</li>
+      <li data-i18n="skill_clouds">AWS / Azure / GCP</li>
+      <li data-i18n="skill_itpassport">IT Passport </li>
+      <li data-i18n="skill_webcreator">Web Creator</li>
+      <li data-i18n="skill_office">Microsoft Excel, Word, PowerPoint, Access</li>
+      <li data-i18n="skill_languages">English / Japanese / Vietnamese / Chinese (HSK1)</li>
+      <li data-i18n="skill_git">GitHub / GitLab</li>
+      <li data-i18n="skill_backend">RENDER / FIREBASE / VS Code / IntelliJ IDEA / Eclipse IDE</li>
+    </ul>
+  </section>
+
   <section id="resume" class="container section">
-    <h2 data-i18n="resume_title">Resume</h2>
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="resume_eyebrow">Experience & proof</p>
+      <h2 data-i18n="resume_title">Resume</h2>
+    </div>
 
-    <h3 data-i18n="education">Education</h3>
-    <ul>
-      <li data-i18n="edu_akamonkai">Akamonkai Japanese Language School (2018–2020)</li>
-      <li data-i18n="edu_chibamode">Chiba Mode Business College - International Business IT Course (2023–2025)</li>
-    </ul>
+    <div class="resume-summary-grid">
+      <article class="info-card">
+        <h3 data-i18n="education">Education</h3>
+        <ul>
+          <li data-i18n="edu_akamonkai">Akamonkai Japanese Language School (2018–2020)</li>
+          <li data-i18n="edu_chibamode">Chiba Mode Business College - International Business IT Course (2023–2025)</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3 data-i18n="work_experience">Work Experience</h3>
+        <ul>
+          <li data-i18n="work_yamato">Yamato Transport - Part-time</li>
+          <li data-i18n="work_sukiya">Sukiya - Part-time</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3 data-i18n="certifications">Certifications</h3>
+        <ul>
+          <li data-i18n="cert_jlpt">JLPT N2 - 2019 (Completed N1 Preparation Program)</li>
+          <li data-i18n="cert_toeic">TOEIC 665 - 2025</li>
+          <li data-i18n="cert_mos">MOS Certification</li>
+        </ul>
+      </article>
+    </div>
 
-    <h3 data-i18n="work_experience">Work Experience</h3>
-    <ul>
-      <li data-i18n="work_yamato">Yamato Transport - Part-time</li>
-      <li data-i18n="work_sukiya">Sukiya - Part-time</li>
-    </ul>
-
-    <h3 data-i18n="certifications">Certifications</h3>
-    <ul>
-      <li data-i18n="cert_jlpt">JLPT N2 - 2019 (Completed N1 Preparation Program)</li>
-      <li data-i18n="cert_toeic">TOEIC 665 - 2025</li>
-      <li data-i18n="cert_mos">MOS Certification</li>
-    </ul>
-
-    <!-- Certificate Photos -->
-    <h3 data-i18n="cert_gallery_title">Certificate Photos</h3>
-    <p class="section-hint" data-i18n="cert_gallery_hint">Click any image to view full size, or use the download button.</p>
-    <div class="gallery-grid cert-gallery">
-      <div class="gallery-item">
-        <img src="assets/certs/JLPT.jpeg" alt="JLPT N2 certificate (Japanese Language Proficiency Test)" loading="lazy" decoding="async" data-zoomable />
-        <p data-i18n="cert_jlpt_label">JLPT N2 (2019)</p>
-        <a href="assets/certs/JLPT.jpeg" class="btn" download data-i18n="download_image">Download Image</a>
+    <div class="split-section">
+      <div>
+        <h3 data-i18n="cert_gallery_title">Certificate Photos</h3>
+        <p class="section-hint" data-i18n="cert_gallery_hint">Click any image to view full size, or use the download button.</p>
       </div>
-      <div class="gallery-item">
-        <img src="assets/certs/Toeic.jpeg" alt="TOEIC certificate, score 665" loading="lazy" decoding="async" data-zoomable />
-        <p data-i18n="cert_toeic_label">TOEIC 665 (2025)</p>
-        <a href="assets/certs/Toeic.jpeg" class="btn" download data-i18n="download_image">Download Image</a>
+      <div class="gallery-grid cert-gallery">
+        <div class="gallery-item">
+          <img src="assets/certs/JLPT.jpeg" alt="JLPT N2 certificate (Japanese Language Proficiency Test)" loading="lazy" decoding="async" data-zoomable />
+          <p data-i18n="cert_jlpt_label">JLPT N2 (2019)</p>
+          <a href="assets/certs/JLPT.jpeg" class="btn btn-ghost" download data-i18n="download_image">Download Image</a>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/certs/Toeic.jpeg" alt="TOEIC certificate, score 665" loading="lazy" decoding="async" data-zoomable />
+          <p data-i18n="cert_toeic_label">TOEIC 665 (2025)</p>
+          <a href="assets/certs/Toeic.jpeg" class="btn btn-ghost" download data-i18n="download_image">Download Image</a>
+        </div>
       </div>
     </div>
 
-    <!-- Resume Inline Preview -->
-    <h3 data-i18n="resume_preview_title">Resume Preview</h3>
-    <p class="section-hint" data-i18n="resume_preview_hint">Switch language with the tabs below. Use the download buttons if your browser can't display the embedded PDF.</p>
     <div class="resume-viewer">
-      <div class="resume-tabs" role="tablist" aria-label="Resume language">
-        <button type="button" class="resume-tab active" role="tab" aria-selected="true" data-pdf="assets/resume/Henry_Nguyen_Resume_EN.pdf">English</button>
-        <button type="button" class="resume-tab" role="tab" aria-selected="false" data-pdf="assets/resume/Henry_Nguyen_Resume_JP.pdf">日本語</button>
-        <button type="button" class="resume-tab" role="tab" aria-selected="false" data-pdf="assets/resume/Henry_Nguyen_Resume_VI.pdf">Tiếng Việt</button>
-        <button type="button" class="resume-tab" role="tab" aria-selected="false" data-pdf="assets/resume/Henry_Nguyen_Resume_ZH.pdf">中文</button>
-        <button type="button" class="resume-tab" role="tab" aria-selected="false" data-pdf="assets/resume/Henry_Nguyen_Resume_DE.pdf">Deutsch</button>
+      <div class="resume-viewer-head">
+        <div>
+          <h3 data-i18n="resume_preview_title">Resume Preview</h3>
+          <p class="section-hint" data-i18n="resume_preview_hint">Switch language with the tabs below. Use the download buttons if your browser can't display the embedded PDF.</p>
+        </div>
+        <div class="resume-tabs" role="tablist" aria-label="Resume language">
+          <button type="button" class="resume-tab active" role="tab" aria-selected="true" data-pdf="assets/resume/Henry_Nguyen_Resume_EN.pdf">English</button>
+          <button type="button" class="resume-tab" role="tab" aria-selected="false" data-pdf="assets/resume/Henry_Nguyen_Resume_JP.pdf">日本語</button>
+          <button type="button" class="resume-tab" role="tab" aria-selected="false" data-pdf="assets/resume/Henry_Nguyen_Resume_VI.pdf">Tiếng Việt</button>
+          <button type="button" class="resume-tab" role="tab" aria-selected="false" data-pdf="assets/resume/Henry_Nguyen_Resume_ZH.pdf">中文</button>
+          <button type="button" class="resume-tab" role="tab" aria-selected="false" data-pdf="assets/resume/Henry_Nguyen_Resume_DE.pdf">Deutsch</button>
+        </div>
       </div>
       <iframe class="resume-frame" src="assets/resume/Henry_Nguyen_Resume_EN.pdf#view=FitH" title="Resume preview" loading="lazy"></iframe>
+      <div class="resume-open-row">
+        <a id="resume-open-link" href="assets/resume/Henry_Nguyen_Resume_EN.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Open Current Resume</a>
+      </div>
     </div>
 
-    <!-- Resume Downloads (4 languages) -->
     <h3 data-i18n="download_resume_title">Download Resume</h3>
     <div class="resume-downloads social-buttons">
       <a href="assets/resume/Henry_Nguyen_Resume_EN.pdf" class="btn" download>English (PDF)</a>
@@ -158,24 +280,28 @@
   </section>
 
   <!-- Motivation Section -->
-  <section id="motivation" class="container section">
-    <h2 data-i18n="motivation_title">Motivation for Application</h2>
-    <p data-i18n="motivation_text">
-      After attending your company’s information session and company tour, I was deeply impressed by your innovative use of cutting-edge technology. I am particularly drawn to your vision for addressing societal challenges such as the declining birthrate and aging population. I aspire to contribute with my development skills and grow together with your company.
-    </p>
-  </section>
+  <section class="container section story-grid">
+    <article id="motivation" class="story-panel">
+      <h2 data-i18n="motivation_title">Motivation for Application</h2>
+      <p data-i18n="motivation_text">
+        After attending your company’s information session and company tour, I was deeply impressed by your innovative use of cutting-edge technology. I am particularly drawn to your vision for addressing societal challenges such as the declining birthrate and aging population. I aspire to contribute with my development skills and grow together with your company.
+      </p>
+    </article>
 
-  <!-- Self-PR Section -->
-  <section id="appeal" class="container section">
-    <h2 data-i18n="appeal_title">Self-PR</h2>
-    <p data-i18n="appeal_text">
-      I am proactive, possess strong communication skills, and have a strong sense of responsibility. I can act calmly and swiftly even in complex situations, and have built smooth relationships within diverse teams. My strong sense of responsibility is rooted in Japanese culture, and I believe these qualities will allow me to make meaningful contributions to your company.
-    </p>
+    <article id="appeal" class="story-panel">
+      <h2 data-i18n="appeal_title">Self-PR</h2>
+      <p data-i18n="appeal_text">
+        I am proactive, possess strong communication skills, and have a strong sense of responsibility. I can act calmly and swiftly even in complex situations, and have built smooth relationships within diverse teams. My strong sense of responsibility is rooted in Japanese culture, and I believe these qualities will allow me to make meaningful contributions to your company.
+      </p>
+    </article>
   </section>
 
   <!-- School Activities -->
   <section id="activities" class="container section">
-    <h2 data-i18n="activities_title">School Activities</h2>
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="campus_life">Campus life</p>
+      <h2 data-i18n="activities_title">School Activities</h2>
+    </div>
     <div class="gallery-grid">
       <div class="gallery-item">
         <img src="assets/images/graduation.jpg" alt="Henry at his graduation ceremony from Chiba Mode Business College" loading="lazy" decoding="async" />
@@ -194,91 +320,6 @@
         <p data-i18n="akamonkai_japanese_school">Akamonkai Japanese Language School</p>
       </div>
     </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="container section">
-  <h2 data-i18n="projects_title">Projects</h2>
-  <div class="projects-grid">
-
-    <!-- SecureVault -->
-    <div class="project-item">
-      <img src="assets/images/securevault.jpg" alt="Screenshot of the SecureVault dashboard — a serverless personal cloud storage app on AWS" loading="lazy" decoding="async" />
-      <h3 data-i18n="securevault_title">SecureVault</h3>
-      <p data-i18n="securevault_desc">A serverless personal cloud storage app built on AWS — Cognito auth, Lambda + API Gateway backend, and per-user S3 isolation via presigned URLs. Built as a hands-on exercise in serverless architecture, IAM, and DevOps fundamentals.</p>
-      <ul class="project-tech" aria-label="Tech stack">
-        <li>React 19</li>
-        <li>Vite</li>
-        <li>AWS Cognito</li>
-        <li>AWS Lambda (Python)</li>
-        <li>API Gateway</li>
-        <li>Amazon S3</li>
-        <li>Vercel</li>
-      </ul>
-      <div class="project-actions">
-        <a href="https://securevault-cloud.vercel.app/" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="view_demo">View Demo</a>
-        <a href="https://github.com/universw/securevault-cloud" class="btn btn-ghost" target="_blank" rel="noopener noreferrer" data-i18n="view_source">View Source</a>
-      </div>
-    </div>
-
-    <!-- Snake Game -->
-    <div class="project-item">
-      <img src="assets/images/snake.jpg" alt="Screenshot of a Snake game built with HTML, CSS, and JavaScript" loading="lazy" decoding="async" />
-      <h3 data-i18n="snake_game_title">Snake Game</h3>
-      <p data-i18n="snake_description">Classic snake game made with pure HTML/CSS/JavaScript.</p>
-      <ul class="project-tech" aria-label="Tech stack">
-        <li>JavaScript</li>
-        <li>HTML5 Canvas</li>
-      </ul>
-      <a href="#snake" class="btn" data-i18n="play_button">Play Now</a>
-    </div>
-
-    <!-- Entrepreneur Presentation Video (YouTube embed) -->
-    <div class="project-item project-video standout-video">
-      <div class="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/9p-opVgInaQ"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          class="project-video-player"
-          aria-label="Entrepreneur Presentation Video"
-        ></iframe>
-      </div>
-      <h3 data-i18n="presentation_title">Entrepreneur Presentation</h3>
-      <p data-i18n="presentation_desc">
-        My entrepreneurship presentation at Chiba Mode Business College, delivered in Japanese.
-      </p>
-      <a
-        href="https://youtu.be/9p-opVgInaQ"
-        target="_blank"
-        class="btn youtube-btn"
-        data-i18n="view_full_video"
-        rel="noopener noreferrer"
-      >▶ View Full Video on YouTube</a>
-    </div>
-
-  </div>
-
-  <!-- Snake Game iframe -->
-  <div id="snake" class="snake-container" style="display: none;">
-    <iframe src="snake/snake.html" frameborder="0" class="snake-iframe"></iframe>
-  </div>
-</section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="container section">
-    <h2 data-i18n="skills_title">Skills</h2>
-    <ul class="skills-list">
-      <li data-i18n="skill_html">HTML, CSS, JavaScript</li>
-      <li data-i18n="skill_java">Java</li>
-      <li data-i18n="skill_itpassport">IT Passport </li>
-      <li data-i18n="skill_webcreator">Web Creator</li>
-      <li data-i18n="skill_office">Microsoft Excel, Word, PowerPoint, Access</li>
-      <li data-i18n="skill_languages">English / Japanese / Vietnamese / Chinese (HSK1)</li>
-      <li data-i18n="skill_git">GitHub / GitLab</li>
-      <li data-i18n="skill_backend">RENDER / FIREBASE / VS Code / IntelliJ IDEA / Eclipse IDE</li>
-    </ul>
   </section>
     <!-- Login Reminder -->
     <div id="login-reminder" class="reminder-box" data-i18n="login_reminder">
@@ -318,7 +359,7 @@
   
     <!-- Chatbox Section -->
     <section id="chatbox" class="container section" style="display: none;">
-  　　　<h2 data-i18n="chatbox_title">Live Chat</h2>
+  <h2 data-i18n="chatbox_title">Live Chat</h2>
 
   <!-- Chat messages container -->
   <div id="chat-messages" class="chat-messages"></div>
@@ -340,12 +381,6 @@
     <button type="submit" class="btn" data-i18n="send_button">Send</button>
   </form>
 </section>
-  </main>
-  <div id="notification" class="notification">
-    <span id="notification-icon" class="icon">ℹ️</span>
-    <span id="notification-text" class="message">Message</span>
-    <span id="notification-close" class="close-btn" onclick="hideNotification()">×</span>
-  </div>
   <!-- Comment Section -->
 <section id="guestbook" class="container section">
   <h2 data-i18n="comment_section_title">Guestbook & Comments</h2>
@@ -358,6 +393,12 @@
 
   <div id="comment-list"></div>
 </section>
+  </main>
+  <div id="notification" class="notification">
+    <span id="notification-icon" class="icon">ℹ️</span>
+    <span id="notification-text" class="message">Message</span>
+    <span id="notification-close" class="close-btn" onclick="hideNotification()">×</span>
+  </div>
 
   <!-- Footer -->
   <footer class="container footer" data-i18n="footer">
@@ -397,6 +438,7 @@
     }
 
     const resumeFrame = document.querySelector(".resume-frame");
+    const resumeOpenLink = document.getElementById("resume-open-link");
     const resumeTabs = document.querySelectorAll(".resume-tab");
     if (resumeFrame && resumeTabs.length) {
       resumeTabs.forEach(function (tab) {
@@ -408,6 +450,7 @@
           tab.classList.add("active");
           tab.setAttribute("aria-selected", "true");
           resumeFrame.src = tab.dataset.pdf + "#view=FitH";
+          if (resumeOpenLink) resumeOpenLink.href = tab.dataset.pdf;
         });
       });
     }
@@ -415,6 +458,7 @@
 </script>
 
   <!-- Custom Scripts -->
+  <script src="js/translations.js"></script>
   <script src="js/lang.js"></script>
   <script src="js/chatbox.js"></script>
   <script src="js/contact-form.js"></script>
