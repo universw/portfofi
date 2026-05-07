@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Portfofia Architecture — Multilingual Portfolio with Firebase">
+  <defs>
+    <linearGradient id="bg-portfofia" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="55%" stop-color="#16213e"/>
+      <stop offset="100%" stop-color="#0f3460"/>
+    </linearGradient>
+    <linearGradient id="card-portfofia" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+    <radialGradient id="glow-portfofia" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b6b" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-portfofia" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg-portfofia)"/>
+  <rect width="1200" height="750" fill="url(#grid-portfofia)"/>
+  <circle cx="900" cy="180" r="320" fill="url(#glow-portfofia)"/>
+  <circle cx="220" cy="640" r="280" fill="url(#glow-portfofia)" opacity="0.65"/>
+
+  <!-- Header chips -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700">
+    <rect x="60" y="60" rx="999" ry="999" width="110" height="44" fill="#ff6b6b" fill-opacity="0.18" stroke="#ff8787" stroke-width="1.5"/>
+    <text x="115" y="89" text-anchor="middle" fill="#ffe0e0">FIREBASE</text>
+
+    <rect x="178" y="60" rx="999" ry="999" width="120" height="44" fill="#ffd93d" fill-opacity="0.16" stroke="#ffed4e" stroke-width="1.5"/>
+    <text x="238" y="89" text-anchor="middle" fill="#fff8dc">Multi-user</text>
+
+    <rect x="306" y="60" rx="999" ry="999" width="90" height="44" fill="#6bcf7f" fill-opacity="0.16" stroke="#81e6b9" stroke-width="1.5"/>
+    <text x="351" y="89" text-anchor="middle" fill="#c6f6d5">i18n</text>
+  </g>
+
+  <!-- Title -->
+  <text x="60" y="200" font-family="Inter, system-ui, sans-serif" font-size="68" font-weight="800" fill="#ffffff" letter-spacing="-1.5">Portfofia</text>
+  <text x="60" y="252" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="500" fill="#ff8787">Full-Stack Portfolio</text>
+
+  <!-- Service grid -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700" fill="#ffffff">
+    <!-- row 1 -->
+    <g>
+      <rect x="60" y="320" width="220" height="100" rx="14" fill="url(#card-portfofia)" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
+      <text x="80" y="358" font-size="14" font-weight="600" fill="#ff8787" letter-spacing="2">AUTH</text>
+      <text x="80" y="392" font-size="22">OAuth 2.0</text>
+    </g>
+    <g>
+      <rect x="296" y="320" width="220" height="100" rx="14" fill="url(#card-portfofia)" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
+      <text x="316" y="358" font-size="14" font-weight="600" fill="#ff8787" letter-spacing="2">DATABASE</text>
+      <text x="316" y="392" font-size="22">Realtime DB</text>
+    </g>
+    <g>
+      <rect x="532" y="320" width="220" height="100" rx="14" fill="url(#card-portfofia)" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
+      <text x="552" y="358" font-size="14" font-weight="600" fill="#ff8787" letter-spacing="2">STORAGE</text>
+      <text x="552" y="392" font-size="22">Firestore</text>
+    </g>
+    <g>
+      <rect x="768" y="320" width="220" height="100" rx="14" fill="url(#card-portfofia)" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
+      <text x="788" y="358" font-size="14" font-weight="600" fill="#ff8787" letter-spacing="2">HOSTING</text>
+      <text x="788" y="392" font-size="22">Firebase CDN</text>
+    </g>
+
+    <!-- row 2 -->
+    <g>
+      <rect x="60" y="440" width="220" height="100" rx="14" fill="url(#card-portfofia)" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
+      <text x="80" y="478" font-size="14" font-weight="600" fill="#ff8787" letter-spacing="2">CHAT</text>
+      <text x="80" y="512" font-size="22">Realtime</text>
+    </g>
+    <g>
+      <rect x="296" y="440" width="220" height="100" rx="14" fill="url(#card-portfofia)" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
+      <text x="316" y="478" font-size="14" font-weight="600" fill="#ff8787" letter-spacing="2">I18N</text>
+      <text x="316" y="512" font-size="22">4 Languages</text>
+    </g>
+    <g>
+      <rect x="532" y="440" width="220" height="100" rx="14" fill="url(#card-portfofia)" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
+      <text x="552" y="478" font-size="14" font-weight="600" fill="#ff8787" letter-spacing="2">GUESTBOOK</text>
+      <text x="552" y="512" font-size="22">Firestore</text>
+    </g>
+    <g>
+      <rect x="768" y="440" width="220" height="100" rx="14" fill="url(#card-portfofia)" stroke="#ffffff" stroke-opacity="0.18" stroke-width="1.5"/>
+      <text x="788" y="478" font-size="14" font-weight="600" fill="#ff8787" letter-spacing="2">GAME</text>
+      <text x="788" y="512" font-size="22">HTML5 Canvas</text>
+    </g>
+  </g>
+
+  <!-- Footer tech stack -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" font-weight="600">
+    <text x="60" y="640" fill="#9ca3af">$ npm run dev</text>
+    <text x="60" y="672" fill="#6b7280">— vanilla JS · HTML5 · CSS3 · Firebase SDK</text>
+
+    <rect x="880" y="618" width="70" height="36" rx="999" fill="#ff6b6b" fill-opacity="0.18" stroke="#ff8787" stroke-width="1"/>
+    <text x="915" y="643" text-anchor="middle" fill="#ff8787">live</text>
+
+    <rect x="960" y="618" width="86" height="36" rx="999" fill="#ffd93d" fill-opacity="0.18" stroke="#ffed4e" stroke-width="1"/>
+    <text x="1003" y="643" text-anchor="middle" fill="#fff8dc">multilingual</text>
+
+    <rect x="1056" y="618" width="70" height="36" rx="999" fill="#6bcf7f" fill-opacity="0.18" stroke="#81e6b9" stroke-width="1"/>
+    <text x="1091" y="643" text-anchor="middle" fill="#81e6b9">social</text>
+  </g>
+</svg>
