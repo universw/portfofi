@@ -68,8 +68,16 @@ node_modules/
 # dataconnect generated files
 .dataconnect
 
-# Claude Code worktrees (transient, never commit)
-.claude/worktrees/
+# AI / agent tooling (kept private, not for the public repo)
+.claude/
+.agents/
+CLAUDE.md
+CLAUDE.local.md
+.anthropic/
+.mcp.json
+skills-lock.json
+.github/workflows/claude.yml
+.github/workflows/claude-code-review.yml
 
 # macOS
 .DS_Store
