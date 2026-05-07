@@ -125,7 +125,7 @@
         <div class="project-content">
           <span class="project-label" data-i18n="project_label_securevault_iac">AWS · Terraform · Infrastructure as Code</span>
           <h3 data-i18n="securevault_iac_title">SecureVault — Infrastructure as Code</h3>
-          <p data-i18n="securevault_iac_desc">Production-style AWS infrastructure for a serverless cloud storage platform, fully provisioned with Terraform. Reproducible deployments across S3, Lambda, API Gateway, DynamoDB, Cognito, CloudFront, IAM, KMS, and CloudWatch — designed around least-privilege access, server-side encryption, and DevOps automation.</p>
+          <p data-i18n="securevault_iac_desc">Production-style AWS infrastructure for a serverless cloud storage platform, fully provisioned with Terraform. Modular architecture with reusable modules (S3, Lambda, DynamoDB, API Gateway, Cognito, CloudFront, IAM) and per-environment configs (dev / staging / prod). Designed around least-privilege IAM, KMS-backed encryption, MFA-ready Cognito, presigned-URL uploads, and CI/CD-ready workflows.</p>
           <ul class="project-tech" aria-label="Tech stack">
             <li>Terraform</li>
             <li>AWS Lambda</li>
@@ -137,6 +137,7 @@
             <li>IAM</li>
             <li>KMS</li>
             <li>CloudWatch</li>
+            <li>GitHub Actions</li>
           </ul>
           <div class="project-actions">
             <a href="https://securevault-iac.vercel.app/" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="view_demo">View Demo</a>
