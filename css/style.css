@@ -533,19 +533,6 @@ textarea {
   border: 0;
 }
 
-.snake-container {
-  margin-top: 1.5rem;
-}
-
-.snake-iframe {
-  width: 100%;
-  height: min(620px, 80vh);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius);
-  background: var(--surface-color);
-  box-shadow: var(--shadow);
-}
-
 .skills-list {
   display: flex;
   flex-wrap: wrap;

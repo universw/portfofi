@@ -5,7 +5,6 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
-      "snake/**",
       "package*.json",
       "README.md",
       "database.rules.json",
