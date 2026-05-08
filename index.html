@@ -337,16 +337,6 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const playButton = document.querySelector('a[href="#snake"]');
-  const snakeContainer = document.getElementById("snake");
-  if (playButton && snakeContainer) {
-    playButton.addEventListener("click", function (e) {
-      e.preventDefault();
-      snakeContainer.style.display = "block";
-      window.scrollTo({ top: snakeContainer.offsetTop, behavior: "smooth" });
-    });
-  }
-
   const resumeFrame = document.querySelector(".resume-frame");
   const resumeOpenLink = document.getElementById("resume-open-link");
   const resumeTabs = document.querySelectorAll(".resume-tab");

@@ -1,78 +1,91 @@
-# 🌐 Multilingual DevOps Portfolio Website | Firebase-Integrated Personal Site
+# Henry HoangQuan Nguyen — Portfolio
 
-Welcome! This is my personal multilingual portfolio website, built to showcase my development skills, projects, and interactive features such as a live chatbox, guestbook, and embedded Snake game. It reflects my growth as a DevOps and Cloud Engineering learner.
+Personal portfolio website showcasing Cloud & DevOps engineering work, infrastructure-as-code projects, and multilingual capabilities. Deployed on Firebase Hosting.
 
----
-
-## 👨‍💻 Author & Ownership
-
-This project was independently designed and developed by **Henry HoangQuan Nguyen** - **All rights reserved.**   
-All source code in this repository is original and owned by the author unless otherwise stated.  
+**Live site:** https://portfo-38945.web.app/
 
 ---
 
-## 🧩 Key Features
+## Highlights
 
-- 🌐 **Multilingual Support** – English, Japanese, Vietnamese, Chinese
-- 🔐 **Firebase Authentication** – Secure user login/logout system
-- 💬 **Realtime Chatbox** – Live messaging with automated responses using Firestore
-- ✍️ **Guestbook** – Users can leave public comments with timestamps
-- 🐍 **Snake Game** – Fully playable retro-style game embedded on the page
-- 🎥 **Large Video Showcase** – Video content (~500MB) hosted with Git LFS
-- 🌙 **Dark Mode & Responsive Design** – Optimized for all screen sizes
+- **Multilingual** — English, Japanese, Vietnamese, Chinese, German (5 languages)
+- **Featured projects** — SecureVault (AWS + Terraform IaC), Portfofia (Firebase platform), LifeHub AI Cloud (GCP + Firebase + Terraform)
+- **Resume** — Embedded multilingual PDF viewer with downloads in all 5 languages
+- **Responsive design** — Optimized layout from mobile to desktop
+- **Lightweight** — Vanilla HTML/CSS/JS, no build step, no framework runtime
 
 ---
 
-## ⚙️ Technologies & Services Used
+## Tech Stack
 
-This project was developed using the following technologies:
+**Frontend**
+- HTML5, CSS3, vanilla JavaScript
+- Custom i18n system (`js/translations.js`)
+- Lightbox and theme modules
 
-**Frontend & UI**
-- `HTML` • `CSS` • `JavaScript`
-- `Responsive Design` & `Dark Mode`
-
-**Backend / Realtime Features**
-- 🔥 **Firebase**
-  - Firebase Authentication (auth)
-  - Firebase Realtime Database (chatbox)
-  - Firebase Hosting
-- 🔥 **Render**
-  - Render (guestbook & comments)
-
-**Media Management**
-- 🗃️ **Git LFS (Large File Storage)** – Used for hosting large video files on GitHub safely
-
-**Other Tools**
-- `Git & GitHub` • `VS Code` • `Linux` • `Photoshop` • `IntelliJ IDE`
+**Hosting & Infrastructure**
+- Firebase Hosting (CDN-backed static delivery)
+- Firebase project config in `firebase.json`
 
 ---
 
-## 🌱 About Me
+## Project Structure
 
-I'm an aspiring **DevOps and Cloud Engineer**, passionate about building scalable web apps and automation systems.
-
-- 🎓 Graduate of **Chiba Mode Business College** – IT Program  
-- 📘 Studied Japanese at **Akamonkai Language School**  
-- 🛠️ Currently learning **AWS**, **GCP**, **Azure**, **Docker**, **Kubernetes**, **CI/CD pipelines**, and **Linux**
-- 🧠 Preparing for the **FE (Fundamental Information Technology Engineer)** exam
-- 🗣️ Trilingual: Japanese (JLPT N2 - 2019), English (TOEIC 590 - 2021), Vietnamese (Native), Chinese (HSK1)
+```
+.
+├── index.html              Main page
+├── 404.html                Hosting fallback
+├── css/style.css           All styles
+├── js/
+│   ├── translations.js     i18n strings (en/ja/vi/zh/de)
+│   ├── lang.js             Language switcher
+│   ├── theme.js            Dark/light mode
+│   └── lightbox.js         Image gallery
+├── assets/
+│   ├── images/             Project architecture SVGs
+│   ├── certs/              Certificate photos
+│   ├── resume/             Resume PDFs (5 languages)
+│   └── sounds/             UI audio
+└── firebase.json           Hosting config
+```
 
 ---
 
-## 📌 Goals
+## Local Development
 
-- 🔧 Master DevOps tools & cloud infrastructure
-- 🧠 Pass the FE Exam
-- 👥 Land a role as a Cloud/DevOps Engineer (Entry-level / Intern / Trainee)
-- 🧱 Become a future **System Architect**
-- 🚀 Build projects that blend frontend, backend, and cloud automation
+No build step required.
+
+```bash
+# Serve with any static server, e.g.
+python3 -m http.server 8000
+# or
+npx serve .
+```
+
+Open http://localhost:8000.
 
 ---
 
-## 📫 Contact Me
+## Deploy
 
-- 🌍 LinkedIn: https://www.linkedin.com/in/henry-hoangquan-nguyen
-- 💻 Portfolio: https://portfo-38945.web.app/
-- 🐙 GitHub: https://github.com/universw
-- 📧 Email: henryhoangquanw@gmail.com
-- 📘 Facebook: https://www.facebook.com/share/1AnvCQouJq/?mibextid=wwXIfr
+```bash
+firebase deploy --only hosting
+```
+
+---
+
+## About the Author
+
+**Henry HoangQuan Nguyen** — Cloud & DevOps Engineer based in Ho Chi Minh City, Vietnam. Open to remote and relocation roles in Vietnam, Japan, Singapore, and Europe.
+
+- Languages: English, Japanese (JLPT N2), Vietnamese, Chinese (HSK1), German (basic)
+- Certifications: JLPT N2, TOEIC 665, IT Passport, MOS
+- Focus: AWS · GCP · Terraform · CI/CD · Linux
+
+**Contact**
+- LinkedIn: https://www.linkedin.com/in/henry-hoangquan-nguyen
+- GitHub: https://github.com/universw
+
+---
+
+© 2026 Henry HoangQuan Nguyen. All rights reserved.
