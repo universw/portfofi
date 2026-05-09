@@ -24,11 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function loadLanguage(lang) {
-  if (window.PORTFOLIO_TRANSLATIONS?.[lang]) {
-    applyLanguage(lang, window.PORTFOLIO_TRANSLATIONS[lang]);
-    return;
-  }
-
   fetch(`lang/${lang}.json`)
     .then((response) => {
       if (!response.ok) {
