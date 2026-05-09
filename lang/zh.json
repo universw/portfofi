@@ -11,7 +11,7 @@
   "nav_chatbox": "聊天",
 
   "about_title": "关于我",
-  "about_description": "你好，欢迎来到我的主页！我叫Henry，是一名多语言、充满热情的开发者，目前定居于越南胡志明市。我能流利使用英语、日语、越南语，并具备基础中文沟通能力。我对技术充满热情，热爱持续学习，并乐于在多元文化的环境中工作。目前，我专注于云计算与DevOps技术，包括AWS、Azure、GCP和Vercel，具备构建和部署现代Web应用程序的实践经验。我正积极寻找Cloud/DevOps领域的实习、培训生或初级职位，希望能参与创新IT项目，成长为一名通过技术创造有意义影响力的工程师",
+  "about_description": "你好，欢迎来到我的主页！我叫Henry，是一名多语言、充满热情的开发者，目前定居于越南胡志明市。我能流利使用英语、日语和越南语。我对技术充满热情，热爱持续学习，并乐于在多元文化的环境中工作。目前，我专注于云计算与DevOps技术，包括AWS、GCP和Vercel，具备构建和部署现代Web应用程序的实践经验。我正积极寻找Cloud/DevOps领域的实习、培训生或初级职位，希望能参与创新IT项目，成长为一名通过技术创造有意义影响力的工程师",
 
   "resume_title": "简历",
   "education": "教育背景",
@@ -65,7 +65,6 @@
   "skills_title": "技能",
   "skill_html": "HTML、CSS、JavaScript",
   "skill_java": "Java",
-  "skill_itpassport": "IT护照",
   "skill_webcreator": "网页创作者",
   "skill_office": "Microsoft Excel、Word、PowerPoint、Access",
   "skill_languages": "英语 / 日语 / 越南语 / 中文（HSK1）",
@@ -114,7 +113,7 @@
    "project_label_securevault": "AWS 无服务器",
    "project_label_presentation": "日语演讲",
    "toolbox_eyebrow": "技能工具箱",
-   "skill_clouds": "AWS / Azure / GCP",
+   "skill_clouds": "AWS / GCP",
    "resume_eyebrow": "经历与证明",
    "campus_life": "校园生活"
 }

@@ -11,7 +11,7 @@
   "nav_chatbox": "Trò chuyện",
 
   "about_title": "Giới thiệu bản thân",
-  "about_description": "Xin chào và chào mừng bạn! Tôi là Henry, một lập trình viên đa ngôn ngữ và đầy động lực, hiện đang sinh sống tại Thành phố Hồ Chí Minh, Việt Nam. Tôi có thể giao tiếp thành thạo bằng tiếng Anh, tiếng Nhật, tiếng Việt và có kiến thức cơ bản về tiếng Trung. Tôi có niềm đam mê sâu sắc với công nghệ, không ngừng học hỏi và làm việc trong môi trường đa văn hóa. Hiện tại, tôi đang tập trung vào các công nghệ Cloud và DevOps như AWS, Azure, GCP và Vercel, cùng kinh nghiệm thực tế trong việc xây dựng và triển khai ứng dụng web. Tôi đang tích cực tìm kiếm các cơ hội thực tập, học việc hoặc vị trí đầu vào trong lĩnh vực Cloud/DevOps, nơi tôi có thể đóng góp cho các dự án IT sáng tạo và phát triển thành một kỹ sư tạo ra tác động có ý nghĩa thông qua công nghệ",
+  "about_description": "Xin chào và chào mừng bạn! Tôi là Henry, một lập trình viên đa ngôn ngữ và đầy động lực, hiện đang sinh sống tại Thành phố Hồ Chí Minh, Việt Nam. Tôi có thể giao tiếp thành thạo bằng tiếng Anh, tiếng Nhật và tiếng Việt. Tôi có niềm đam mê sâu sắc với công nghệ, không ngừng học hỏi và làm việc trong môi trường đa văn hóa. Hiện tại, tôi đang tập trung vào các công nghệ Cloud và DevOps như AWS, GCP và Vercel, cùng kinh nghiệm thực tế trong việc xây dựng và triển khai ứng dụng web. Tôi đang tích cực tìm kiếm các cơ hội thực tập, học việc hoặc vị trí đầu vào trong lĩnh vực Cloud/DevOps, nơi tôi có thể đóng góp cho các dự án IT sáng tạo và phát triển thành một kỹ sư tạo ra tác động có ý nghĩa thông qua công nghệ",
    "resume_title": "Sơ yếu lý lịch",
   "education": "Học vấn",
   "edu_akamonkai": "Trường Nhật ngữ Akamonkai (2018–2020)",
@@ -63,7 +63,6 @@
   "skills_title": "Kỹ năng",
   "skill_html": "HTML, CSS, JavaScript",
   "skill_java": "Java",
-  "skill_itpassport": "IT Passport ",
   "skill_webcreator": "Web Creator",
   "skill_office": "Microsoft Excel, Word, PowerPoint, Access",
   "skill_languages": "Tiếng Anh / Tiếng Nhật / Tiếng Việt / Tiếng Trung (HSK1)",
@@ -112,7 +111,7 @@
    "project_label_securevault": "AWS Serverless",
    "project_label_presentation": "Thuyết trình tiếng Nhật",
    "toolbox_eyebrow": "Bộ kỹ năng",
-   "skill_clouds": "AWS / Azure / GCP",
+   "skill_clouds": "AWS / GCP",
    "resume_eyebrow": "Kinh nghiệm & minh chứng",
    "campus_life": "Hoạt động trường học"
 }

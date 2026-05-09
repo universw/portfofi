@@ -79,7 +79,7 @@ firebase deploy --only hosting
 **Henry HoangQuan Nguyen** — Cloud & DevOps Engineer based in Ho Chi Minh City, Vietnam. Open to remote and relocation roles in Vietnam, Japan, Singapore, and Europe.
 
 - Languages: English, Japanese (JLPT N2), Vietnamese, Chinese (HSK1), German (basic)
-- Certifications: JLPT N2, TOEIC 665, IT Passport, MOS
+- Certifications: JLPT N2, TOEIC 665, MOS
 - Focus: AWS · GCP · Terraform · CI/CD · Linux
 
 **Contact**

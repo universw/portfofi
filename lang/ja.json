@@ -10,7 +10,7 @@
   "nav_contact": "連絡先",
   "nav_chatbox": "チャット",
    "about_title": "自己紹介",
-  "about_description": "はじめまして！私はヘンリーと申します。ベトナム・ホーチミン市を拠点とする、多言語対応のモチベーション高い開発者です。英語・日本語・ベトナム語を流暢に話し、中国語も基礎レベルで使用できます。テクノロジーへの深い情熱を持ち、継続的な学習と多様な文化が交わる環境での仕事を大切にしています。現在はAWS・Azure・GCP・Vercelを含むクラウド・DevOps技術に注力しており、Webアプリケーションの構築・デプロイの実務経験も有しています。Cloud/DevOps分野でのインターンシップや研修生・エントリーレベルのポジションを積極的に探しており、革新的なITプロジェクトに貢献しながら、テクノロジーで社会に意味ある影響を与えるエンジニアへと成長したいと考えています",
+  "about_description": "はじめまして！私はヘンリーと申します。ベトナム・ホーチミン市を拠点とする、多言語対応のモチベーション高い開発者です。英語・日本語・ベトナム語を流暢に話します。テクノロジーへの深い情熱を持ち、継続的な学習と多様な文化が交わる環境での仕事を大切にしています。現在はAWS・GCP・Vercelを含むクラウド・DevOps技術に注力しており、Webアプリケーションの構築・デプロイの実務経験も有しています。Cloud/DevOps分野でのインターンシップや研修生・エントリーレベルのポジションを積極的に探しており、革新的なITプロジェクトに貢献しながら、テクノロジーで社会に意味ある影響を与えるエンジニアへと成長したいと考えています",
   "resume_title": "履歴書",
   "education": "学歴",
   "edu_akamonkai": "赤門会日本語学校（2018年～2020年）",
@@ -62,7 +62,6 @@
   "skills_title": "スキル",
   "skill_html": "HTML、CSS、JavaScript",
   "skill_java": "Java",
-  "skill_itpassport": "ITパスポート",
   "skill_webcreator": "Webクリエイター",
   "skill_office": "Microsoft Excel、Word、PowerPoint、Access",
   "skill_languages": "英語 / 日本語 / ベトナム語 / 中国語（HSK1）",
@@ -111,7 +110,7 @@
   "project_label_securevault": "AWSサーバーレス",
   "project_label_presentation": "日本語プレゼン",
   "toolbox_eyebrow": "スキルセット",
-  "skill_clouds": "AWS / Azure / GCP",
+  "skill_clouds": "AWS / GCP",
   "resume_eyebrow": "経験と実績",
   "campus_life": "学校生活"
 }

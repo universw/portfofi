@@ -11,7 +11,7 @@
   "nav_chatbox": "Chat",
 
   "about_title": "Über mich",
-  "about_description": "Hallo und herzlich willkommen! Ich bin Henry, ein mehrsprachiger und motivierter Entwickler mit Sitz in Ho-Chi-Minh-Stadt, Vietnam. Ich spreche fließend Englisch, Japanisch, Vietnamesisch sowie grundlegendes Chinesisch. Technologie, lebenslanges Lernen und die Arbeit in vielfältigen, interkulturellen Umgebungen sind meine Leidenschaft. Derzeit konzentriere ich mich auf Cloud- und DevOps-Technologien wie AWS, Azure, GCP und Vercel und habe praktische Erfahrung mit dem Entwickeln und Bereitstellen moderner Webanwendungen. Ich suche aktiv nach Praktikums-, Trainee- oder Einstiegspositionen im Bereich Cloud/DevOps, um zu innovativen IT-Projekten beizutragen und mich zu einem zukunftsorientierten Ingenieur zu entwickeln, der durch Technologie nachhaltige Wirkung erzielt.",
+  "about_description": "Hallo und herzlich willkommen! Ich bin Henry, ein mehrsprachiger und motivierter Entwickler mit Sitz in Ho-Chi-Minh-Stadt, Vietnam. Ich spreche fließend Englisch, Japanisch und Vietnamesisch. Technologie, lebenslanges Lernen und die Arbeit in vielfältigen, interkulturellen Umgebungen sind meine Leidenschaft. Derzeit konzentriere ich mich auf Cloud- und DevOps-Technologien wie AWS, GCP und Vercel und habe praktische Erfahrung mit dem Entwickeln und Bereitstellen moderner Webanwendungen. Ich suche aktiv nach Praktikums-, Trainee- oder Einstiegspositionen im Bereich Cloud/DevOps, um zu innovativen IT-Projekten beizutragen und mich zu einem zukunftsorientierten Ingenieur zu entwickeln, der durch Technologie nachhaltige Wirkung erzielt.",
 
   "resume_title": "Lebenslauf",
   "education": "Ausbildung",
@@ -65,7 +65,6 @@
   "skills_title": "Fähigkeiten",
   "skill_html": "HTML, CSS, JavaScript",
   "skill_java": "Java",
-  "skill_itpassport": "IT Passport ",
   "skill_webcreator": "Web Creator",
   "skill_office": "Microsoft Excel, Word, PowerPoint, Access",
   "skill_languages": "Englisch / Japanisch / Vietnamesisch / Chinesisch (HSK1)",
@@ -114,7 +113,7 @@
   "project_label_securevault": "AWS Serverless",
   "project_label_presentation": "Japanische Präsentation",
   "toolbox_eyebrow": "Toolbox",
-  "skill_clouds": "AWS / Azure / GCP",
+  "skill_clouds": "AWS / GCP",
   "resume_eyebrow": "Erfahrung & Nachweise",
   "campus_life": "Campusleben"
 }
