@@ -9,7 +9,7 @@
   "nav_contact": "連絡先",
   "nav_chatbox": "チャット",
   "about_title": "自己紹介",
-  "about_description": "はじめまして！私はヘンリーと申します。ベトナム・ホーチミン市を拠点とする、多言語対応のモチベーション高い開発者です。英語・日本語・ベトナム語を流暢に話します。テクノロジーへの深い情熱を持ち、継続的な学習と多様な文化が交わる環境での仕事を大切にしています。現在はAWS・GCP・Vercelを含むクラウド・DevOps技術に注力しており、Webアプリケーションの構築・デプロイの実務経験も有しています。Cloud/DevOps分野でのインターンシップや研修生・エントリーレベルのポジションを積極的に探しており、革新的なITプロジェクトに貢献しながら、テクノロジーで社会に意味ある影響を与えるエンジニアへと成長したいと考えています",
+  "about_description": "こんにちは、ヘンリーです。ホーチミン市を拠点とするクラウド／DevOpsエンジニアで、日本語（JLPT N2、日本在住5年）、英語、ベトナム語を話します。AWSとGCP上で、TerraformとGitHub Actionsを用いた本番品質のクラウドインフラを構築しています。最近の制作物には、東京リージョンにデプロイし、dev／staging／prod環境をTerraformモジュールで管理するサーバーレスAWSプラットフォーム「SecureVault」（Lambda、API Gateway、DynamoDB、Cognito、CloudFront、KMS）と、Terraformでインフラを管理しGitHub ActionsでCI/CDを稼働させているFirebase＋GCPアプリケーション「LifeHub AI Cloud」があります。シニアエンジニアと一緒に実際のインフラを構築・運用できるエントリーレベルのCloud／DevOpsポジションを探しています。現在はAWS Solutions Architect Associateの取得に向けて学習中です。",
   "hero_subtitle": "AWS 上にセキュアでサーバーレスなインフラを構築 — ホーチミン市拠点、グローバル勤務に対応。",
   "hero_eyebrow": "クラウド / DevOpsエンジニア（エントリーレベル）· AWS · GCP · Firebase · Terraform · GitHub Actions · JLPT N2 · ホーチミン市",
   "get_in_touch": "お問い合わせ",

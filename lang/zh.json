@@ -9,7 +9,7 @@
   "nav_contact": "联系方式",
   "nav_chatbox": "聊天",
   "about_title": "关于我",
-  "about_description": "你好，欢迎来到我的主页！我叫Henry，是一名多语言、充满热情的开发者，目前定居于越南胡志明市。我能流利使用英语、日语和越南语。我对技术充满热情，热爱持续学习，并乐于在多元文化的环境中工作。目前，我专注于云计算与DevOps技术，包括AWS、GCP和Vercel，具备构建和部署现代Web应用程序的实践经验。我正积极寻找Cloud/DevOps领域的实习、培训生或初级职位，希望能参与创新IT项目，成长为一名通过技术创造有意义影响力的工程师",
+  "about_description": "你好，我是 Henry — 一名常驻越南胡志明市的 Cloud / DevOps 工程师，能熟练使用日语（JLPT N2，曾在日本生活 5 年）、英语和越南语。我使用 Terraform 和 GitHub Actions 在 AWS 与 GCP 上构建生产级别的云基础设施。近期项目包括 SecureVault，一个部署在东京区域的 AWS serverless 平台（Lambda、API Gateway、DynamoDB、Cognito、CloudFront、KMS），通过 Terraform 模块化 IaC 管理 dev/staging/prod 多环境；以及 LifeHub AI Cloud，一个基于 Firebase + GCP 的应用，由 Terraform 管理基础设施，并配有 GitHub Actions CI/CD 持续运行。我正在寻找 Cloud/DevOps 方向的入门级岗位，希望能与资深工程师一起交付真实的基础设施。目前正在备考 AWS Solutions Architect Associate 认证。",
   "hero_subtitle": "在 AWS 上构建安全的无服务器基础设施 — 胡志明市，面向全球机会。",
   "hero_eyebrow": "云 / DevOps 工程师（应届 / 入门级）· AWS · GCP · Firebase · Terraform · GitHub Actions · JLPT N2 · 胡志明市",
   "get_in_touch": "联系我",
