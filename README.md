@@ -1,4 +1,4 @@
-# Henry HoangQuan Nguyen — Portfolio
+# Henry Nguyen (Nguyễn Hồng Quân) — Portfolio
 
 Personal portfolio website showcasing Cloud & DevOps engineering work, infrastructure-as-code projects, and multilingual capabilities. Deployed on Firebase Hosting.
 
@@ -76,7 +76,7 @@ firebase deploy --only hosting
 
 ## About the Author
 
-**Henry HoangQuan Nguyen** — Cloud & DevOps Engineer based in Ho Chi Minh City, Vietnam. Open to remote and relocation roles in Vietnam, Japan, Singapore, and Europe.
+**Henry Nguyen** (Nguyễn Hồng Quân) — Cloud & DevOps Engineer based in Ho Chi Minh City, Vietnam. Open to remote and relocation roles in Vietnam, Japan, Singapore, and Europe.
 
 - Languages: English, Japanese (JLPT N2), Vietnamese, Chinese (HSK1), German (basic)
 - Certifications: JLPT N2, TOEIC 665, MOS
@@ -88,4 +88,4 @@ firebase deploy --only hosting
 
 ---
 
-© 2026 Henry HoangQuan Nguyen. All rights reserved.
+© 2026 Henry Nguyen (Nguyễn Hồng Quân). Designed & built from Ho Chi Minh City.

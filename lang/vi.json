@@ -1,5 +1,5 @@
 {
-  "site_title": "Henry HoangQuan Nguyen | Hồ sơ cá nhân",
+  "site_title": "Henry Nguyen (Nguyễn Hồng Quân) | Hồ sơ cá nhân",
   "tagline": "BrSE · IT Comtor · Kỹ sư Cloud / DevOps · JLPT N2 · AWS · GCP · Terraform · GitHub Actions · TP. Hồ Chí Minh",
   "nav_about": "Giới thiệu",
   "nav_resume": "Sơ yếu lý lịch",
@@ -104,7 +104,7 @@
   "send_button": "Gửi",
   "chatbox_title": "Trò chuyện trực tuyến",
   "chat_input_placeholder": "Nhập tin nhắn của bạn...",
-  "footer": "© 2025 Henry HoangQuan Nguyen. Mọi quyền được bảo lưu.",
+  "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). Thiết kế & phát triển tại TP. Hồ Chí Minh.",
   "comment_section_title": "Sổ lưu bút & Bình luận",
   "comment_name": "Tên của bạn",
   "comment_message": "Viết bình luận của bạn...",
@@ -158,5 +158,5 @@
   "now_observability_desc": "Structured logs, traces, và SLO — từ \"nó chạy\" sang \"mình biết chính xác nó đang chạy ra sao\".",
   "resume_lead": "Đọc ở năm ngôn ngữ. Tải bản PDF phù hợp với team của bạn.",
   "contact_title": "Cùng nhau xây dựng điều gì đó.",
-  "footer": "© 2026 Henry HoangQuan Nguyen. Thiết kế & phát triển tại TP. Hồ Chí Minh."
+  "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). Thiết kế & phát triển tại TP. Hồ Chí Minh."
 }

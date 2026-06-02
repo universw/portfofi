@@ -1,5 +1,5 @@
 {
-  "site_title": "ヘンリー・ホアン・クアン・グエン | ポートフォリオ",
+  "site_title": "ヘンリー・グエン (Nguyễn Hồng Quân) | ポートフォリオ",
   "tagline": "ブリッジSE · ITコミュニケーター · クラウド / DevOpsエンジニア · JLPT N2 · AWS · GCP · Terraform · GitHub Actions · ホーチミン市",
   "nav_about": "自己紹介",
   "nav_resume": "履歴書",
@@ -104,7 +104,7 @@
   "send_button": "送信",
   "chatbox_title": "ライブチャット",
   "chat_input_placeholder": "メッセージを入力してください...",
-  "footer": "© 2025年 ヘンリー・ホアン・クアン・グエン。全著作権所有。",
+  "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). ホーチミン市より設計・開発。",
   "comment_section_title": "ゲストブックとコメント",
   "comment_name": "あなたの名前",
   "comment_message": "コメントを入力してください...",
@@ -158,5 +158,5 @@
   "now_observability_desc": "構造化ログ、トレース、SLO — 「動いている」から「動作を正確に把握している」状態へ。",
   "resume_lead": "5言語で閲覧可能。チームに合わせたPDFをダウンロードできます。",
   "contact_title": "一緒に何かを作りましょう。",
-  "footer": "© 2026 Henry HoangQuan Nguyen. ホーチミン市より設計・開発。"
+  "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). ホーチミン市より設計・開発。"
 }

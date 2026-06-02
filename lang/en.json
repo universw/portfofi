@@ -1,5 +1,5 @@
 {
-  "site_title": "Henry HoangQuan Nguyen | Portfolio",
+  "site_title": "Henry Nguyen | Portfolio",
   "tagline": "BrSE · IT Comtor · Cloud / DevOps Engineer · JLPT N2 · AWS · GCP · Terraform · GitHub Actions · Ho Chi Minh City",
   "nav_about": "About Me",
   "nav_resume": "Resume",
@@ -103,7 +103,7 @@
   "send_button": "Send",
   "chatbox_title": "Live Chat",
   "chat_input_placeholder": "Type your message...",
-  "footer": "© 2025 Henry HoangQuan Nguyen. All rights reserved.",
+  "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). Designed & built from Ho Chi Minh City.",
   "comment_section_title": "Guestbook & Comments",
   "comment_name": "Your Name",
   "comment_message": "Write your comment...",
@@ -158,5 +158,5 @@
   "now_observability_desc": "Structured logs, traces, and SLOs — moving from 'it runs' to 'I know exactly how it's running.'",
   "resume_lead": "Read it in five languages. Download the PDF that matches your team.",
   "contact_title": "Let's build something together.",
-  "footer": "© 2026 Henry HoangQuan Nguyen. Designed & built from Ho Chi Minh City."
+  "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). Designed & built from Ho Chi Minh City."
 }

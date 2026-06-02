@@ -1,5 +1,5 @@
 /* =========================================================
-   Henry HoangQuan Nguyen — Portfolio
+   Henry Nguyen (Nguyễn Hồng Quân) — Portfolio
    Premium international-tier design system
    ========================================================= */
 
@@ -427,6 +427,17 @@ textarea {
 @keyframes hueShift {
   0%, 100% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
+}
+
+.hero-copy h1 .name-vi {
+  display: block;
+  margin-top: 0.35em;
+  font-family: var(--font-serif, Georgia, serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.5em;
+  letter-spacing: 0.01em;
+  color: var(--muted, rgba(255, 255, 255, 0.7));
 }
 
 .eyebrow {
