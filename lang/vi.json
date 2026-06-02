@@ -104,7 +104,6 @@
   "send_button": "Gửi",
   "chatbox_title": "Trò chuyện trực tuyến",
   "chat_input_placeholder": "Nhập tin nhắn của bạn...",
-  "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). Thiết kế & phát triển tại TP. Hồ Chí Minh.",
   "comment_section_title": "Sổ lưu bút & Bình luận",
   "comment_name": "Tên của bạn",
   "comment_message": "Viết bình luận của bạn...",
@@ -158,5 +157,6 @@
   "now_observability_desc": "Structured logs, traces, và SLO — từ \"nó chạy\" sang \"mình biết chính xác nó đang chạy ra sao\".",
   "resume_lead": "Đọc ở năm ngôn ngữ. Tải bản PDF phù hợp với team của bạn.",
   "contact_title": "Cùng nhau xây dựng điều gì đó.",
+  "hero_greeting": "Xin chào, tôi là",
   "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). Thiết kế & phát triển tại TP. Hồ Chí Minh."
 }

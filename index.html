@@ -7,9 +7,23 @@
   <meta name="description" content="Cloud & DevOps engineer based in Ho Chi Minh City. AWS, Terraform, and serverless infrastructure. Bilingual JP/EN, open to roles in Vietnam, Japan, Singapore, and globally." />
   <meta name="author" content="Henry Nguyen" />
   <meta name="theme-color" content="#4f46e5" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://portfo-38945.web.app/" />
   <link rel="icon" type="image/jpeg" href="assets/images/profile.jpg" />
   <link rel="apple-touch-icon" href="assets/images/profile.jpg" />
+
+  <!-- hreflang for i18n SEO -->
+  <link rel="alternate" hreflang="en" href="https://portfo-38945.web.app/?lang=en" />
+  <link rel="alternate" hreflang="ja" href="https://portfo-38945.web.app/?lang=ja" />
+  <link rel="alternate" hreflang="vi" href="https://portfo-38945.web.app/?lang=vi" />
+  <link rel="alternate" hreflang="zh" href="https://portfo-38945.web.app/?lang=zh" />
+  <link rel="alternate" hreflang="de" href="https://portfo-38945.web.app/?lang=de" />
+  <link rel="alternate" hreflang="x-default" href="https://portfo-38945.web.app/" />
+
+  <!-- Performance: preload critical assets -->
+  <link rel="preload" as="image" href="assets/images/profile.jpg" fetchpriority="high" />
+  <link rel="dns-prefetch" href="https://www.youtube.com" />
+  <link rel="dns-prefetch" href="https://i.ytimg.com" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -17,9 +31,14 @@
   <meta property="og:title" content="Henry Nguyen — Cloud & DevOps Engineer" />
   <meta property="og:description" content="Cloud & DevOps engineer based in Ho Chi Minh City. AWS, Terraform, serverless. Bilingual JP/EN. Open to global opportunities." />
   <meta property="og:image" content="https://portfo-38945.web.app/assets/images/profile.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:alt" content="Portrait of Henry Nguyen (Nguyễn Hồng Quân)" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="ja_JP" />
   <meta property="og:locale:alternate" content="vi_VN" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+  <meta property="og:locale:alternate" content="de_DE" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -55,7 +74,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -107,7 +126,7 @@
       <div class="hero-copy">
         <span class="hero-status reveal" data-i18n="status_open">Open to BrSE · IT Comtor · Cloud / DevOps roles · Remote or relocation</span>
         <p class="eyebrow reveal reveal-delay-1" data-i18n="hero_eyebrow">Cloud · DevOps · Infrastructure as Code</p>
-        <h1 class="reveal reveal-delay-1"><span class="serif-accent">Hi, I'm</span> Henry <span class="grad">Nguyen</span> <small class="name-vi">(Nguyễn Hồng Quân)</small></h1>
+        <h1 class="reveal reveal-delay-1"><span class="serif-accent" data-i18n="hero_greeting">Hi, I'm</span> Henry <span class="grad">Nguyen</span> <small class="name-vi">(Nguyễn Hồng Quân)</small></h1>
         <p class="hero-subtitle reveal reveal-delay-2" data-i18n="hero_subtitle">I build secure, serverless infrastructure on AWS — from Ho Chi Minh City to the world.</p>
         <p class="hero-description reveal reveal-delay-3" data-i18n="about_description">
           Cloud / DevOps engineer specializing in production-grade AWS infrastructure provisioned with Terraform — serverless systems, least-privilege IAM, and reproducible deployments across dev / staging / prod. Bilingual in Japanese (JLPT N2, 5 years in Japan) and English, with working Vietnamese. Currently studying for AWS Solutions Architect Associate, and open to opportunities across Vietnam, Japan, Singapore, and Europe.
@@ -117,9 +136,9 @@
           <a href="#contact" class="btn btn-secondary" data-i18n="get_in_touch">Get in touch</a>
         </div>
         <div class="hero-meta reveal reveal-delay-4">
-          <span class="hero-meta-item"><strong>📍</strong> <span data-i18n="loc_based">Ho Chi Minh City, Vietnam</span></span>
-          <span class="hero-meta-item"><strong>🗓</strong> <span data-i18n="reply_within">Replies within 24 hours</span></span>
-          <span class="hero-meta-item"><strong>🌐</strong> EN · 日本語 · Tiếng Việt</span>
+          <span class="hero-meta-item"><span class="hero-meta-icon" aria-hidden="true">📍</span> <span data-i18n="loc_based">Ho Chi Minh City, Vietnam</span></span>
+          <span class="hero-meta-item"><span class="hero-meta-icon" aria-hidden="true">🗓</span> <span data-i18n="reply_within">Replies within 24 hours</span></span>
+          <span class="hero-meta-item"><span class="hero-meta-icon" aria-hidden="true">🌐</span> <span>EN · 日本語 · Tiếng Việt</span></span>
         </div>
       </div>
       <aside class="hero-panel reveal reveal-delay-2" aria-label="Portfolio highlights">
@@ -246,15 +265,17 @@
 
       <article class="project-item project-video project-rose reveal reveal-delay-3">
         <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/9p-opVgInaQ"
-            frameborder="0"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="project-video-player"
-            title="Entrepreneurship presentation in Japanese at Chiba Mode Business College"
-          ></iframe>
+          <button
+            type="button"
+            class="yt-facade"
+            data-video-id="9p-opVgInaQ"
+            aria-label="Play: Entrepreneurship presentation in Japanese at Chiba Mode Business College"
+            style="background-image:url('https://i.ytimg.com/vi/9p-opVgInaQ/hqdefault.jpg')"
+          >
+            <span class="yt-facade-play" aria-hidden="true">
+              <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74 0 13.04 0 24 0 24s0 10.96 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C68 34.96 68 24 68 24s0-10.96-1.48-16.26z" fill="#f00"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
+            </span>
+          </button>
         </div>
         <div class="project-content">
           <span class="project-label" data-i18n="project_label_presentation">Talk · Japanese · Business</span>
@@ -380,7 +401,7 @@
       </div>
     </div>
 
-    <h3 data-i18n="download_resume_title" style="font-family:var(--font-display);font-weight:700;letter-spacing:-0.01em;margin-top:2rem;">Download resume</h3>
+    <h3 class="resume-downloads-heading" data-i18n="download_resume_title">Download resume</h3>
     <div class="resume-downloads social-buttons">
       <a href="assets/resume/Henry_Nguyen_Resume_EN.pdf" class="btn" download>English (PDF)</a>
       <a href="assets/resume/Henry_Nguyen_Resume_JP.pdf" class="btn" download>日本語 (PDF)</a>
@@ -399,7 +420,7 @@
         <a href="mailto:henry.hoangquan.nguyen@gmail.com" class="btn"><span data-i18n="email">Email</span> <span class="arrow" aria-hidden="true">→</span></a>
         <a href="https://www.linkedin.com/in/henry-hoangquan-nguyen" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="linkedin_link">LinkedIn</a>
         <a href="https://github.com/universw" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="github_link">GitHub</a>
-        <a href="tel:0824440509" class="btn btn-ghost" data-i18n="phone">Phone</a>
+        <a href="tel:+84824440509" class="btn btn-ghost" data-i18n="phone">Phone</a>
       </div>
     </div>
   </section>
@@ -525,20 +546,21 @@ document.addEventListener("DOMContentLoaded", function () {
     syncObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
   }
 
-  // Theme toggle icon update
-  const themeBtn = document.getElementById("theme-toggle");
-  const updateThemeIcon = () => {
-    if (!themeBtn) return;
-    const isDark = document.body.classList.contains("dark-mode");
-    themeBtn.innerHTML = `<span aria-hidden="true">${isDark ? "☀" : "◐"}</span>`;
-  };
-  updateThemeIcon();
-  if (themeBtn) {
-    themeBtn.addEventListener("click", () => {
-      // theme.js handles the class flip; we just refresh icon after the tick
-      setTimeout(updateThemeIcon, 0);
+  // YouTube facade — load the iframe only when the user clicks the poster
+  document.querySelectorAll(".yt-facade").forEach((facade) => {
+    facade.addEventListener("click", () => {
+      const id = facade.dataset.videoId;
+      if (!id) return;
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+      iframe.title = facade.getAttribute("aria-label") || "Embedded video";
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+      iframe.setAttribute("allowfullscreen", "");
+      iframe.className = "project-video-player";
+      facade.replaceWith(iframe);
     });
-  }
+  });
 });
 </script>
 

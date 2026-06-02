@@ -104,7 +104,6 @@
   "send_button": "Senden",
   "chatbox_title": "Live-Chat",
   "chat_input_placeholder": "Geben Sie Ihre Nachricht ein...",
-  "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). Entworfen & gebaut aus Ho-Chi-Minh-Stadt.",
   "comment_section_title": "Gästebuch & Kommentare",
   "comment_name": "Ihr Name",
   "comment_message": "Schreiben Sie Ihren Kommentar...",
@@ -158,5 +157,6 @@
   "now_observability_desc": "Strukturierte Logs, Traces und SLOs — von „läuft\" zu „ich weiß genau wie es läuft\".",
   "resume_lead": "In fünf Sprachen lesbar. Lade das PDF herunter, das zu deinem Team passt.",
   "contact_title": "Lass uns gemeinsam etwas bauen.",
+  "hero_greeting": "Hallo, ich bin",
   "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). Entworfen & gebaut aus Ho-Chi-Minh-Stadt."
 }

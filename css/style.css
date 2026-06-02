@@ -560,6 +560,16 @@ textarea {
   font-weight: 700;
 }
 
+.hero-meta-icon {
+  display: inline-flex;
+  width: 1.1em;
+  height: 1.1em;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  line-height: 1;
+}
+
 /* Buttons */
 .btn {
   position: relative;
@@ -1616,3 +1626,70 @@ select:focus-visible {
     transform: none;
   }
 }
+
+/* =========================================================
+   Resume downloads heading
+   ========================================================= */
+.resume-downloads-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 2rem;
+}
+
+/* =========================================================
+   YouTube facade — click-to-load thumbnail (avoids loading
+   the YouTube iframe and its JS until the user opts in)
+   ========================================================= */
+.yt-facade {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.yt-facade::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.45) 100%);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.yt-facade:hover,
+.yt-facade:focus-visible {
+  transform: scale(1.01);
+}
+
+.yt-facade:focus-visible {
+  outline: 3px solid var(--accent-color, #ec4899);
+  outline-offset: 2px;
+}
+
+.yt-facade-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.45));
+  transition: transform 0.25s ease;
+}
+
+.yt-facade:hover .yt-facade-play,
+.yt-facade:focus-visible .yt-facade-play {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+

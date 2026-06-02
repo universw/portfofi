@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /.firebase/
+Disallow: /.github/
+Disallow: /.vscode/
+
+Sitemap: https://portfo-38945.web.app/sitemap.xml

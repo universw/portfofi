@@ -104,7 +104,6 @@
   "send_button": "发送",
   "chatbox_title": "实时聊天",
   "chat_input_placeholder": "请输入您的消息...",
-  "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). 在胡志明市设计与开发。",
   "comment_section_title": "留言簿与评论",
   "comment_name": "你的名字",
   "comment_message": "写下你的评论...",
@@ -158,5 +157,6 @@
   "now_observability_desc": "结构化日志、追踪与 SLO — 从「它在运行」到「我清楚它如何运行」。",
   "resume_lead": "提供五种语言版本。下载适合您团队的 PDF。",
   "contact_title": "让我们一起构建一些东西。",
+  "hero_greeting": "你好，我是",
   "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). 在胡志明市设计与开发。"
 }

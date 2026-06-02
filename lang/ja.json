@@ -104,7 +104,6 @@
   "send_button": "送信",
   "chatbox_title": "ライブチャット",
   "chat_input_placeholder": "メッセージを入力してください...",
-  "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). ホーチミン市より設計・開発。",
   "comment_section_title": "ゲストブックとコメント",
   "comment_name": "あなたの名前",
   "comment_message": "コメントを入力してください...",
@@ -158,5 +157,6 @@
   "now_observability_desc": "構造化ログ、トレース、SLO — 「動いている」から「動作を正確に把握している」状態へ。",
   "resume_lead": "5言語で閲覧可能。チームに合わせたPDFをダウンロードできます。",
   "contact_title": "一緒に何かを作りましょう。",
+  "hero_greeting": "こんにちは、私は",
   "footer": "© 2026 Henry Nguyen (Nguyễn Hồng Quân). ホーチミン市より設計・開発。"
 }

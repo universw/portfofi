@@ -1,26 +1,45 @@
-// Theme toggle button
-const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
+// Theme: persists user choice, defaults to system preference, single source of truth for icon.
+(function () {
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+  const STORAGE_KEY = 'theme';
 
-// Load saved theme from localStorage
-window.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    body.classList.add('dark-mode');
+  function systemPrefersDark() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   }
-  updateThemeLabel();
-});
 
-// Toggle theme and save preference
-themeToggle?.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  const isDark = body.classList.contains('dark-mode');
-  localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  updateThemeLabel();
-});
+  function getInitialTheme() {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved === 'dark' || saved === 'light') return saved;
+    return systemPrefersDark() ? 'dark' : 'light';
+  }
 
-function updateThemeLabel() {
-  if (!themeToggle) return;
-  const isDark = body.classList.contains('dark-mode');
-  themeToggle.textContent = isDark ? 'Light' : 'Dark';
-}
+  function applyTheme(theme) {
+    body.classList.toggle('dark-mode', theme === 'dark');
+    updateThemeIcon();
+  }
+
+  function updateThemeIcon() {
+    if (!themeToggle) return;
+    const isDark = body.classList.contains('dark-mode');
+    themeToggle.innerHTML = `<span aria-hidden="true">${isDark ? '☀' : '◐'}</span>`;
+    themeToggle.setAttribute('aria-pressed', String(isDark));
+    themeToggle.title = isDark ? 'Switch to light theme' : 'Switch to dark theme';
+  }
+
+  // Initial apply (before paint to avoid flash)
+  applyTheme(getInitialTheme());
+
+  themeToggle?.addEventListener('click', () => {
+    const next = body.classList.contains('dark-mode') ? 'light' : 'dark';
+    localStorage.setItem(STORAGE_KEY, next);
+    applyTheme(next);
+  });
+
+  // React to system theme changes if user hasn't explicitly chosen
+  if (window.matchMedia) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!localStorage.getItem(STORAGE_KEY)) applyTheme(e.matches ? 'dark' : 'light');
+    });
+  }
+})();
